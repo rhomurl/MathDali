@@ -6,55 +6,152 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\switch_sound</sound>
+    <sound>sound\correct_answer</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="input_user">
-      <sprite>sprites\spr_textbox</sprite>
-      <sprite>sprites\spr_button</sprite>
+    <sprites name="Bonus">
+      <sprite>sprites\spr_cloud</sprite>
+      <sprite>sprites\spr_clouds</sprite>
+      <sprite>sprites\spr_enterp</sprite>
     </sprites>
-    <sprite>sprites\spr_cursor</sprite>
-    <sprite>sprites\spr_heart</sprite>
-    <sprite>sprites\spr_multiply</sprite>
-    <sprite>sprites\spr_addition</sprite>
-    <sprite>sprites\spr_minus</sprite>
-    <sprite>sprites\spr_clouds1</sprite>
-    <sprite>sprites\spr_MainMenu</sprite>
+    <sprites name="Buttons">
+      <sprite>sprites\spr_MainMenu</sprite>
+      <sprite>sprites\spr_heart_backup</sprite>
+      <sprite>sprites\spr_heart</sprite>
+      <sprite>sprites\spr_prev_next</sprite>
+      <sprite>sprites\spr_submit_backup</sprite>
+      <sprite>sprites\spr_submit</sprite>
+      <sprite>sprites\spr_lock_or_unlocked</sprite>
+    </sprites>
+    <sprites name="Cursor">
+      <sprite>sprites\spr_cursor</sprite>
+      <sprite>sprites\spr_cursor2</sprite>
+      <sprite>sprites\spr_cursor_red</sprite>
+      <sprite>sprites\spr_cursor_blue</sprite>
+    </sprites>
+    <sprites name="Others">
+      <sprite>sprites\spr_textbox</sprite>
+      <sprite>sprites\spr_textbox_green</sprite>
+      <sprite>sprites\spr_collision_green</sprite>
+    </sprites>
+    <sprites name="Popup">
+      <sprite>sprites\sprite19</sprite>
+    </sprites>
+    <sprites name="Questions">
+      <sprite>sprites\spr_numbers</sprite>
+      <sprite>sprites\spr_wholenum</sprite>
+      <sprite>sprites\spr_w2n</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_level</background>
     <background>background\bg_play</background>
     <background>background\background2</background>
+    <background>background\background3</background>
+    <background>background\bg_sel_button</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\path0</path>
+    <path>paths\path_cloud</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\angleDifference.gml</script>
+    <script>scripts\spr_locked_or_unlocked.gml</script>
+    <script>scripts\scr_not_unlocked.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_MathDali</font>
+    <font>fonts\f_answer34</font>
     <font>fonts\f_default</font>
+    <font>fonts\f_question</font>
+    <font>fonts\f_instruction</font>
+    <font>fonts\font_lock</font>
   </fonts>
   <objects name="objects">
-    <objects name="main_menu">
+    <objects name="essential">
+      <objects name="input_user">
+        <object>objects\obj_text</object>
+        <object>objects\obj_textbox</object>
+        <object>objects\obj_sbutton</object>
+        <object>objects\obj_button_w2n</object>
+      </objects>
+      <object>objects\obj_lives</object>
+      <object>objects\ctrl_g_input</object>
+    </objects>
+    <objects name="Menu">
       <object>objects\obj_MainMenu</object>
       <object>objects\obj_title</object>
     </objects>
-    <objects name="input_user">
-      <object>objects\obj_text</object>
-      <object>objects\obj_textbox</object>
-      <object>objects\obj_sbutton</object>
+    <object>objects\control_mm</object>
+    <object>objects\ctrl_game</object>
+    <object>objects\obj_popup</object>
+    <object>objects\obj_enterp</object>
+    <object>objects\obj_title_ingame</object>
+    <objects name="Bonus">
+      <object>objects\obj_clouds1</object>
+      <object>objects\obj_cloudsbig</object>
+      <object>objects\obj_cloud</object>
+      <object>objects\obj_cloudsbig2</object>
+      <object>objects\obj_clouds_small</object>
     </objects>
-    <object>objects\obj_cursor</object>
-    <object>objects\object1</object>
-    <object>objects\obj_clouds1</object>
-    <object>objects\obj_nextroom</object>
+    <objects name="Cursor">
+      <object>objects\obj_cursor</object>
+    </objects>
+    <objects name="Buttons">
+      <objects name="word2num_num2word">
+        <object>objects\w2n_lvl1</object>
+        <object>objects\w2n_lvl2</object>
+        <object>objects\w2n_lvl3</object>
+        <object>objects\w2n_lvl4</object>
+        <object>objects\w2n_lvl5</object>
+        <object>objects\n2w_lvl1</object>
+        <object>objects\n2w_lvl2</object>
+        <object>objects\n2w_lvl3</object>
+        <object>objects\n2w_lvl4</object>
+        <object>objects\n2w_lvl5</object>
+        <object>objects\obj_button_parent</object>
+        <object>objects\obj_control</object>
+      </objects>
+      <object>objects\obj_prevroom</object>
+      <object>objects\obj_nextroom</object>
+      <object>objects\ctrl_lvl</object>
+    </objects>
+    <objects name="Popup">
+      <object>objects\obj_incorrect</object>
+      <object>objects\obj_correct</object>
+    </objects>
+    <objects name="Questions">
+      <object>objects\obj_random_num1</object>
+      <object>objects\obj_random_num2</object>
+      <object>objects\obj_rand_w2n</object>
+    </objects>
+    <objects name="Others">
+      <object>objects\obj_collision_green</object>
+    </objects>
+    <objects name="Splash">
+      <object>objects\obj_splash</object>
+    </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\main_menu</room>
+    <room>rooms\room_splash_screen</room>
+    <room>rooms\room_menu</room>
+    <room>rooms\room_n2w_level</room>
+    <room>rooms\room_w2n_level</room>
     <room>rooms\room2</room>
-    <room>rooms\sel_lesson</room>
+    <room>rooms\room55</room>
+    <room>rooms\room5</room>
+    <rooms name="lessons">
+      <room>rooms\w2n_lvl1_r1</room>
+    </rooms>
+    <rooms name="conditions">
+      <room>rooms\gameover</room>
+      <room>rooms\correct</room>
+    </rooms>
+    <rooms name="help">
+      <rooms name="help_lesson">
+        <room>rooms\c2a_help</room>
+        <room>rooms\t2a_help</room>
+      </rooms>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

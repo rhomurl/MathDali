@@ -73,11 +73,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>x</string>
+            <string>room_width/2</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>y</string>
+            <string>576</string>
           </argument>
         </arguments>
       </action>

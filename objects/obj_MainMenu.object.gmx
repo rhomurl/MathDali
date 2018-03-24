@@ -35,7 +35,7 @@ menu_x = room_width/2;
 menu_y = room_height/2;
 
 //set the size of the menu
-menu_width = 500;
+menu_width = 400;
 menu_height = 50;
 </string>
           </argument>
@@ -62,22 +62,24 @@ menu_height = 50;
             <string>// left and right
 if (keyboard_check_pressed(vk_right)) {
     selected += 1;
-    audio_play_sound(switch_sound, 10, false);
-    
+    audio_play_sound(switch_sound, 10, false);   
 }
 else if (keyboard_check_pressed(vk_left)) {
     selected -= 1;
     audio_play_sound(switch_sound, 10, false);
 }
 
+//Left pressed and Enter
+
+
 //Rotate towards the selection
 rot -= angleDifference(rot, selected*(360/image_number))/(0.2*room_speed);
 
 // setting the item variable to image_index
 item = -selected mod image_number;
-if (item) &lt; 0 {item+=image_number; };
+if (item) &lt; 0 { item+=image_number; }
 
- 
+
 </string>
           </argument>
         </arguments>
@@ -120,7 +122,7 @@ if (item) &lt; 0 {item+=image_number; };
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_font(f_default);
+            <string>
 //set some vars
 var pr, i;
 i = 0;
@@ -145,17 +147,19 @@ repeat(image_number){
 //remove ds priority 
 ds_priority_destroy(pr);
 
-//draw text based on what item you have
-var text;
 
 switch(item){
     case 0: text = "Play" break;
     case 1: text = "Help" break;
-    case 2: text = "Settings" break;
+    case 2: text = "Sound" break;
     case 3: text = "Exit" break;
     default: text = "" break;
+
 }
 
+//draw text based on what item you have
+var text;
+draw_set_font(f_default);
 draw_set_halign(fa_center);
 draw_text(512,256,text);
 </string>
@@ -180,7 +184,8 @@ draw_text(512,256,text);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch(item){
+            <string>//if (mouse_check_button_pressed(mb_left) || keyboard_check(vk_enter)){
+switch(item){
     case 0: 
         ini_open("savedata.ini"); //open file savedata.ini
         global.highscore = ini_read_real("score", "highscore", 0);
@@ -191,9 +196,11 @@ draw_text(512,256,text);
         lives=5;    
     room_goto_next(); break;
     case 1: room_goto(help_room); break;
-    case 2: show_message("Settings not available") break;
+    case 2: show_message("Sound not available") break;
     case 3: game_end(); break;
-}
+    }
+
+
 </string>
           </argument>
         </arguments>

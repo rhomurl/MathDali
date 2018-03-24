@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>max_width = 1000;
+            <string>max_width = 400;
 selected = true;
 blink = false;
 txt = "";
@@ -116,13 +116,15 @@ keyboard_string = txt;
           <argument>
             <kind>1</kind>
             <string>draw_set_font(f_default); //setting up the font
+draw_set_colour(c_white);
+draw_set_font(f_answer34);
 draw_sprite(sprite_index, image_index, x, y);
 draw_set_halign(fa_center);
 draw_set_valign(fa_center);
 
 if (txt == "")
 {
-draw_text(x, y, "1st num");
+draw_text(x, y, "answer");
 }
 else{
 if(blink == false) || (selected == false)
