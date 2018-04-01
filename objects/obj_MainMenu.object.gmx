@@ -88,26 +88,6 @@ if (item) &lt; 0 { item+=image_number; }
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
-        <id>524</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_color</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>13</kind>
-            <string>16777215</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>603</id>
         <kind>7</kind>
         <userelative>0</userelative>
@@ -151,17 +131,21 @@ ds_priority_destroy(pr);
 switch(item){
     case 0: text = "Play" break;
     case 1: text = "Help" break;
-    case 2: text = "Sound" break;
-    case 3: text = "Exit" break;
+    case 2: text = "Exit" break;
     default: text = "" break;
 
 }
 
 //draw text based on what item you have
 var text;
-draw_set_font(f_default);
+draw_set_font(f_mainmenu_dr);
 draw_set_halign(fa_center);
-draw_text(512,256,text);
+draw_set_colour(c_black);
+
+draw_text(room_width/2-1,224-1,text);
+
+draw_set_colour(c_white); //shadow effect
+draw_text(room_width/2,224,text)
 </string>
           </argument>
         </arguments>
@@ -195,9 +179,8 @@ switch(item){
         score=0;
         lives=5;    
     room_goto_next(); break;
-    case 1: room_goto(help_room); break;
-    case 2: show_message("Sound not available") break;
-    case 3: game_end(); break;
+    case 1: room_goto(room_help); break;
+    case 2: room_goto(room_exit); break;
     }
 
 

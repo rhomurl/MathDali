@@ -11,26 +11,6 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
-        <id>701</id>
-        <kind>0</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_set_score</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>201</id>
         <kind>0</kind>
         <userelative>-1</userelative>
@@ -101,15 +81,15 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_enterp</object>
+            <object>obj_cursor</object>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>room_width/2</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>room_height/2+200</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -129,43 +109,15 @@
         <arguments>
           <argument>
             <kind>10</kind>
-            <object>obj_cursor</object>
+            <object>obj_ins_main</object>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>100</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>num1 = real(50);
-num2 = real(3);
-
-summy = num1/num2;
-draw_text(50,50, summy);
-
-</string>
+            <string>716</string>
           </argument>
         </arguments>
       </action>

@@ -25,6 +25,35 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Declare variables and instance
+instance_create(x,y, obj_cursor);
+global.level_w2n=1; global.level_w2n1=0; global.level_w2n2=0;
+global.level_n2w=1;
+global.level_f2d=1;
+global.level_pv=1;
+global.level_ro=1;
+score=0;
+lives=5;
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Set Splash Timer
 alarm[0]=1*room_speed;
 </string>
@@ -59,30 +88,6 @@ global.level=ini_read_real("main", "level", 1);
 
 ini_close();
 */
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Declare variables
-global.level_w2n=1;
-global.level_n2w=1;
 
 </string>
           </argument>

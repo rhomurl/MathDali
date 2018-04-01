@@ -7,21 +7,48 @@
   <sounds name="sound">
     <sound>sound\switch_sound</sound>
     <sound>sound\correct_answer</sound>
+    <sound>sound\sound3</sound>
+    <sound>sound\sound4</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="Backups">
+      <sprite>sprites\spr_heart_backup</sprite>
+      <sprite>sprites\spr_submit_backup</sprite>
+    </sprites>
     <sprites name="Bonus">
       <sprite>sprites\spr_cloud</sprite>
-      <sprite>sprites\spr_clouds</sprite>
-      <sprite>sprites\spr_enterp</sprite>
+      <sprite>sprites\spr_clouds3</sprite>
+      <sprite>sprites\spr_clouds2</sprite>
+      <sprite>sprites\spr_clouds1</sprite>
+      <sprite>sprites\spr_clouds4</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_MainMenu</sprite>
-      <sprite>sprites\spr_heart_backup</sprite>
       <sprite>sprites\spr_heart</sprite>
       <sprite>sprites\spr_prev_next</sprite>
-      <sprite>sprites\spr_submit_backup</sprite>
       <sprite>sprites\spr_submit</sprite>
       <sprite>sprites\spr_lock_or_unlocked</sprite>
+      <sprite>sprites\spr_sound</sprite>
+      <sprite>sprites\spr_exit_yes_no</sprite>
+      <sprites name="Place Value">
+        <sprite>sprites\spr_tens</sprite>
+        <sprite>sprites\spr_hundredmillions</sprite>
+        <sprite>sprites\spr_hundredthousands</sprite>
+        <sprite>sprites\spr_hundreds</sprite>
+        <sprite>sprites\spr_hundredths</sprite>
+        <sprite>sprites\spr_millions</sprite>
+        <sprite>sprites\spr_tenmillions</sprite>
+        <sprite>sprites\spr_tenthousands</sprite>
+        <sprite>sprites\spr_tenthousandths</sprite>
+        <sprite>sprites\spr_tenths</sprite>
+        <sprite>sprites\spr_thousands</sprite>
+        <sprite>sprites\spr_thousandths</sprite>
+      </sprites>
+      <sprites name="Round Off">
+        <sprite>sprites\spr_roundoff_textbox</sprite>
+        <sprite>sprites\spr_roundoff_question</sprite>
+        <sprite>sprites\spr_roundoff_questionv2</sprite>
+      </sprites>
     </sprites>
     <sprites name="Cursor">
       <sprite>sprites\spr_cursor</sprite>
@@ -29,18 +56,35 @@
       <sprite>sprites\spr_cursor_red</sprite>
       <sprite>sprites\spr_cursor_blue</sprite>
     </sprites>
+    <sprites name="Main Menu">
+      <sprite>sprites\spr_msg_mainmenu</sprite>
+      <sprite>sprites\spr_title</sprite>
+    </sprites>
     <sprites name="Others">
       <sprite>sprites\spr_textbox</sprite>
-      <sprite>sprites\spr_textbox_green</sprite>
+      <sprite>sprites\spr_textbox2</sprite>
+      <sprite>sprites\spr_prev_next_bck</sprite>
+      <sprite>sprites\spr_textobx_green_bck</sprite>
       <sprite>sprites\spr_collision_green</sprite>
     </sprites>
     <sprites name="Popup">
-      <sprite>sprites\sprite19</sprite>
+      <sprite>sprites\spr_correct</sprite>
+      <sprite>sprites\spr_incorrect</sprite>
+      <sprite>sprites\spr_q_exit</sprite>
+      <sprite>sprites\spr_exit_txt</sprite>
+      <sprite>sprites\spr_levelcomplete</sprite>
+      <sprite>sprites\spr_lvl_complete_continue</sprite>
     </sprites>
     <sprites name="Questions">
       <sprite>sprites\spr_numbers</sprite>
       <sprite>sprites\spr_wholenum</sprite>
       <sprite>sprites\spr_w2n</sprite>
+      <sprite>sprites\spr_fraction</sprite>
+    </sprites>
+    <sprites name="Test">
+      <sprite>sprites\spr_wq</sprite>
+      <sprite>sprites\spr_qanswers</sprite>
+      <sprite>sprites\spr_dialogbc</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -49,6 +93,9 @@
     <background>background\background2</background>
     <background>background\background3</background>
     <background>background\bg_sel_button</background>
+    <background>background\bg_exitconfirm</background>
+    <background>background\background6</background>
+    <background>background\bg_splash_mm</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_cloud</path>
@@ -61,97 +108,220 @@
   <fonts name="fonts">
     <font>fonts\f_MathDali</font>
     <font>fonts\f_answer34</font>
-    <font>fonts\f_default</font>
     <font>fonts\f_question</font>
     <font>fonts\f_instruction</font>
     <font>fonts\font_lock</font>
+    <font>fonts\f_title_les</font>
+    <font>fonts\f_menu</font>
+    <font>fonts\f_mainmenu_dr</font>
+    <font>fonts\f_txtbox_ro</font>
+    <font>fonts\f_question_ro</font>
   </fonts>
   <objects name="objects">
-    <objects name="essential">
-      <objects name="input_user">
-        <object>objects\obj_text</object>
-        <object>objects\obj_textbox</object>
-        <object>objects\obj_sbutton</object>
-        <object>objects\obj_button_w2n</object>
-      </objects>
-      <object>objects\obj_lives</object>
-      <object>objects\ctrl_g_input</object>
-    </objects>
-    <objects name="Menu">
-      <object>objects\obj_MainMenu</object>
-      <object>objects\obj_title</object>
-    </objects>
-    <object>objects\control_mm</object>
-    <object>objects\ctrl_game</object>
-    <object>objects\obj_popup</object>
-    <object>objects\obj_enterp</object>
-    <object>objects\obj_title_ingame</object>
     <objects name="Bonus">
-      <object>objects\obj_clouds1</object>
-      <object>objects\obj_cloudsbig</object>
-      <object>objects\obj_cloud</object>
-      <object>objects\obj_cloudsbig2</object>
-      <object>objects\obj_clouds_small</object>
-    </objects>
-    <objects name="Cursor">
-      <object>objects\obj_cursor</object>
+      <object>objects\obj_cloud_twirl</object>
+      <object>objects\objj_clouds1</object>
+      <object>objects\obj_clouds2</object>
+      <object>objects\obj_clouds3</object>
+      <object>objects\obj_clouds4</object>
     </objects>
     <objects name="Buttons">
-      <objects name="word2num_num2word">
-        <object>objects\w2n_lvl1</object>
-        <object>objects\w2n_lvl2</object>
-        <object>objects\w2n_lvl3</object>
-        <object>objects\w2n_lvl4</object>
-        <object>objects\w2n_lvl5</object>
-        <object>objects\n2w_lvl1</object>
-        <object>objects\n2w_lvl2</object>
-        <object>objects\n2w_lvl3</object>
-        <object>objects\n2w_lvl4</object>
-        <object>objects\n2w_lvl5</object>
-        <object>objects\obj_button_parent</object>
-        <object>objects\obj_control</object>
+      <objects name="Choose Lessons">
+        <object>objects\obj_n2w</object>
+        <object>objects\obj_w2n</object>
+        <object>objects\obj_f2d</object>
+        <object>objects\obj_pv</object>
+        <object>objects\obj_ro</object>
+        <object>objects\obj_ctrl_lessons</object>
       </objects>
-      <object>objects\obj_prevroom</object>
-      <object>objects\obj_nextroom</object>
-      <object>objects\ctrl_lvl</object>
+      <objects name="Level Icons">
+        <objects name="num2word">
+          <object>objects\n2w_lvl1</object>
+          <object>objects\n2w_lvl2</object>
+          <object>objects\n2w_lvl3</object>
+          <object>objects\n2w_lvl4</object>
+          <object>objects\n2w_lvl5</object>
+        </objects>
+        <objects name="word2num">
+          <object>objects\w2n_lvl1</object>
+          <object>objects\w2n_lvl2</object>
+          <object>objects\w2n_lvl3</object>
+          <object>objects\w2n_lvl4</object>
+          <object>objects\w2n_lvl5</object>
+        </objects>
+        <objects name="frac2decimal">
+          <object>objects\frac2dec_lvl1</object>
+          <object>objects\frac2dec_lvl2</object>
+          <object>objects\frac2dec_lvl3</object>
+          <object>objects\frac2dec_lvl4</object>
+          <object>objects\frac2dec_lvl5</object>
+        </objects>
+        <objects name="placeval">
+          <object>objects\placeval_lvl1</object>
+          <object>objects\placeval_lvl2</object>
+          <object>objects\placeval_lvl3</object>
+          <object>objects\placeval_lvl4</object>
+          <object>objects\placeval_lvl5</object>
+        </objects>
+        <objects name="roundoff">
+          <object>objects\roundoff_lvl1</object>
+          <object>objects\roundoff_lvl2</object>
+          <object>objects\roundoff_lvl3</object>
+          <object>objects\roundoff_lvl4</object>
+          <object>objects\roundoff_lvl5</object>
+        </objects>
+        <object>objects\obj_button_parent</object>
+      </objects>
+      <objects name="BCK_NXT_Room">
+        <object>objects\obj_nextroom</object>
+        <object>objects\obj_prevroom</object>
+      </objects>
+      <objects name="Place Value">
+        <object>objects\obj_tens</object>
+        <object>objects\obj_hundredmillions</object>
+        <object>objects\obj_hundredthousands</object>
+        <object>objects\obj_hundreds</object>
+        <object>objects\obj_hundredths</object>
+        <object>objects\obj_millions</object>
+        <object>objects\obj_tenmillions</object>
+        <object>objects\obj_tenthousands</object>
+        <object>objects\obj_tenths</object>
+        <object>objects\obj_thousands</object>
+        <object>objects\obj_thousandths</object>
+      </objects>
+      <objects name="Round Off">
+        <object>objects\obj_txtbox_roa</object>
+        <object>objects\obj_txtbox_rob</object>
+        <object>objects\obj_txtbox_roc</object>
+        <object>objects\obj_txtbox_rod</object>
+        <object>objects\obj_roundoff_question</object>
+        <object>objects\obj_txtbox_parent</object>
+      </objects>
+    </objects>
+    <objects name="Default needs">
+      <objects name="Cursor">
+        <object>objects\obj_cursor</object>
+      </objects>
+      <objects name="Sound">
+        <object>objects\obj_soundmute</object>
+        <object>objects\obj_sound</object>
+      </objects>
+      <object>objects\obj_lives</object>
+    </objects>
+    <objects name="Exit">
+      <object>objects\obj_q_exit</object>
+      <object>objects\obj_exit_yes</object>
+      <object>objects\obj_exit_no</object>
+    </objects>
+    <objects name="Input User">
+      <object>objects\obj_text</object>
+      <object>objects\obj_textbox</object>
+      <object>objects\obj_button_w2n</object>
+      <object>objects\obj_button_integers</object>
+      <object>objects\obj_rand_w2n</object>
+      <object>objects\obj_sbutton</object>
+      <object>objects\obj_drawq_w2n</object>
+    </objects>
+    <objects name="Menu">
+      <objects name="Main">
+        <object>objects\obj_MainMenu</object>
+        <object>objects\obj_msg_main</object>
+        <object>objects\obj_title</object>
+        <object>objects\obj_ctrl_mainmenu</object>
+      </objects>
+      <objects name="Level">
+        <object>objects\obj_ctrl_lvl_menu</object>
+      </objects>
+    </objects>
+    <objects name="Others">
+      <object>objects\obj_collision_green</object>
     </objects>
     <objects name="Popup">
+      <objects name="Level Complete">
+        <object>objects\obj_button_complete</object>
+        <object>objects\obj_levelcomplete</object>
+        <object>objects\obj_ctrl_lvl_complete</object>
+      </objects>
       <object>objects\obj_incorrect</object>
       <object>objects\obj_correct</object>
     </objects>
     <objects name="Questions">
       <object>objects\obj_random_num1</object>
       <object>objects\obj_random_num2</object>
-      <object>objects\obj_rand_w2n</object>
-    </objects>
-    <objects name="Others">
-      <object>objects\obj_collision_green</object>
+      <object>objects\obj_fraction</object>
     </objects>
     <objects name="Splash">
       <object>objects\obj_splash</object>
+    </objects>
+    <objects name="Test">
+      <object>objects\obj_dialogbox</object>
+      <object>objects\obj_ctrl_wq</object>
+      <object>objects\obj_ctrl_wq1</object>
+      <object>objects\obj_qans1</object>
+      <object>objects\obj_qans2</object>
+      <object>objects\obj_qans3</object>
+      <object>objects\obj_qans4</object>
+      <object>objects\obj_wq</object>
+      <object>objects\obj_ranqqq</object>
+      <object>objects\obj_dialogbx</object>
+    </objects>
+    <objects name="WhoWantsToBeMillionare">
+      <object>objects\obj_answer1</object>
+      <object>objects\obj_answer2</object>
+      <object>objects\ctrl_randq</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_splash_screen</room>
     <room>rooms\room_menu</room>
-    <room>rooms\room_n2w_level</room>
-    <room>rooms\room_w2n_level</room>
-    <room>rooms\room2</room>
-    <room>rooms\room55</room>
-    <room>rooms\room5</room>
-    <rooms name="lessons">
-      <room>rooms\w2n_lvl1_r1</room>
-    </rooms>
-    <rooms name="conditions">
+    <room>rooms\choose_lesson</room>
+    <rooms name="Conditions">
       <room>rooms\gameover</room>
       <room>rooms\correct</room>
     </rooms>
-    <rooms name="help">
+    <rooms name="Help">
       <rooms name="help_lesson">
         <room>rooms\c2a_help</room>
         <room>rooms\t2a_help</room>
       </rooms>
     </rooms>
+    <rooms name="Lesson">
+      <rooms name="Words to Numbers">
+        <room>rooms\room_w2n_level</room>
+        <rooms name="LVL1">
+          <room>rooms\rm_w2n_lvl1</room>
+          <room>rooms\rm_w2n_lvl1_1</room>
+          <room>rooms\rm_w2n_lvl1_2</room>
+          <room>rooms\rm_w2n_lvl1_3</room>
+          <room>rooms\rm_w2n_lvl1_4</room>
+          <room>rooms\rm_w2n_lvl1_5_bck</room>
+        </rooms>
+        <rooms name="LVL2">
+          <room>rooms\rm_w2n_lvl2</room>
+          <room>rooms\rm_w2n_lvl2_1</room>
+          <room>rooms\rm_w2n_lvl2_2</room>
+          <room>rooms\rm_w2n_lvl2_3</room>
+          <room>rooms\rm_w2n_lvl2_4</room>
+        </rooms>
+      </rooms>
+      <rooms name="Numbers to Words">
+        <room>rooms\room_n2w_level</room>
+      </rooms>
+      <rooms name="Fraction to Decimal">
+        <room>rooms\room_f2d_level</room>
+      </rooms>
+      <rooms name="Place Value">
+        <room>rooms\room_pv_level</room>
+      </rooms>
+      <rooms name="Round Off">
+        <room>rooms\room_ro_level</room>
+      </rooms>
+    </rooms>
+    <room>rooms\test1</room>
+    <room>rooms\test2</room>
+    <room>rooms\level_complete</room>
+    <room>rooms\room_help</room>
+    <room>rooms\room_exit</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

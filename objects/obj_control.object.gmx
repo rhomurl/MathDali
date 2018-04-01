@@ -8,6 +8,34 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>sel_lvl = "Select Level";
+str_w2n = "Words to Numbers";
+str_n2w = "Numbers to Words";
+str_f2d = "Fraction to Decimal";
+str_pv = "Place Value";
+str_ro = "Round Off";
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -45,6 +73,41 @@ if (room == room_n2w_level){
     global.level_n2w+=1;
     }
 }
+if (room == room_f2d_level){
+    if keyboard_check_released(ord('Q'))
+    {
+    global.level_f2d-=1;
+    }
+    if keyboard_check_released(ord('A'))
+    {
+    global.level_f2d+=1;
+    }
+}
+if (room == room_pv_level){
+    if keyboard_check_released(ord('Q'))
+    {
+    global.level_pv-=1;
+    }
+    if keyboard_check_released(ord('A'))
+    {
+    global.level_pv+=1;
+    }
+}
+if (room == room_ro_level){
+    if keyboard_check_released(ord('Q'))
+    {
+    global.level_ro-=1;
+    }
+    if keyboard_check_released(ord('A'))
+    {
+    global.level_ro+=1;
+    }
+}
+
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -93,10 +156,33 @@ if (room == room_n2w_level){
             <kind>1</kind>
             <string>if room == room_w2n_level {
 draw_text(10,10,global.level_w2n); //for testing only
+draw_text(32,704,str_w2n);
 }
 else if room == room_n2w_level {
 draw_text(10,10,global.level_n2w); //for testing only
+draw_text(32,704,str_n2w);
 }
+else if room == room_f2d_level {
+draw_text(10,10,global.level_f2d); //for testing only
+draw_text(32,704,str_f2d);
+}
+else if room == room_pv_level {
+draw_text(10,10,global.level_pv); //for testing only
+draw_text(32,704,str_pv);
+}
+else if room == room_ro_level {
+draw_text(10,10,global.level_ro); //for testing only
+draw_text(32,704,str_ro);
+}
+draw_set_font(f_questions);
+draw_set_colour(c_black);
+draw_text(room_width/2-1, 128, sel_lvl);
+draw_set_colour(c_white);
+draw_text(room_width/2, 128, sel_lvl);
+
+
+
+
 </string>
           </argument>
         </arguments>
