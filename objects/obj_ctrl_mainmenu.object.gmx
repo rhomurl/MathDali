@@ -28,6 +28,7 @@
             <string>///Destroy lives, delete keyboard content and spawn msg
 instance_create(room_width/2, 716, obj_msg_main);
 keyboard_string = ""; 
+lives = 5;
 </string>
           </argument>
         </arguments>

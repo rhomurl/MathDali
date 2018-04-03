@@ -25,19 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>aaa = choose(obj_n2w, obj_w2n, obj_f2d, obj_pv, obj_ro);
-bbb = choose(obj_n2w, obj_w2n, obj_f2d, obj_pv, obj_ro);
-ccc = choose(obj_n2w, obj_w2n, obj_f2d, obj_pv, obj_ro);
-ddd = choose(obj_n2w, obj_w2n, obj_f2d, obj_pv, obj_ro);
-eee = choose(obj_n2w, obj_w2n, obj_f2d, obj_pv, obj_ro);
-if (aaa != bbb) &amp;&amp; (aaa != ccc) &amp;&amp; (aaa != ddd) &amp;&amp; (aaa != eee) 
-&amp;&amp; (bbb != ccc) &amp;&amp; (bbb != ddd) &amp;&amp; (bbb != eee) &amp;&amp; (ccc != ddd)
-&amp;&amp; (ccc != eee) &amp;&amp; (ddd != eee){
-instance_create(32,96, aaa);
-instance_create(32,224, bbb);
+            <string>
+
+aaa = obj_w2n;
+bbb = obj_n2w
+ccc = obj_f2d;
+ddd = obj_pv;
+eee = obj_ro;
+instance_create(32,0, aaa);
+instance_create(32,150, bbb);
 instance_create(32,300, ccc);
-instance_create(32,400, ddd);
-instance_create(32,400, eee);
+instance_create(32,450, ddd);
+instance_create(32,600, eee);
+/* 
 }
 else {
 instance_create(32,96, aaa);
@@ -47,7 +47,7 @@ instance_create(32,400, ddd);
 instance_create(32,400, eee);
 }
 
-/* else if (aaa != bbb) {
+else if (aaa != bbb) {
 ddd = choose(obj_n2w, obj_w2n, obj_f2d, obj_pv, obj_ro);
 eee = choose(obj_n2w, obj_w2n, obj_f2d, obj_pv, obj_ro);
 if (ddd != eee){

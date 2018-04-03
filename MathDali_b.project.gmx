@@ -25,11 +25,13 @@
     <sprites name="Buttons">
       <sprite>sprites\spr_MainMenu</sprite>
       <sprite>sprites\spr_heart</sprite>
-      <sprite>sprites\spr_prev_next</sprite>
       <sprite>sprites\spr_submit</sprite>
       <sprite>sprites\spr_lock_or_unlocked</sprite>
       <sprite>sprites\spr_sound</sprite>
       <sprite>sprites\spr_exit_yes_no</sprite>
+      <sprite>sprites\spr_exit_yes_no_bck</sprite>
+      <sprite>sprites\spr_ok_btn</sprite>
+      <sprite>sprites\spr_prev_next</sprite>
       <sprites name="Place Value">
         <sprite>sprites\spr_tens</sprite>
         <sprite>sprites\spr_hundredmillions</sprite>
@@ -70,10 +72,8 @@
     <sprites name="Popup">
       <sprite>sprites\spr_correct</sprite>
       <sprite>sprites\spr_incorrect</sprite>
-      <sprite>sprites\spr_q_exit</sprite>
-      <sprite>sprites\spr_exit_txt</sprite>
       <sprite>sprites\spr_levelcomplete</sprite>
-      <sprite>sprites\spr_lvl_complete_continue</sprite>
+      <sprite>sprites\spr_dialog_lvl_notunlocked</sprite>
     </sprites>
     <sprites name="Questions">
       <sprite>sprites\spr_numbers</sprite>
@@ -84,7 +84,17 @@
     <sprites name="Test">
       <sprite>sprites\spr_wq</sprite>
       <sprite>sprites\spr_qanswers</sprite>
+      <sprite>sprites\spr_dialog2</sprite>
       <sprite>sprites\spr_dialogbc</sprite>
+    </sprites>
+    <sprites name="Text">
+      <sprite>sprites\spr_lvl_complete_continue</sprite>
+      <sprite>sprites\spr_exit_txt</sprite>
+      <sprite>sprites\spr_gameover</sprite>
+      <sprite>sprites\spr_gameover_bck</sprite>
+      <sprite>sprites\spr_q_exit</sprite>
+      <sprite>sprites\spr_tryagain</sprite>
+      <sprite>sprites\spr_tryagain_bck</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -132,6 +142,7 @@
         <object>objects\obj_f2d</object>
         <object>objects\obj_pv</object>
         <object>objects\obj_ro</object>
+        <object>objects\obj_room1</object>
         <object>objects\obj_ctrl_lessons</object>
       </objects>
       <objects name="Level Icons">
@@ -176,6 +187,11 @@
         <object>objects\obj_nextroom</object>
         <object>objects\obj_prevroom</object>
       </objects>
+      <objects name="Exit">
+        <object>objects\obj_q_exit</object>
+        <object>objects\obj_exit_yes</object>
+        <object>objects\obj_exit_no</object>
+      </objects>
       <objects name="Place Value">
         <object>objects\obj_tens</object>
         <object>objects\obj_hundredmillions</object>
@@ -208,19 +224,18 @@
       </objects>
       <object>objects\obj_lives</object>
     </objects>
-    <objects name="Exit">
-      <object>objects\obj_q_exit</object>
-      <object>objects\obj_exit_yes</object>
-      <object>objects\obj_exit_no</object>
-    </objects>
     <objects name="Input User">
-      <object>objects\obj_text</object>
-      <object>objects\obj_textbox</object>
-      <object>objects\obj_button_w2n</object>
-      <object>objects\obj_button_integers</object>
-      <object>objects\obj_rand_w2n</object>
-      <object>objects\obj_sbutton</object>
-      <object>objects\obj_drawq_w2n</object>
+      <objects name="Textbox">
+        <object>objects\obj_textbox</object>
+        <object>objects\obj_text</object>
+      </objects>
+      <objects name="Words to Numbers">
+        <object>objects\obj_button_w2n</object>
+        <object>objects\obj_drawquestion_w2n</object>
+        <object>objects\obj_button_integers</object>
+        <object>objects\obj_w2n_randy</object>
+      </objects>
+      <object>objects\obj_random_</object>
     </objects>
     <objects name="Menu">
       <objects name="Main">
@@ -235,15 +250,6 @@
     </objects>
     <objects name="Others">
       <object>objects\obj_collision_green</object>
-    </objects>
-    <objects name="Popup">
-      <objects name="Level Complete">
-        <object>objects\obj_button_complete</object>
-        <object>objects\obj_levelcomplete</object>
-        <object>objects\obj_ctrl_lvl_complete</object>
-      </objects>
-      <object>objects\obj_incorrect</object>
-      <object>objects\obj_correct</object>
     </objects>
     <objects name="Questions">
       <object>objects\obj_random_num1</object>
@@ -265,6 +271,20 @@
       <object>objects\obj_ranqqq</object>
       <object>objects\obj_dialogbx</object>
     </objects>
+    <objects name="Text">
+      <objects name="Level Complete">
+        <object>objects\obj_button_complete</object>
+        <object>objects\obj_levelcomplete</object>
+        <object>objects\obj_ctrl_lvl_complete</object>
+      </objects>
+      <object>objects\obj_gameover</object>
+      <object>objects\obj_correct</object>
+      <object>objects\obj_incorrect</object>
+      <object>objects\obj_ok_btn</object>
+      <object>objects\obj_tryagain</object>
+      <object>objects\obj_dialog</object>
+      <object>objects\obj_dialog2</object>
+    </objects>
     <objects name="WhoWantsToBeMillionare">
       <object>objects\obj_answer1</object>
       <object>objects\obj_answer2</object>
@@ -273,11 +293,12 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_splash_screen</room>
-    <room>rooms\room_menu</room>
     <room>rooms\choose_lesson</room>
+    <room>rooms\test1</room>
+    <room>rooms\test2</room>
+    <room>rooms\level_complete</room>
     <rooms name="Conditions">
-      <room>rooms\gameover</room>
-      <room>rooms\correct</room>
+      <room>rooms\room_gameover</room>
     </rooms>
     <rooms name="Help">
       <rooms name="help_lesson">
@@ -294,7 +315,6 @@
           <room>rooms\rm_w2n_lvl1_2</room>
           <room>rooms\rm_w2n_lvl1_3</room>
           <room>rooms\rm_w2n_lvl1_4</room>
-          <room>rooms\rm_w2n_lvl1_5_bck</room>
         </rooms>
         <rooms name="LVL2">
           <room>rooms\rm_w2n_lvl2</room>
@@ -302,6 +322,27 @@
           <room>rooms\rm_w2n_lvl2_2</room>
           <room>rooms\rm_w2n_lvl2_3</room>
           <room>rooms\rm_w2n_lvl2_4</room>
+        </rooms>
+        <rooms name="LVL3">
+          <room>rooms\rm_w2n_lvl3</room>
+          <room>rooms\rm_w2n_lvl3_1</room>
+          <room>rooms\rm_w2n_lvl3_2</room>
+          <room>rooms\rm_w2n_lvl3_3</room>
+          <room>rooms\rm_w2n_lvl3_4</room>
+        </rooms>
+        <rooms name="LVL4">
+          <room>rooms\rm_w2n_lvl4</room>
+          <room>rooms\rm_w2n_lvl4_1</room>
+          <room>rooms\rm_w2n_lvl4_2</room>
+          <room>rooms\rm_w2n_lvl4_3</room>
+          <room>rooms\rm_w2n_lvl4_4</room>
+        </rooms>
+        <rooms name="LVL5">
+          <room>rooms\rm_w2n_lvl5</room>
+          <room>rooms\rm_w2n_lvl5_1</room>
+          <room>rooms\rm_w2n_lvl5_2</room>
+          <room>rooms\rm_w2n_lvl5_3</room>
+          <room>rooms\rm_w2n_lvl5_4</room>
         </rooms>
       </rooms>
       <rooms name="Numbers to Words">
@@ -317,11 +358,12 @@
         <room>rooms\room_ro_level</room>
       </rooms>
     </rooms>
-    <room>rooms\test1</room>
-    <room>rooms\test2</room>
-    <room>rooms\level_complete</room>
-    <room>rooms\room_help</room>
-    <room>rooms\room_exit</room>
+    <rooms name="Menu">
+      <room>rooms\room_menu</room>
+      <room>rooms\room_help</room>
+      <room>rooms\room_about</room>
+      <room>rooms\room_exit</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

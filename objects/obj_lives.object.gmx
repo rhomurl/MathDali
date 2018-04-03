@@ -29,8 +29,9 @@
 (room == level_complete) || (room == room_w2n_level) || (room == room_n2w_level) ||
 (room == room_f2d_level) || (room == room_pv_level) || (room == room_ro_level) ||
 (room == room_exit) || (room == room_help)
-
+{
 instance_deactivate_object(obj_lives);
+}
 </string>
           </argument>
         </arguments>

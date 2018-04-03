@@ -27,13 +27,22 @@
             <kind>1</kind>
             <string>///Declare variables and instance
 instance_create(x,y, obj_cursor);
-global.level_w2n=1; global.level_w2n1=0; global.level_w2n2=0;
+//Words to Numbers
+global.level_w2n=1; 
+//For level checking - first time
+global.level_w2n1=0; 
+global.level_w2n2=0; 
+global.level_w2n3=0; 
+global.level_w2n4=0; 
+global.level_w2n5=0;
+//Number to Words
 global.level_n2w=1;
 global.level_f2d=1;
 global.level_pv=1;
 global.level_ro=1;
 score=0;
 lives=5;
+
 </string>
           </argument>
         </arguments>

@@ -55,7 +55,8 @@
     <instance objName="obj_txtbox_rob" x="510" y="400" name="inst_B8A794EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_txtbox_roc" x="45" y="520" name="inst_2804B249" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_txtbox_rod" x="510" y="520" name="inst_963A4BFC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_roundoff_question" x="15" y="93" name="inst_48983E3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_roundoff_question" x="15" y="200" name="inst_48983E3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_prevroom" x="30" y="20" name="inst_5ED82520" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

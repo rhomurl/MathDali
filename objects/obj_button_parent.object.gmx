@@ -77,7 +77,9 @@ if (room == room_w2n_level)
     }
      else if (locked &amp;&amp; position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
     {
-        if my_w2n_lvl==1 || my_w2n_lvl==2 || my_w2n_lvl==3 || my_w2n_lvl==4 || my_w2n_lvl==5 show_message("Level locked!");
+        if (my_w2n_lvl==1 || my_w2n_lvl==2 || my_w2n_lvl==3 || my_w2n_lvl==4 || my_w2n_lvl==5)
+         instance_create(room_width/2,room_height/2, obj_dialog);
+        /*show_message("Level locked!");*/
     }
 }
 
