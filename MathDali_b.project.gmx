@@ -23,6 +23,19 @@
       <sprite>sprites\spr_clouds4</sprite>
     </sprites>
     <sprites name="Buttons">
+      <sprites name="Help">
+        <sprites name="game">
+          <sprite>sprites\spr_h_c2a</sprite>
+          <sprite>sprites\spr_h_t2a</sprite>
+          <sprite>sprites\spr_h_game</sprite>
+        </sprites>
+        <sprites name="lesson">
+          <sprite>sprites\spr_h_pv</sprite>
+          <sprite>sprites\spr_h_ro</sprite>
+          <sprite>sprites\spr_h_wn</sprite>
+          <sprite>sprites\spr_h_lesson</sprite>
+        </sprites>
+      </sprites>
       <sprite>sprites\spr_MainMenu</sprite>
       <sprite>sprites\spr_heart</sprite>
       <sprite>sprites\spr_submit</sprite>
@@ -31,6 +44,7 @@
       <sprite>sprites\spr_exit_yes_no</sprite>
       <sprite>sprites\spr_exit_yes_no_bck</sprite>
       <sprite>sprites\spr_ok_btn</sprite>
+      <sprite>sprites\spr_check_btn</sprite>
       <sprite>sprites\spr_prev_next</sprite>
       <sprites name="Place Value">
         <sprite>sprites\spr_tens</sprite>
@@ -50,6 +64,12 @@
         <sprite>sprites\spr_roundoff_textbox</sprite>
         <sprite>sprites\spr_roundoff_question</sprite>
         <sprite>sprites\spr_roundoff_questionv2</sprite>
+      </sprites>
+      <sprites name="Textbox">
+        <sprite>sprites\spr_txtbx_yellow</sprite>
+        <sprite>sprites\spr_txtbx_aqua</sprite>
+        <sprite>sprites\spr_txtbx_red</sprite>
+        <sprite>sprites\spr_txtbx_violet</sprite>
       </sprites>
     </sprites>
     <sprites name="Cursor">
@@ -96,6 +116,16 @@
       <sprite>sprites\spr_tryagain</sprite>
       <sprite>sprites\spr_tryagain_bck</sprite>
     </sprites>
+    <sprites name="Help">
+      <sprite>sprites\spr_h_nw</sprite>
+      <sprite>sprites\spr_h_nw1</sprite>
+      <sprite>sprites\spr_h_nw2</sprite>
+      <sprite>sprites\spr_h_nw3</sprite>
+      <sprite>sprites\spr_help_pv1</sprite>
+      <sprite>sprites\spr_help_pv2</sprite>
+      <sprite>sprites\spr_help_pv3</sprite>
+    </sprites>
+    <sprite>sprites\sprite80</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_level</background>
@@ -137,13 +167,16 @@
     </objects>
     <objects name="Buttons">
       <objects name="Choose Lessons">
-        <object>objects\obj_n2w</object>
-        <object>objects\obj_w2n</object>
-        <object>objects\obj_f2d</object>
-        <object>objects\obj_pv</object>
-        <object>objects\obj_ro</object>
-        <object>objects\obj_room1</object>
         <object>objects\obj_ctrl_lessons</object>
+      </objects>
+      <objects name="BCK_NXT_Room">
+        <object>objects\obj_nextroom</object>
+        <object>objects\obj_prevroom</object>
+      </objects>
+      <objects name="Exit">
+        <object>objects\obj_q_exit</object>
+        <object>objects\obj_exit_yes</object>
+        <object>objects\obj_exit_no</object>
       </objects>
       <objects name="Level Icons">
         <objects name="num2word">
@@ -159,13 +192,6 @@
           <object>objects\w2n_lvl3</object>
           <object>objects\w2n_lvl4</object>
           <object>objects\w2n_lvl5</object>
-        </objects>
-        <objects name="frac2decimal">
-          <object>objects\frac2dec_lvl1</object>
-          <object>objects\frac2dec_lvl2</object>
-          <object>objects\frac2dec_lvl3</object>
-          <object>objects\frac2dec_lvl4</object>
-          <object>objects\frac2dec_lvl5</object>
         </objects>
         <objects name="placeval">
           <object>objects\placeval_lvl1</object>
@@ -183,14 +209,8 @@
         </objects>
         <object>objects\obj_button_parent</object>
       </objects>
-      <objects name="BCK_NXT_Room">
-        <object>objects\obj_nextroom</object>
-        <object>objects\obj_prevroom</object>
-      </objects>
-      <objects name="Exit">
-        <object>objects\obj_q_exit</object>
-        <object>objects\obj_exit_yes</object>
-        <object>objects\obj_exit_no</object>
+      <objects name="Numbers to Words">
+        <object>objects\obj_txtbox_nw</object>
       </objects>
       <objects name="Place Value">
         <object>objects\obj_tens</object>
@@ -206,12 +226,15 @@
         <object>objects\obj_thousandths</object>
       </objects>
       <objects name="Round Off">
-        <object>objects\obj_txtbox_roa</object>
-        <object>objects\obj_txtbox_rob</object>
-        <object>objects\obj_txtbox_roc</object>
-        <object>objects\obj_txtbox_rod</object>
+        <object>objects\obj_txtbox_ro</object>
         <object>objects\obj_roundoff_question</object>
-        <object>objects\obj_txtbox_parent</object>
+      </objects>
+      <object>objects\obj_check_btn</object>
+      <objects name=" TEXTBOXES">
+        <object>objects\obj_txtbox_a</object>
+        <object>objects\obj_txtbox_c</object>
+        <object>objects\obj_txtbox_b</object>
+        <object>objects\obj_txtbox_d</object>
       </objects>
     </objects>
     <objects name="Default needs">
@@ -285,16 +308,31 @@
       <object>objects\obj_dialog</object>
       <object>objects\obj_dialog2</object>
     </objects>
-    <objects name="WhoWantsToBeMillionare">
-      <object>objects\obj_answer1</object>
-      <object>objects\obj_answer2</object>
-      <object>objects\ctrl_randq</object>
+    <objects name="Help">
+      <object>objects\obj_helppv1</object>
+      <object>objects\obj_helppv2</object>
+      <object>objects\obj_helppv3</object>
+      <objects name="wn">
+        <object>objects\obj_helpwn</object>
+        <object>objects\obj_helpnw1</object>
+        <object>objects\obj_helpnw3</object>
+        <object>objects\obj_helpnw2</object>
+      </objects>
+      <objects name="btns">
+        <object>objects\obj_h_game</object>
+        <object>objects\obj_h_lesson</object>
+        <object>objects\obj_h_wn</object>
+        <object>objects\obj_h_pv</object>
+        <object>objects\obj_h_ro</object>
+        <object>objects\obj_h_c2a</object>
+        <object>objects\obj_h_t2a</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_splash_screen</room>
     <room>rooms\choose_lesson</room>
-    <room>rooms\test1</room>
+    <room>rooms\ro_2</room>
     <room>rooms\test2</room>
     <room>rooms\level_complete</room>
     <rooms name="Conditions">
@@ -302,6 +340,22 @@
     </rooms>
     <rooms name="Help">
       <rooms name="help_lesson">
+        <rooms name="wn">
+          <room>rooms\h_w2n_n2w_1</room>
+          <room>rooms\h_w2n_n2w_2</room>
+          <room>rooms\h_w2n_n2w_3</room>
+          <room>rooms\h_w2n_n2w_4</room>
+        </rooms>
+        <rooms name="pv">
+          <room>rooms\h_pv_1</room>
+          <room>rooms\h_pv_2</room>
+          <room>rooms\h_pv_3</room>
+        </rooms>
+        <room>rooms\h_ro_1</room>
+        <room>rooms\rm_help_lesson</room>
+      </rooms>
+      <rooms name="help_game">
+        <room>rooms\rm_help_game</room>
         <room>rooms\c2a_help</room>
         <room>rooms\t2a_help</room>
       </rooms>
@@ -347,15 +401,23 @@
       </rooms>
       <rooms name="Numbers to Words">
         <room>rooms\room_n2w_level</room>
-      </rooms>
-      <rooms name="Fraction to Decimal">
-        <room>rooms\room_f2d_level</room>
+        <rooms name="LVL1">
+          <room>rooms\rm_n2w_lvl1</room>
+          <room>rooms\rm_n2w_lvl1_1</room>
+        </rooms>
       </rooms>
       <rooms name="Place Value">
         <room>rooms\room_pv_level</room>
+        <rooms name="LVL1">
+          <room>rooms\rm_pv_lvl1</room>
+        </rooms>
       </rooms>
       <rooms name="Round Off">
         <room>rooms\room_ro_level</room>
+        <rooms name="LVL1">
+          <room>rooms\rm_ro_lvl1</room>
+          <room>rooms\rm_ro_lvl1_1</room>
+        </rooms>
       </rooms>
     </rooms>
     <rooms name="Menu">

@@ -30,7 +30,6 @@ score=0;
 sel_lvl = "Select Level";
 str_w2n = "Words to Numbers";
 str_n2w = "Numbers to Words";
-str_f2d = "Fraction to Decimal";
 str_pv = "Place Value";
 str_ro = "Round Off";
 
@@ -74,16 +73,6 @@ if (room == room_n2w_level){
     if keyboard_check_released(ord('A'))
     {
     global.level_n2w+=1;
-    }
-}
-if (room == room_f2d_level){
-    if keyboard_check_released(ord('Q'))
-    {
-    global.level_f2d-=1;
-    }
-    if keyboard_check_released(ord('A'))
-    {
-    global.level_f2d+=1;
     }
 }
 if (room == room_pv_level){
@@ -168,12 +157,6 @@ draw_set_valign(fa_left);
 draw_set_halign(fa_left);
 draw_text(10,10,global.level_n2w); //for testing only
 draw_text(32,704,str_n2w);
-}
-else if room == room_f2d_level {
-draw_set_valign(fa_left);
-draw_set_halign(fa_left);
-draw_text(10,10,global.level_f2d); //for testing only
-draw_text(32,704,str_f2d);
 }
 else if room == room_pv_level {
 draw_set_valign(fa_left);

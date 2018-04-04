@@ -175,7 +175,7 @@ switch(item){
         global.highscore = ini_read_real("score", "highscore", 0);
         //set global.highscore to value or set as 0 if no value present
         ini_close(); //close ini file - always do this after loading or saving data 
-        room_goto(choose_lesson); break;
+        room_goto(room_w2n_level); break;
     case 1: room_goto(room_help); break;
     case 2: room_goto(room_exit); break;
     }

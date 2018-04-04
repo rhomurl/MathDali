@@ -109,33 +109,6 @@ if (room == room_n2w_level)
     }
 }
 
-
-//Fraction to Decimal
-if (room == room_f2d_level)
-{
-    if (global.level_f2d&gt;=my_frac2dec_lvl) 
-    {
-    locked=false
-    } 
-    else 
-    {
-    locked=true
-    }
-    if locked image_index=0 else image_index=1
-    if (!locked &amp;&amp; position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
-    {
-        if my_frac2dec_lvl==1 room_goto(rm_n2w_lvl1);
-        if my_frac2dec_lvl==2 room_goto(rm_n2w_lvl2);
-        if my_frac2dec_lvl==3 room_goto(rm_n2w_lvl3);
-        if my_frac2dec_lvl==4 room_goto(rm_n2w_lvl4);
-        if my_frac2dec_lvl==5 room_goto(rm_n2w_lvl5);
-    }
-    else if (locked &amp;&amp; position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
-    {
-        if my_frac2dec_lvl==1 || my_frac2dec_lvl==2 || my_frac2dec_lvl==3 || my_frac2dec_lvl==4 || my_frac2dec_lvl==5 show_message("Level locked!");
-    }
-}
-
 //Place Value
 if (room == room_pv_level)
 {

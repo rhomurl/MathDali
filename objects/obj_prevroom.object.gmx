@@ -83,21 +83,30 @@ image_index = 1;
     <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>11</kind>
-            <room>room_menu</room>
+            <kind>1</kind>
+            <string>room_goto(room_menu);
+if (room == rm_help_lesson) 
+{
+    room_goto(room_help);
+}
+if (room == rm_help_game) 
+{
+    room_goto(room_help);
+}
+</string>
           </argument>
         </arguments>
       </action>
