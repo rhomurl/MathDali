@@ -106,6 +106,7 @@ draw_text(x,y-200, "Press space to continue");
 instance_deactivate_object(obj_correct);
 score+=1;
 
+//Words to Numbers START
 //Level 1 - Words to Numbers
 if (room == rm_w2n_lvl1) || (room == rm_w2n_lvl1_1) 
 || (room == rm_w2n_lvl1_2) || (room == rm_w2n_lvl1_3)
@@ -116,9 +117,6 @@ if (room == rm_w2n_lvl1) || (room == rm_w2n_lvl1_1)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n1 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n1 == 0) { global.level_w2n+=1; global.level_w2n1+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n1 == 1) { room_goto(level_complete); }        
@@ -131,9 +129,6 @@ else if (room == rm_w2n_lvl1_4)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n1 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n1 == 0) { global.level_w2n+=1; global.level_w2n1+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n1 == 1) { room_goto(level_complete); }        
@@ -150,9 +145,6 @@ if (room == rm_w2n_lvl2) || (room == rm_w2n_lvl2_1)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n2 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n2 == 0) { global.level_w2n+=1; global.level_w2n2+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n2 == 1) { room_goto(level_complete); }        
@@ -165,9 +157,6 @@ else if (room == rm_w2n_lvl2_4)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n2 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n2 == 0) { global.level_w2n+=1; global.level_w2n2+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n2 == 1) { room_goto(level_complete); }        
@@ -184,9 +173,6 @@ if (room == rm_w2n_lvl3) || (room == rm_w2n_lvl3_1)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n3 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n3 == 0) { global.level_w2n+=1; global.level_w2n3+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n3 == 1) { room_goto(level_complete); }        
@@ -199,9 +185,6 @@ else if (room == rm_w2n_lvl3_4)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n3 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n3 == 0) { global.level_w2n+=1; global.level_w2n3+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n3 == 1) { room_goto(level_complete); }        
@@ -218,9 +201,6 @@ if (room == rm_w2n_lvl4) || (room == rm_w2n_lvl4_1)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n4 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n4 == 0) { global.level_w2n+=1; global.level_w2n4+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n4 == 1) { room_goto(level_complete); }        
@@ -233,9 +213,6 @@ else if (room == rm_w2n_lvl4_4)
     }
     else if (score == 5) 
     {
-        // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n4 == 1) { room_goto(level_complete); }
-        //Kapag first time maglaro sa LVL1
         if (global.level_w2n4 == 0) { global.level_w2n+=1; global.level_w2n4+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n4 == 1) { room_goto(level_complete); }        
@@ -253,9 +230,9 @@ if (room == rm_w2n_lvl5) || (room == rm_w2n_lvl5_1)
     else if (score == 5) 
     {
         // Kapag hanggang LEVEL 5 na ang na-unlocked
-        //if (global.level_w2n == 5) &amp;&amp; (global.level_w2n5 == 1) { room_goto(level_complete); }
+        if (global.level_w2n == 5) &amp;&amp; (global.level_w2n5 == 1) { room_goto(level_complete); }
         //Kapag first time maglaro sa LVL1
-        if (global.level_w2n5 == 0) { global.level_w2n+=1; global.level_w2n5+=1; room_goto(level_complete); }
+        if (global.level_w2n5 == 0) { /*global.level_w2n+=1;*/; global.level_w2n5+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n5 == 1) { room_goto(level_complete); }        
     }
@@ -273,6 +250,445 @@ else if (room == rm_w2n_lvl5_4)
         else if (global.level_w2n5 == 0) { /*global.level_w2n+=1;*/ global.level_w2n5+=1; room_goto(level_complete); }
         //Kapag second time or more than na naglaro
         else if (global.level_w2n5 == 1) { room_goto(level_complete); }        
+    }
+}
+//Words to Numbers END
+
+//Numbers to Words START
+//Level 1
+if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1) 
+|| (room == rm_n2w_lvl1_2) || (room == rm_n2w_lvl1_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w1 == 0) { global.level_n2w+=1; global.level_n2w1+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w1 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_n2w_lvl1_4)
+{
+    if (score != 5){
+    room_goto(rm_n2w_lvl1_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w1 == 0) { global.level_n2w+=1; global.level_n2w1+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w1 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 2
+if (room == rm_n2w_lvl2) || (room == rm_n2w_lvl2_1) 
+|| (room == rm_n2w_lvl2_2) || (room == rm_n2w_lvl2_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w2 == 0) { global.level_n2w+=1; global.level_n2w2+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w2 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_n2w_lvl2_4)
+{
+    if (score != 5){
+    room_goto(rm_n2w_lvl2_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w2 == 0) { global.level_n2w+=1; global.level_n2w2+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w2 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 3
+if (room == rm_n2w_lvl3) || (room == rm_n2w_lvl3_1) 
+|| (room == rm_n2w_lvl3_2) || (room == rm_n2w_lvl3_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w3 == 0) { global.level_n2w+=1; global.level_n2w3+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w3 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_n2w_lvl3_4)
+{
+    if (score != 5){
+    room_goto(rm_n2w_lvl3_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w3 == 0) { global.level_n2w+=1; global.level_n2w3+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w3 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 4
+if (room == rm_n2w_lvl4) || (room == rm_n2w_lvl4_1) 
+|| (room == rm_n2w_lvl4_2) || (room == rm_n2w_lvl4_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w4 == 0) { global.level_n2w+=1; global.level_n2w4+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w4 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_n2w_lvl4_4)
+{
+    if (score != 5){
+    room_goto(rm_n2w_lvl4_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w4 == 0) { global.level_n2w+=1; global.level_n2w4+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w4 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 5
+if (room == rm_n2w_lvl5) || (room == rm_n2w_lvl5_1) 
+|| (room == rm_n2w_lvl5_2) || (room == rm_n2w_lvl5_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w5 == 0) { global.level_n2w+=1; global.level_n2w5+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w5 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_n2w_lvl5_4)
+{
+    if (score != 5){
+    room_goto(rm_n2w_lvl5_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_n2w5 == 0) { global.level_n2w+=1; global.level_n2w5+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_n2w5 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Numbers to Words END//
+
+//START Place Value
+//Level 1
+if (room == rm_pv_lvl1) || (room == rm_pv_lvl1_1) 
+|| (room == rm_pv_lvl1_2) || (room == rm_pv_lvl1_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv1 == 0) { global.level_pv+=1; global.level_pv1+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv1 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_pv_lvl1_4)
+{
+    if (score != 5){
+    room_goto(rm_pv_lvl1_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv1 == 0) { global.level_pv+=1; global.level_pv1+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv1 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 2
+if (room == rm_pv_lvl2) || (room == rm_pv_lvl2_1) 
+|| (room == rm_pv_lvl2_2) || (room == rm_pv_lvl2_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv2 == 0) { global.level_pv+=1; global.level_pv2+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv2 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_pv_lvl2_4)
+{
+    if (score != 5){
+    room_goto(rm_pv_lvl2_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv2 == 0) { global.level_pv+=1; global.level_pv2+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv2 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 3
+if (room == rm_pv_lvl3) || (room == rm_pv_lvl3_1) 
+|| (room == rm_pv_lvl3_2) || (room == rm_pv_lvl3_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv3 == 0) { global.level_pv+=1; global.level_pv3+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv3 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_pv_lvl3_4)
+{
+    if (score != 5){
+    room_goto(rm_pv_lvl3_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv3 == 0) { global.level_pv+=1; global.level_pv3+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv3 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 4
+if (room == rm_pv_lvl4) || (room == rm_pv_lvl4_1) 
+|| (room == rm_pv_lvl4_2) || (room == rm_pv_lvl4_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv4 == 0) { global.level_pv+=1; global.level_pv4+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv4 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_pv_lvl4_4)
+{
+    if (score != 5){
+    room_goto(rm_pv_lvl4_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_pv4 == 0) { global.level_pv+=1; global.level_pv4+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv4 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 5
+if (room == rm_pv_lvl5) || (room == rm_pv_lvl5_1) 
+|| (room == rm_pv_lvl5_2) || (room == rm_pv_lvl5_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        // Kapag hanggang LEVEL 5 na ang na-unlocked
+        if (global.level_pv == 5) &amp;&amp; (global.level_pv5 == 1) { room_goto(level_complete); }
+        //Kapag first time maglaro sa LVL1
+        if (global.level_pv5 == 0) { /*global.level_pv+=1;*/; global.level_pv5+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv5 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_pv_lvl5_4)
+{
+    if (score != 5){
+    room_goto(rm_pv_lvl5_1);
+    }
+    else if (score == 5) 
+    {
+        // Kapag hanggang LEVEL 5 na ang na-unlocked
+        if (global.level_pv == 5) &amp;&amp; (global.level_pv5 == 1) { room_goto(level_complete); }
+        //Kapag first time maglaro sa LVL1
+        else if (global.level_pv5 == 0) { /*global.level_pv+=1;*/ global.level_pv5+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_pv5 == 1) { room_goto(level_complete); }        
+    }
+}
+//END Place Value
+
+//START Round Off
+//Level 1
+if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1) 
+|| (room == rm_ro_lvl1_2) || (room == rm_ro_lvl1_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro1 == 0) { global.level_ro+=1; global.level_ro1+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro1 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_ro_lvl1_4)
+{
+    if (score != 5){
+    room_goto(rm_ro_lvl1_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro1 == 0) { global.level_ro+=1; global.level_ro1+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro1 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 2
+if (room == rm_ro_lvl2) || (room == rm_ro_lvl2_1) 
+|| (room == rm_ro_lvl2_2) || (room == rm_ro_lvl2_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro2 == 0) { global.level_ro+=1; global.level_ro2+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro2 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_ro_lvl2_4)
+{
+    if (score != 5){
+    room_goto(rm_ro_lvl2_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro2 == 0) { global.level_ro+=1; global.level_ro2+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro2 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 3
+if (room == rm_ro_lvl3) || (room == rm_ro_lvl3_1) 
+|| (room == rm_ro_lvl3_2) || (room == rm_ro_lvl3_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro3 == 0) { global.level_ro+=1; global.level_ro3+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro3 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_ro_lvl3_4)
+{
+    if (score != 5){
+    room_goto(rm_ro_lvl3_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro3 == 0) { global.level_ro+=1; global.level_ro3+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro3 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 4
+if (room == rm_ro_lvl4) || (room == rm_ro_lvl4_1) 
+|| (room == rm_ro_lvl4_2) || (room == rm_ro_lvl4_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro4 == 0) { global.level_ro+=1; global.level_ro4+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro4 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_ro_lvl4_4)
+{
+    if (score != 5){
+    room_goto(rm_ro_lvl4_1);
+    }
+    else if (score == 5) 
+    {
+        if (global.level_ro4 == 0) { global.level_ro+=1; global.level_ro4+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro4 == 1) { room_goto(level_complete); }        
+    }
+}
+
+//Level 5
+if (room == rm_ro_lvl5) || (room == rm_ro_lvl5_1) 
+|| (room == rm_ro_lvl5_2) || (room == rm_ro_lvl5_3)
+{
+    if (score != 5)
+    {
+        room_goto_next();
+    }
+    else if (score == 5) 
+    {
+        // Kapag hanggang LEVEL 5 na ang na-unlocked
+        if (global.level_ro == 5) &amp;&amp; (global.level_ro5 == 1) { room_goto(level_complete); }
+        //Kapag first time maglaro sa LVL1
+        if (global.level_ro5 == 0) { /*global.level_ro+=1;*/; global.level_ro5+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro5 == 1) { room_goto(level_complete); }        
+    }
+}
+else if (room == rm_ro_lvl5_4)
+{
+    if (score != 5){
+    room_goto(rm_ro_lvl5_1);
+    }
+    else if (score == 5) 
+    {
+        // Kapag hanggang LEVEL 5 na ang na-unlocked
+        if (global.level_ro == 5) &amp;&amp; (global.level_ro5 == 1) { room_goto(level_complete); }
+        //Kapag first time maglaro sa LVL1
+        else if (global.level_ro5 == 0) { /*global.level_ro+=1;*/ global.level_ro5+=1; room_goto(level_complete); }
+        //Kapag second time or more than na naglaro
+        else if (global.level_ro5 == 1) { room_goto(level_complete); }        
     }
 }
 </string>

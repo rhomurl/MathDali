@@ -25,11 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-draw_set_font(f_txtbox_ro);
-draw_set_color(c_black);
-draw_text(255, 420, obj_txtbox_ro.rnd_offa);
+            <string>draw_self(); draw_set_font(f_choice_nw); draw_set_color(c_black);
+if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1) 
+|| (room == rm_ro_lvl1_2) || (room == rm_ro_lvl1_3) ||
+(room == rm_ro_lvl1_4)
+{
+    draw_set_halign(fa_center);
+    draw_text(x+230, y+15, obj_txtbox_ro.rnd_offa);
+}
 
+if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1) 
+|| (room == rm_n2w_lvl1_2) || (room == rm_n2w_lvl1_3) ||
+(room == rm_n2w_lvl1_4)
+{
+    draw_set_halign(fa_center);
+    draw_text(x+230, y+30, obj_txtbox_nw.n2w_a);
+}
+
+if (room == rm_pv_lvl1) || (room == rm_pv_lvl1_1) 
+|| (room == rm_pv_lvl1_2) || (room == rm_pv_lvl1_3) ||
+(room == rm_pv_lvl1_4)
+{
+    draw_set_halign(fa_center);
+    draw_text(x+230, y+15, obj_txtbox_pv.pv_a);
+}
 </string>
           </argument>
         </arguments>

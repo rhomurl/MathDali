@@ -26,17 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>
+instance_create(32,0, obj_go_wn);
+instance_create(32,150, obj_go_nw);
+instance_create(32,300, obj_go_pv);
+instance_create(32,450, obj_go_ro);
 
-aaa = obj_w2n;
-bbb = obj_n2w
-ccc = obj_f2d;
-ddd = obj_pv;
-eee = obj_ro;
-instance_create(32,0, aaa);
-instance_create(32,150, bbb);
-instance_create(32,300, ccc);
-instance_create(32,450, ddd);
-instance_create(32,600, eee);
 /* 
 }
 else {

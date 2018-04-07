@@ -7,8 +7,7 @@
   <sounds name="sound">
     <sound>sound\switch_sound</sound>
     <sound>sound\correct_answer</sound>
-    <sound>sound\sound3</sound>
-    <sound>sound\sound4</sound>
+    <sound>sound\snd_game</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Backups">
@@ -23,17 +22,18 @@
       <sprite>sprites\spr_clouds4</sprite>
     </sprites>
     <sprites name="Buttons">
+      <sprites name="LESSON MENU">
+        <sprite>sprites\spr_n2w_btn</sprite>
+        <sprite>sprites\spr_w2n_btn</sprite>
+        <sprite>sprites\spr_pv_btn</sprite>
+        <sprite>sprites\spr_ro_btn</sprite>
+        <sprite>sprites\spr_lessonhelp_btn</sprite>
+      </sprites>
       <sprites name="Help">
         <sprites name="game">
-          <sprite>sprites\spr_h_c2a</sprite>
-          <sprite>sprites\spr_h_t2a</sprite>
-          <sprite>sprites\spr_h_game</sprite>
-        </sprites>
-        <sprites name="lesson">
-          <sprite>sprites\spr_h_pv</sprite>
-          <sprite>sprites\spr_h_ro</sprite>
-          <sprite>sprites\spr_h_wn</sprite>
-          <sprite>sprites\spr_h_lesson</sprite>
+          <sprite>sprites\spr_gamehelp_btn</sprite>
+          <sprite>sprites\spr_type2ans_btn</sprite>
+          <sprite>sprites\spr_ans2type_btn</sprite>
         </sprites>
       </sprites>
       <sprite>sprites\spr_MainMenu</sprite>
@@ -41,8 +41,8 @@
       <sprite>sprites\spr_submit</sprite>
       <sprite>sprites\spr_lock_or_unlocked</sprite>
       <sprite>sprites\spr_sound</sprite>
-      <sprite>sprites\spr_exit_yes_no</sprite>
-      <sprite>sprites\spr_exit_yes_no_bck</sprite>
+      <sprite>sprites\spr_yes_exit_btn</sprite>
+      <sprite>sprites\spr_no_exit_btn</sprite>
       <sprite>sprites\spr_ok_btn</sprite>
       <sprite>sprites\spr_check_btn</sprite>
       <sprite>sprites\spr_prev_next</sprite>
@@ -60,10 +60,9 @@
         <sprite>sprites\spr_thousands</sprite>
         <sprite>sprites\spr_thousandths</sprite>
       </sprites>
-      <sprites name="Round Off">
-        <sprite>sprites\spr_roundoff_textbox</sprite>
+      <sprites name="IMPORTANTE SA n2w - ro">
         <sprite>sprites\spr_roundoff_question</sprite>
-        <sprite>sprites\spr_roundoff_questionv2</sprite>
+        <sprite>sprites\spr_question</sprite>
       </sprites>
       <sprites name="Textbox">
         <sprite>sprites\spr_txtbx_yellow</sprite>
@@ -88,6 +87,7 @@
       <sprite>sprites\spr_prev_next_bck</sprite>
       <sprite>sprites\spr_textobx_green_bck</sprite>
       <sprite>sprites\spr_collision_green</sprite>
+      <sprite>sprites\spr_bamboo_leaves</sprite>
     </sprites>
     <sprites name="Popup">
       <sprite>sprites\spr_correct</sprite>
@@ -125,7 +125,6 @@
       <sprite>sprites\spr_help_pv2</sprite>
       <sprite>sprites\spr_help_pv3</sprite>
     </sprites>
-    <sprite>sprites\sprite80</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_level</background>
@@ -136,6 +135,7 @@
     <background>background\bg_exitconfirm</background>
     <background>background\background6</background>
     <background>background\bg_splash_mm</background>
+    <background>background\background8</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_cloud</path>
@@ -156,23 +156,43 @@
     <font>fonts\f_mainmenu_dr</font>
     <font>fonts\f_txtbox_ro</font>
     <font>fonts\f_question_ro</font>
+    <font>fonts\f_choice_nw</font>
   </fonts>
   <objects name="objects">
+    <objects name="Cursor">
+      <object>objects\obj_cursor</object>
+    </objects>
+    <objects name="Sound">
+      <object>objects\obj_sound</object>
+    </objects>
     <objects name="Bonus">
+      <objects name="Questions">
+        <object>objects\obj_random_num1</object>
+        <object>objects\obj_random_num2</object>
+        <object>objects\obj_fraction</object>
+      </objects>
+      <objects name="Test">
+        <object>objects\obj_dialogbox</object>
+        <object>objects\obj_ctrl_wq</object>
+        <object>objects\obj_ctrl_wq1</object>
+        <object>objects\obj_qans1</object>
+        <object>objects\obj_qans2</object>
+        <object>objects\obj_qans3</object>
+        <object>objects\obj_qans4</object>
+        <object>objects\obj_wq</object>
+        <object>objects\obj_ranqqq</object>
+        <object>objects\obj_dialogbx</object>
+      </objects>
       <object>objects\obj_cloud_twirl</object>
       <object>objects\objj_clouds1</object>
       <object>objects\obj_clouds2</object>
       <object>objects\obj_clouds3</object>
       <object>objects\obj_clouds4</object>
+      <object>objects\obj_collision_green</object>
+      <object>objects\obj_splash</object>
+      <object>objects\obj_lives</object>
     </objects>
     <objects name="Buttons">
-      <objects name="Choose Lessons">
-        <object>objects\obj_ctrl_lessons</object>
-      </objects>
-      <objects name="BCK_NXT_Room">
-        <object>objects\obj_nextroom</object>
-        <object>objects\obj_prevroom</object>
-      </objects>
       <objects name="Exit">
         <object>objects\obj_q_exit</object>
         <object>objects\obj_exit_yes</object>
@@ -209,54 +229,21 @@
         </objects>
         <object>objects\obj_button_parent</object>
       </objects>
-      <objects name="Numbers to Words">
-        <object>objects\obj_txtbox_nw</object>
+      <objects name="LESSON MENU">
+        <object>objects\obj_bamboo_leaves</object>
+        <object>objects\obj_w2n_btn</object>
+        <object>objects\obj_pv_btn</object>
+        <object>objects\obj_ro_btn</object>
+        <object>objects\obj_n2w_btn</object>
       </objects>
-      <objects name="Place Value">
-        <object>objects\obj_tens</object>
-        <object>objects\obj_hundredmillions</object>
-        <object>objects\obj_hundredthousands</object>
-        <object>objects\obj_hundreds</object>
-        <object>objects\obj_hundredths</object>
-        <object>objects\obj_millions</object>
-        <object>objects\obj_tenmillions</object>
-        <object>objects\obj_tenthousands</object>
-        <object>objects\obj_tenths</object>
-        <object>objects\obj_thousands</object>
-        <object>objects\obj_thousandths</object>
-      </objects>
-      <objects name="Round Off">
-        <object>objects\obj_txtbox_ro</object>
-        <object>objects\obj_roundoff_question</object>
-      </objects>
+      <object>objects\obj_nextroom</object>
+      <object>objects\obj_prevroom</object>
       <object>objects\obj_check_btn</object>
-      <objects name=" TEXTBOXES">
-        <object>objects\obj_txtbox_a</object>
-        <object>objects\obj_txtbox_c</object>
-        <object>objects\obj_txtbox_b</object>
-        <object>objects\obj_txtbox_d</object>
-      </objects>
-    </objects>
-    <objects name="Default needs">
-      <objects name="Cursor">
-        <object>objects\obj_cursor</object>
-      </objects>
-      <objects name="Sound">
-        <object>objects\obj_soundmute</object>
-        <object>objects\obj_sound</object>
-      </objects>
-      <object>objects\obj_lives</object>
     </objects>
     <objects name="Input User">
       <objects name="Textbox">
         <object>objects\obj_textbox</object>
         <object>objects\obj_text</object>
-      </objects>
-      <objects name="Words to Numbers">
-        <object>objects\obj_button_w2n</object>
-        <object>objects\obj_drawquestion_w2n</object>
-        <object>objects\obj_button_integers</object>
-        <object>objects\obj_w2n_randy</object>
       </objects>
       <object>objects\obj_random_</object>
     </objects>
@@ -270,29 +257,6 @@
       <objects name="Level">
         <object>objects\obj_ctrl_lvl_menu</object>
       </objects>
-    </objects>
-    <objects name="Others">
-      <object>objects\obj_collision_green</object>
-    </objects>
-    <objects name="Questions">
-      <object>objects\obj_random_num1</object>
-      <object>objects\obj_random_num2</object>
-      <object>objects\obj_fraction</object>
-    </objects>
-    <objects name="Splash">
-      <object>objects\obj_splash</object>
-    </objects>
-    <objects name="Test">
-      <object>objects\obj_dialogbox</object>
-      <object>objects\obj_ctrl_wq</object>
-      <object>objects\obj_ctrl_wq1</object>
-      <object>objects\obj_qans1</object>
-      <object>objects\obj_qans2</object>
-      <object>objects\obj_qans3</object>
-      <object>objects\obj_qans4</object>
-      <object>objects\obj_wq</object>
-      <object>objects\obj_ranqqq</object>
-      <object>objects\obj_dialogbx</object>
     </objects>
     <objects name="Text">
       <objects name="Level Complete">
@@ -319,111 +283,241 @@
         <object>objects\obj_helpnw2</object>
       </objects>
       <objects name="btns">
-        <object>objects\obj_h_game</object>
-        <object>objects\obj_h_lesson</object>
-        <object>objects\obj_h_wn</object>
-        <object>objects\obj_h_pv</object>
-        <object>objects\obj_h_ro</object>
-        <object>objects\obj_h_c2a</object>
-        <object>objects\obj_h_t2a</object>
+        <objects name="LESSON">
+          <object>objects\obj_h_lesson</object>
+          <object>objects\obj_h_wn</object>
+        </objects>
+        <objects name="GAME">
+          <object>objects\obj_h_t2a</object>
+          <object>objects\obj_h_game</object>
+          <object>objects\obj_h_c2a</object>
+        </objects>
+      </objects>
+    </objects>
+    <objects name="Textboxes">
+      <object>objects\obj_txtbox_a</object>
+      <object>objects\obj_txtbox_b</object>
+      <object>objects\obj_txtbox_c</object>
+      <object>objects\obj_txtbox_d</object>
+    </objects>
+    <objects name="Lessons">
+      <objects name="Words to Numbers">
+        <object>objects\obj_button_w2n</object>
+        <object>objects\obj_drawquestion_w2n</object>
+        <object>objects\obj_w2n_randy</object>
+      </objects>
+      <objects name="Numbers to Words">
+        <object>objects\obj_nw_question</object>
+        <object>objects\obj_txtbox_nw</object>
+      </objects>
+      <objects name="Place Value">
+        <object>objects\obj_pv_question</object>
+        <object>objects\obj_txtbox_pv</object>
+      </objects>
+      <objects name="Round Off">
+        <object>objects\obj_roundoff_question</object>
+        <object>objects\obj_txtbox_ro</object>
       </objects>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_splash_screen</room>
-    <room>rooms\choose_lesson</room>
     <room>rooms\ro_2</room>
     <room>rooms\test2</room>
-    <room>rooms\level_complete</room>
     <rooms name="Conditions">
       <room>rooms\room_gameover</room>
-    </rooms>
-    <rooms name="Help">
-      <rooms name="help_lesson">
-        <rooms name="wn">
-          <room>rooms\h_w2n_n2w_1</room>
-          <room>rooms\h_w2n_n2w_2</room>
-          <room>rooms\h_w2n_n2w_3</room>
-          <room>rooms\h_w2n_n2w_4</room>
-        </rooms>
-        <rooms name="pv">
-          <room>rooms\h_pv_1</room>
-          <room>rooms\h_pv_2</room>
-          <room>rooms\h_pv_3</room>
-        </rooms>
-        <room>rooms\h_ro_1</room>
-        <room>rooms\rm_help_lesson</room>
-      </rooms>
-      <rooms name="help_game">
-        <room>rooms\rm_help_game</room>
-        <room>rooms\c2a_help</room>
-        <room>rooms\t2a_help</room>
-      </rooms>
-    </rooms>
-    <rooms name="Lesson">
-      <rooms name="Words to Numbers">
-        <room>rooms\room_w2n_level</room>
-        <rooms name="LVL1">
-          <room>rooms\rm_w2n_lvl1</room>
-          <room>rooms\rm_w2n_lvl1_1</room>
-          <room>rooms\rm_w2n_lvl1_2</room>
-          <room>rooms\rm_w2n_lvl1_3</room>
-          <room>rooms\rm_w2n_lvl1_4</room>
-        </rooms>
-        <rooms name="LVL2">
-          <room>rooms\rm_w2n_lvl2</room>
-          <room>rooms\rm_w2n_lvl2_1</room>
-          <room>rooms\rm_w2n_lvl2_2</room>
-          <room>rooms\rm_w2n_lvl2_3</room>
-          <room>rooms\rm_w2n_lvl2_4</room>
-        </rooms>
-        <rooms name="LVL3">
-          <room>rooms\rm_w2n_lvl3</room>
-          <room>rooms\rm_w2n_lvl3_1</room>
-          <room>rooms\rm_w2n_lvl3_2</room>
-          <room>rooms\rm_w2n_lvl3_3</room>
-          <room>rooms\rm_w2n_lvl3_4</room>
-        </rooms>
-        <rooms name="LVL4">
-          <room>rooms\rm_w2n_lvl4</room>
-          <room>rooms\rm_w2n_lvl4_1</room>
-          <room>rooms\rm_w2n_lvl4_2</room>
-          <room>rooms\rm_w2n_lvl4_3</room>
-          <room>rooms\rm_w2n_lvl4_4</room>
-        </rooms>
-        <rooms name="LVL5">
-          <room>rooms\rm_w2n_lvl5</room>
-          <room>rooms\rm_w2n_lvl5_1</room>
-          <room>rooms\rm_w2n_lvl5_2</room>
-          <room>rooms\rm_w2n_lvl5_3</room>
-          <room>rooms\rm_w2n_lvl5_4</room>
-        </rooms>
-      </rooms>
-      <rooms name="Numbers to Words">
-        <room>rooms\room_n2w_level</room>
-        <rooms name="LVL1">
-          <room>rooms\rm_n2w_lvl1</room>
-          <room>rooms\rm_n2w_lvl1_1</room>
-        </rooms>
-      </rooms>
-      <rooms name="Place Value">
-        <room>rooms\room_pv_level</room>
-        <rooms name="LVL1">
-          <room>rooms\rm_pv_lvl1</room>
-        </rooms>
-      </rooms>
-      <rooms name="Round Off">
-        <room>rooms\room_ro_level</room>
-        <rooms name="LVL1">
-          <room>rooms\rm_ro_lvl1</room>
-          <room>rooms\rm_ro_lvl1_1</room>
-        </rooms>
-      </rooms>
+      <room>rooms\level_complete</room>
+      <room>rooms\room_gameover_wn</room>
+      <room>rooms\room_gameover_nw</room>
+      <room>rooms\room_gameover_pv</room>
+      <room>rooms\room_gameover_ro</room>
+      <room>rooms\level_complete_nw</room>
+      <room>rooms\level_complete_wn</room>
+      <room>rooms\level_complete_pv</room>
+      <room>rooms\level_complete_ro</room>
     </rooms>
     <rooms name="Menu">
-      <room>rooms\room_menu</room>
-      <room>rooms\room_help</room>
+      <rooms name="Help">
+        <rooms name="help_lesson">
+          <rooms name="wn">
+            <room>rooms\h_w2n_n2w_1</room>
+            <room>rooms\h_w2n_n2w_2</room>
+            <room>rooms\h_w2n_n2w_3</room>
+            <room>rooms\h_w2n_n2w_4</room>
+          </rooms>
+          <rooms name="pv">
+            <room>rooms\h_pv_1</room>
+            <room>rooms\h_pv_2</room>
+            <room>rooms\h_pv_3</room>
+          </rooms>
+          <room>rooms\h_ro_1</room>
+          <room>rooms\rm_game_help</room>
+        </rooms>
+        <rooms name="help_game">
+          <room>rooms\rm_help_game</room>
+          <room>rooms\c2a_help</room>
+          <room>rooms\t2a_help</room>
+        </rooms>
+      </rooms>
+      <rooms name="Lesson">
+        <rooms name="Words to Numbers">
+          <room>rooms\room_w2n_level</room>
+          <rooms name="LVL1">
+            <room>rooms\rm_w2n_lvl1</room>
+            <room>rooms\rm_w2n_lvl1_1</room>
+            <room>rooms\rm_w2n_lvl1_2</room>
+            <room>rooms\rm_w2n_lvl1_3</room>
+            <room>rooms\rm_w2n_lvl1_4</room>
+          </rooms>
+          <rooms name="LVL2">
+            <room>rooms\rm_w2n_lvl2</room>
+            <room>rooms\rm_w2n_lvl2_1</room>
+            <room>rooms\rm_w2n_lvl2_2</room>
+            <room>rooms\rm_w2n_lvl2_3</room>
+            <room>rooms\rm_w2n_lvl2_4</room>
+          </rooms>
+          <rooms name="LVL3">
+            <room>rooms\rm_w2n_lvl3</room>
+            <room>rooms\rm_w2n_lvl3_1</room>
+            <room>rooms\rm_w2n_lvl3_2</room>
+            <room>rooms\rm_w2n_lvl3_3</room>
+            <room>rooms\rm_w2n_lvl3_4</room>
+          </rooms>
+          <rooms name="LVL4">
+            <room>rooms\rm_w2n_lvl4</room>
+            <room>rooms\rm_w2n_lvl4_1</room>
+            <room>rooms\rm_w2n_lvl4_2</room>
+            <room>rooms\rm_w2n_lvl4_3</room>
+            <room>rooms\rm_w2n_lvl4_4</room>
+          </rooms>
+          <rooms name="LVL5">
+            <room>rooms\rm_w2n_lvl5</room>
+            <room>rooms\rm_w2n_lvl5_1</room>
+            <room>rooms\rm_w2n_lvl5_2</room>
+            <room>rooms\rm_w2n_lvl5_3</room>
+            <room>rooms\rm_w2n_lvl5_4</room>
+          </rooms>
+        </rooms>
+        <rooms name="Numbers to Words">
+          <room>rooms\room_n2w_level</room>
+          <rooms name="LVL1">
+            <room>rooms\rm_n2w_lvl1</room>
+            <room>rooms\rm_n2w_lvl1_1</room>
+            <room>rooms\rm_n2w_lvl1_2</room>
+            <room>rooms\rm_n2w_lvl1_3</room>
+            <room>rooms\rm_n2w_lvl1_4</room>
+          </rooms>
+          <rooms name="LVL2">
+            <room>rooms\rm_n2w_lvl2</room>
+            <room>rooms\rm_n2w_lvl2_1</room>
+            <room>rooms\rm_n2w_lvl2_2</room>
+            <room>rooms\rm_n2w_lvl2_3</room>
+            <room>rooms\rm_n2w_lvl2_4</room>
+          </rooms>
+          <rooms name="LVL3">
+            <room>rooms\rm_n2w_lvl3</room>
+            <room>rooms\rm_n2w_lvl3_1</room>
+            <room>rooms\rm_n2w_lvl3_2</room>
+            <room>rooms\rm_n2w_lvl3_3</room>
+            <room>rooms\rm_n2w_lvl3_4</room>
+          </rooms>
+          <rooms name="LVL4">
+            <room>rooms\rm_n2w_lvl4</room>
+            <room>rooms\rm_n2w_lvl4_1</room>
+            <room>rooms\rm_n2w_lvl4_2</room>
+            <room>rooms\rm_n2w_lvl4_3</room>
+            <room>rooms\rm_n2w_lvl4_4</room>
+          </rooms>
+          <rooms name="LVL5">
+            <room>rooms\rm_n2w_lvl5</room>
+            <room>rooms\rm_n2w_lvl5_1</room>
+            <room>rooms\rm_n2w_lvl5_2</room>
+            <room>rooms\rm_n2w_lvl5_3</room>
+            <room>rooms\rm_n2w_lvl5_4</room>
+          </rooms>
+        </rooms>
+        <rooms name="Place Value">
+          <room>rooms\room_pv_level</room>
+          <rooms name="LVL1">
+            <room>rooms\rm_pv_lvl1</room>
+            <room>rooms\rm_pv_lvl1_1</room>
+            <room>rooms\rm_pv_lvl1_2</room>
+            <room>rooms\rm_pv_lvl1_3</room>
+            <room>rooms\rm_pv_lvl1_4</room>
+          </rooms>
+          <rooms name="LVL2">
+            <room>rooms\rm_pv_lvl2</room>
+            <room>rooms\rm_pv_lvl2_1</room>
+            <room>rooms\rm_pv_lvl2_2</room>
+            <room>rooms\rm_pv_lvl2_3</room>
+            <room>rooms\rm_pv_lvl2_4</room>
+          </rooms>
+          <rooms name="LVL3">
+            <room>rooms\rm_pv_lvl3_4</room>
+            <room>rooms\room135</room>
+            <room>rooms\room136</room>
+            <room>rooms\room138</room>
+            <room>rooms\room137</room>
+          </rooms>
+          <rooms name="LVL4">
+            <room>rooms\room115</room>
+            <room>rooms\room127</room>
+            <room>rooms\room129</room>
+            <room>rooms\room128</room>
+            <room>rooms\room126</room>
+          </rooms>
+          <rooms name="LVL5">
+            <room>rooms\room114</room>
+            <room>rooms\room131</room>
+            <room>rooms\room133</room>
+            <room>rooms\room132</room>
+            <room>rooms\room130</room>
+          </rooms>
+        </rooms>
+        <rooms name="Round Off">
+          <room>rooms\room_ro_level</room>
+          <rooms name="LVL1">
+            <room>rooms\rm_ro_lvl1</room>
+            <room>rooms\rm_ro_lvl1_1</room>
+            <room>rooms\rm_ro_lvl1_2</room>
+            <room>rooms\rm_ro_lvl1_3</room>
+            <room>rooms\rm_ro_lvl1_4</room>
+          </rooms>
+          <rooms name="LVL2">
+            <room>rooms\rm_ro_lvl2</room>
+            <room>rooms\rm_ro_lvl2_1</room>
+            <room>rooms\rm_ro_lvl2_2</room>
+            <room>rooms\rm_ro_lvl2_3</room>
+            <room>rooms\rm_ro_lvl2_4</room>
+          </rooms>
+          <rooms name="LVL3">
+            <room>rooms\rm_ro_lvl3</room>
+            <room>rooms\rm_ro_lvl3_1</room>
+            <room>rooms\rm_ro_lvl3_2</room>
+            <room>rooms\rm_ro_lvl3_3</room>
+            <room>rooms\rm_ro_lvl3_4</room>
+          </rooms>
+          <rooms name="LVL4">
+            <room>rooms\rm_ro_lvl4</room>
+            <room>rooms\rm_ro_lvl4_1</room>
+            <room>rooms\rm_ro_lvl4_2</room>
+            <room>rooms\rm_ro_lvl4_3</room>
+            <room>rooms\rm_ro_lvl4_4</room>
+          </rooms>
+          <rooms name="LVL5">
+            <room>rooms\rm_ro_lvl5</room>
+            <room>rooms\rm_ro_lvl5_1</room>
+            <room>rooms\rm_ro_lvl5_2</room>
+            <room>rooms\rm_ro_lvl5_3</room>
+            <room>rooms\rm_ro_lvl5_4</room>
+          </rooms>
+        </rooms>
+      </rooms>
       <room>rooms\room_about</room>
+      <room>rooms\room_help</room>
+      <room>rooms\room_lesson</room>
+      <room>rooms\room139</room>
+      <room>rooms\room_menu</room>
       <room>rooms\room_exit</room>
     </rooms>
   </rooms>

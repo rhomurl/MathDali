@@ -66,6 +66,161 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>answer = obj_textbox.txt
+answer1 = real(answer);
+//LEVEL 1 - w2n
+if (position_meeting(mouse_x, mouse_y, obj_button_w2n) &amp;&amp; mouse_check_button_released(mb_left))
+{
+    if (room == rm_w2n_lvl1) 
+    || (room == rm_w2n_lvl1_1) 
+    || (room == rm_w2n_lvl1_2) 
+    || (room == rm_w2n_lvl1_3) 
+    || (room == rm_w2n_lvl1_4)
+    {
+        
+        /* Checks the user's answer */
+        if(answer1 == global.w2n_1_1)
+        { 
+            instance_create(room_width/2,room_height/2, obj_correct); 
+            //score +=1;
+        }
+        else 
+        { 
+        lives -= 1;
+        if (lives = 0) {
+            room_goto(room_gameover);
+            }
+            else 
+            {
+            instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+        }
+    }
+
+//Level 2 - w2n
+    else if (room == rm_w2n_lvl2) 
+    || (room == rm_w2n_lvl2_1) 
+    || (room == rm_w2n_lvl2_2) 
+    || (room == rm_w2n_lvl2_3) 
+    || (room == rm_w2n_lvl2_4)
+    {
+        if (answer1 == global.w2n_2_1)
+        { 
+            instance_create(room_width/2,room_height/2, obj_correct); 
+            //score +=1;
+        }
+        else 
+        { 
+        lives -= 1;
+        if (lives = 0) {
+            room_goto(room_gameover);
+            }
+            else 
+            {
+            instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+        }
+    }
+    
+    
+    //Level 3 - w2n
+    else if (room == rm_w2n_lvl3) 
+    || (room == rm_w2n_lvl3_1) 
+    || (room == rm_w2n_lvl3_2) 
+    || (room == rm_w2n_lvl3_3) 
+    || (room == rm_w2n_lvl3_4)
+    {
+        if (answer1 == global.w2n_3_1)
+        { 
+            instance_create(room_width/2,room_height/2, obj_correct); 
+            //score +=1;
+        }
+        else 
+        { 
+        lives -= 1;
+        if (lives = 0) {
+            room_goto(room_gameover);
+            }
+            else 
+            {
+            instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+        }
+    }
+    
+    
+    //Level 4 - w2n
+    else if (room == rm_w2n_lvl4) 
+    || (room == rm_w2n_lvl4_1) 
+    || (room == rm_w2n_lvl4_2) 
+    || (room == rm_w2n_lvl4_3) 
+    || (room == rm_w2n_lvl4_4)
+    {
+        if (answer1 == global.w2n_4_1)
+        { 
+            instance_create(room_width/2,room_height/2, obj_correct); 
+            //score +=1;
+        }
+        else 
+        { 
+        lives -= 1;
+        if (lives = 0) {
+            room_goto(room_gameover);
+            }
+            else 
+            {
+            instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+        }
+    }
+    
+    //Level 5 - w2n
+    else if (room == rm_w2n_lvl5) 
+    || (room == rm_w2n_lvl5_1) 
+    || (room == rm_w2n_lvl5_2) 
+    || (room == rm_w2n_lvl5_3) 
+    || (room == rm_w2n_lvl5_4)
+    {
+        if (answer1 == global.w2n_5_1)
+        { 
+            instance_create(room_width/2,room_height/2, obj_correct); 
+            //score +=1;
+        }
+        else 
+        { 
+        lives -= 1;
+        if (lives = 0) {
+            room_goto(room_gameover);
+            }
+            else 
+            {
+            instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="13">
       <action>
         <libid>1</libid>
@@ -412,7 +567,7 @@ keyboard_string = "";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>answer = obj_textbox.txt
+            <string>nswer = obj_textbox.txt
 answer1 = real(answer);
 //LEVEL 1 - w2n
 if (room == rm_w2n_lvl1) 
@@ -541,166 +696,6 @@ else if (room == rm_w2n_lvl5)
         }
     }
 }
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="13">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/* instance_deactivate_object(obj_correct);
-instance_deactivate_object(obj_incorrect);
-
-///Level 1 - Words to Numbers
-if (room == rm_w2n_lvl1) 
-|| (room == rm_w2n_lvl1_1)
-|| (room == rm_w2n_lvl1_2) 
-|| (room == rm_w2n_lvl1_3)
-|| (room == rm_w2n_lvl1_4)
-{
-    if(answer1 == global.w2n_1_1)
-    {
-        if (room == rm_w2n_lvl1) { room_goto(rm_w2n_lvl1_1); }
-        else if (room == rm_w2n_lvl1_1) { room_goto(rm_w2n_lvl1_2); }
-        else if (room == rm_w2n_lvl1_2) { room_goto(rm_w2n_lvl1_3); }
-        else if (room == rm_w2n_lvl1_3) { room_goto(rm_w2n_lvl1_4); }
-        else if (room == rm_w2n_lvl1_4) &amp;&amp; (score != 5){ room_goto(rm_w2n_lvl1_1);  }
-        else if (score == 5) &amp;&amp; ((room == rm_w2n_lvl1_4) || (room == rm_w2n_lvl1_3) || 
-        (room == rm_w2n_lvl1_2) || (room == rm_w2n_lvl1_1) || (room == rm_w2n_lvl1))
-        {
-            // Kapag hanggang LEVEL 5 na ang na-unlocked
-            if (global.level_w2n == 5) &amp;&amp; (global.level_w2n1 == 1) { room_goto(level_complete); }
-            //Kapag first time maglaro sa LVL1
-            else if (global.level_w2n1 == 0) { global.level_w2n+=1; global.level_w2n1+=1; room_goto(level_complete); }
-            //Kapag second time or more than na naglaro
-            else if (global.level_w2n1 == 1) { room_goto(level_complete); }
-        }
-    }
-}
-
-//Level 2 - Words to Numbers
-if (room == rm_w2n_lvl2) 
-|| (room == rm_w2n_lvl2_1)
-|| (room == rm_w2n_lvl2_2) 
-|| (room == rm_w2n_lvl2_3)
-|| (room == rm_w2n_lvl2_4)
-{
-    if(answer1 == global.w2n_2_1)
-    {
-        if (room == rm_w2n_lvl2) { room_goto(rm_w2n_lvl2_1); }
-        else if (room == rm_w2n_lvl2_1) { room_goto(rm_w2n_lvl2_2); }
-        else if (room == rm_w2n_lvl2_2) { room_goto(rm_w2n_lvl2_3); }
-        else if (room == rm_w2n_lvl2_3) { room_goto(rm_w2n_lvl2_4); }
-        else if (room == rm_w2n_lvl2_4) &amp;&amp; (score != 5){ room_goto(rm_w2n_lvl2_1);  }
-        else if (score == 5) &amp;&amp; ((room == rm_w2n_lvl2_4) || (room == rm_w2n_lvl2_3) || 
-        (room == rm_w2n_lvl2_2) || (room == rm_w2n_lvl2_1) || (room == rm_w2n_lvl2))
-        {
-            // Kapag hanggang LEVEL 5 na ang na-unlocked
-            if (global.level_w2n == 5) &amp;&amp; (global.level_w2n12 == 1) { room_goto(level_complete); }
-            //Kapag first time maglaro sa LVL1
-            else if (global.level_w2n2 == 0) { global.level_w2n+=1; global.level_w2n2+=1; room_goto(level_complete); }
-            //Kapag second time or more than na naglaro
-            else if (global.level_w2n2 == 1) { room_goto(level_complete); }
-        }
-    }
-}
-
-//Level 3 - Words to Numbers
-if (room == rm_w2n_lvl3) 
-|| (room == rm_w2n_lvl3_1)
-|| (room == rm_w2n_lvl3_2) 
-|| (room == rm_w2n_lvl3_3)
-|| (room == rm_w2n_lvl3_4)
-{
-    if(answer1 == global.w2n_3_1)
-    {
-        if (room == rm_w2n_lvl3) { room_goto(rm_w2n_lvl3_1); }
-        else if (room == rm_w2n_lvl3_1) { room_goto(rm_w2n_lvl3_2); }
-        else if (room == rm_w2n_lvl3_2) { room_goto(rm_w2n_lvl3_3); }
-        else if (room == rm_w2n_lvl3_3) { room_goto(rm_w2n_lvl3_4); }
-        else if (room == rm_w2n_lvl3_4) &amp;&amp; (score != 5){ room_goto(rm_w2n_lvl3_1);  }
-        else if (score == 5) &amp;&amp; ((room == rm_w2n_lvl3_4) || (room == rm_w2n_lvl3_3) || 
-        (room == rm_w2n_lvl3_2) || (room == rm_w2n_lvl3_1) || (room == rm_w2n_lvl3))
-        {
-            // Kapag hanggang LEVEL 5 na ang na-unlocked
-            if (global.level_w2n == 5) &amp;&amp; (global.level_w2n13 == 1) { room_goto(level_complete); }
-            //Kapag first time maglaro sa LVL1
-            else if (global.level_w2n3 == 0) { global.level_w2n+=1; global.level_w2n3+=1; room_goto(level_complete); }
-            //Kapag second time or more than na naglaro
-            else if (global.level_w2n3 == 1) { room_goto(level_complete); }
-        }
-    }
-}
-
-//Level 4 - Words to Numbers
-if (room == rm_w2n_lvl4) 
-|| (room == rm_w2n_lvl4_1)
-|| (room == rm_w2n_lvl4_2) 
-|| (room == rm_w2n_lvl4_3)
-|| (room == rm_w2n_lvl4_4)
-{
-    if(answer1 == global.w2n_4_1)
-    {
-        if (room == rm_w2n_lvl4) { room_goto(rm_w2n_lvl4_1); }
-        else if (room == rm_w2n_lvl4_1) { room_goto(rm_w2n_lvl4_2); }
-        else if (room == rm_w2n_lvl4_2) { room_goto(rm_w2n_lvl4_3); }
-        else if (room == rm_w2n_lvl4_3) { room_goto(rm_w2n_lvl4_4); }
-        else if (room == rm_w2n_lvl4_4) &amp;&amp; (score != 5){ room_goto(rm_w2n_lvl4_1);  }
-        else if (score == 5) &amp;&amp; ((room == rm_w2n_lvl4_4) || (room == rm_w2n_lvl4_3) || 
-        (room == rm_w2n_lvl4_2) || (room == rm_w2n_lvl4_1) || (room == rm_w2n_lvl4))
-        {
-            // Kapag hanggang LEVEL 5 na ang na-unlocked
-            if (global.level_w2n == 5) &amp;&amp; (global.level_w2n14 == 1) { room_goto(level_complete); }
-            //Kapag first time maglaro sa LVL1
-            else if (global.level_w2n4 == 0) { global.level_w2n+=1; global.level_w2n4+=1; room_goto(level_complete); }
-            //Kapag second time or more than na naglaro
-            else if (global.level_w2n4 == 1) { room_goto(level_complete); }
-        }
-    }
-}
-
-//Level 5 - Words to Numbers
-if (room == rm_w2n_lvl5) 
-|| (room == rm_w2n_lvl5_1)
-|| (room == rm_w2n_lvl5_2) 
-|| (room == rm_w2n_lvl5_3)
-|| (room == rm_w2n_lvl5_4)
-{
-    if(answer1 == global.w2n_5_1)
-    {
-        if (room == rm_w2n_lvl5) { room_goto(rm_w2n_lvl5_1); }
-        else if (room == rm_w2n_lvl5_1) { room_goto(rm_w2n_lvl5_2); }
-        else if (room == rm_w2n_lvl5_2) { room_goto(rm_w2n_lvl5_3); }
-        else if (room == rm_w2n_lvl5_3) { room_goto(rm_w2n_lvl5_4); }
-        else if (room == rm_w2n_lvl5_4) &amp;&amp; (score != 5){ room_goto(rm_w2n_lvl5_1);  }
-        else if (score == 5) &amp;&amp; ((room == rm_w2n_lvl5_4) || (room == rm_w2n_lvl5_3) || 
-        (room == rm_w2n_lvl4_2) || (room == rm_w2n_lvl5_1) || (room == rm_w2n_lvl5))
-        {
-            // Kapag hanggang LEVEL 5 na ang na-unlocked
-            if (global.level_w2n == 5) &amp;&amp; (global.level_w2n5 == 1) { room_goto(level_complete); }
-            //Kapag first time maglaro sa LVL1
-            else if (global.level_w2n5 == 0) { global.level_w2n5+=1; room_goto(level_complete); }
-            //Kapag second time or more than na naglaro
-            else if (global.level_w2n5 == 1) { room_goto(level_complete); }
-        }
-    }
-}*/
 
 </string>
           </argument>

@@ -28,9 +28,9 @@
             <string>draw_set_font(f_question);
 stringq = string_upper(obj_w2n_randy.string1);
 draw_set_halign(fa_center);
-draw_set_colour(c_white);
-draw_text(540-1,280-1,stringq);
 draw_set_colour(c_black);
+draw_text(540-3,280-3,stringq);
+draw_set_colour(c_white);
 draw_text(540,280,stringq);
 </string>
           </argument>

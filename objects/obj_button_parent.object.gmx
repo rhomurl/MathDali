@@ -31,6 +31,8 @@ my_n2w_lvl=1; //Declaring Number to Words variable
 my_frac2dec_lvl=1; //Declaring Fraction to Decimal variable
 my_placeval_lvl=1; //Declaring Place Value variable
 my_roundoff_lvl=1; //Declaring Round Off variable
+
+global.lesson = ""; //clear lesson 
 </string>
           </argument>
         </arguments>
@@ -53,7 +55,8 @@ my_roundoff_lvl=1; //Declaring Round Off variable
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Level enter or not
+            <string>///Level system
+var hasEntered = false;
 
 //Words to Numbers
 if (room == room_w2n_level)
@@ -66,7 +69,36 @@ if (room == room_w2n_level)
     {
     locked=true
     }
-    if locked image_index=0 else image_index=1
+    if (locked) 
+    {
+        image_index=0 
+        //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=1 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=0
+        }
+    }
+    else 
+    {
+    image_index=2
+    //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=3 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=2
+        }
+    }
     if (!locked &amp;&amp; position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
     {
         if my_w2n_lvl==1 room_goto(rm_w2n_lvl1);
@@ -201,10 +233,6 @@ else if (room == room_n2w_level) {
 draw_set_colour(c_black);
 draw_text(x-1,y-1,my_n2w_lvl); //Draw number level number - Number to Words
 }
-else if (room == room_f2d_level) {
-draw_set_colour(c_black);
-draw_text(x-1,y-1,my_frac2dec_lvl); //Draw number level number - Fraction to Decimal
-}
 else if (room == room_pv_level) {
 draw_set_colour(c_black);
 draw_text(x-1,y-1,my_placeval_lvl); //Draw number level number - Place Value
@@ -223,16 +251,10 @@ else if (room == room_n2w_level) {
 draw_set_colour(c_white); //shadow effect
 draw_text(x,y,my_n2w_lvl); //Draw number level number - Number to Words
 }
-else if (room == room_f2d_level) {
-draw_set_colour(c_white); //shadow effect
-draw_text(x,y,my_frac2dec_lvl); //Draw number level number - Fraction to Decimal
-}
-
 else if (room == room_pv_level) {
 draw_set_colour(c_white); //shadow effect
 draw_text(x,y,my_placeval_lvl); //Draw number level number - Place Value
 }
-
 else if (room == room_ro_level) {
 draw_set_colour(c_white); //shadow effect
 draw_text(x,y,my_roundoff_lvl); //Draw number level number - Round Off

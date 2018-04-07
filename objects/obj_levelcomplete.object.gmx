@@ -49,7 +49,23 @@ image_index = 14;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_w2n_level);
+            <string>if (global.lesson = "w2n")
+{
+    room_goto(room_w2n_level);
+}
+else if (global.lesson = "n2w")
+{
+    room_goto(room_n2w_level);
+}
+else if (global.lesson = "pv")
+{
+    room_goto(room_pv_level);
+}
+else if (global.lesson = "ro")
+{
+    room_goto(room_ro_level);
+}
+
 </string>
           </argument>
         </arguments>

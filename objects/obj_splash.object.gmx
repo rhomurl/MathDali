@@ -28,21 +28,51 @@
             <string>///Declare variables and instance
 instance_create(x,y, obj_cursor);
 randomize();
+
 //Words to Numbers
 global.level_w2n=1; 
-//For level checking - first time
+//For level checking - first time (words to numbers)
 global.level_w2n1=0; 
 global.level_w2n2=0; 
 global.level_w2n3=0; 
 global.level_w2n4=0; 
 global.level_w2n5=0;
+
 //Number to Words
 global.level_n2w=1;
+//For level checking - first time (words to numbers)
+global.level_n2w1=0; 
+global.level_n2w2=0; 
+global.level_n2w3=0; 
+global.level_n2w4=0; 
+global.level_n2w5=0;
 
+//Place Value
 global.level_pv=1;
+//For level checking - first time (words to numbers)
+global.level_pv1=0; 
+global.level_pv2=0; 
+global.level_pv3=0; 
+global.level_pv4=0; 
+global.level_pv5=0;
+
+//Round Off
 global.level_ro=1;
+//For level checking - first time (words to numbers)
+global.level_ro1=0; 
+global.level_ro2=0; 
+global.level_ro3=0; 
+global.level_ro4=0; 
+global.level_ro5=0;
+
+//Where lesson are you??
+global.lesson = "";
+
 score=0;
 lives=5;
+
+//Play sound
+global.sound = 1;
 
 </string>
           </argument>

@@ -166,7 +166,7 @@ if (room == rm_w2n_lvl4) || (room == rm_w2n_lvl4_1) || (room == rm_w2n_lvl4_2)
     case 1: { string1 = "six hundred sixty-nine thousand#six hundred eighty-three "; w2n_4_1 = 669683; break; }
     case 2: { string1 = "two hundred seventy-two thousand#four hundred thirty"; w2n_4_1 = 272430; break; }
     case 3: { string1 = "eight hundred ninety thousand#six hundred fifty-seven"; w2n_4_1 = 890657; break; }
-    case 4: { string1 = "eight hundred thirty-seven#thousandone hundred"; w2n_4_1 = 837100;  break; }
+    case 4: { string1 = "eight hundred thirty-seven#thousand one hundred"; w2n_4_1 = 837100;  break; }
     case 5: { string1 = "nine hundred fifty-one thousand#ninety-eight"; w2n_4_1 = 951098; break; }
     case 6: { string1 = "seven hundred nineteen thousand#six hundred forty-three"; w2n_4_1 = 719643; break; }
     case 7: { string1 = "eight hundred twelve thousand#six hundred fifty-four"; w2n_4_1 = 812654; break; }

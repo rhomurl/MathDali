@@ -96,7 +96,7 @@ switch (rndoff_rnd)
         }
         default: 
         {
-            string5 = ""; rnd_off = rnd_offa = rnd_offb = rnd_offc = rnd_offd = 0;
+            string5 = ""; rnd_off = rnd_offa = rnd_offb = rnd_offc = rnd_offd = 0; break;
         }
     }
 
@@ -131,19 +131,13 @@ switch (rndoff_rnd)
         //This is only a test
         case 0: 
         {
-           if (position_meeting(mouse_x, mouse_y, obj_txtbox_roa) &amp;&amp; mouse_check_button_released(mb_left))
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
             {
                 show_message("Correct!");
             }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_rob) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_rob) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_rob) &amp;&amp; mouse_check_button_released(mb_left))
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
             {
                 show_message("Incorrect!");
             }
@@ -151,19 +145,13 @@ switch (rndoff_rnd)
         }
         case 1: 
         {
-            if (position_meeting(mouse_x, mouse_y, obj_txtbox_roa) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            else if (position_meeting(mouse_x, mouse_y,obj_txtbox_rob) &amp;&amp; mouse_check_button_released(mb_left))
+            if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
             {
                 show_message("Correct!");
             }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_roc) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_rod) &amp;&amp; mouse_check_button_released(mb_left))
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
             {
                 show_message("Incorrect!");
             }
@@ -171,47 +159,17 @@ switch (rndoff_rnd)
         }
         case 2: 
         {
-            if (position_meeting(mouse_x, mouse_y, obj_txtbox_roa) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_rob) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_roc) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_rod) &amp;&amp; mouse_check_button_released(mb_left))
+            if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
             {
                 show_message("Correct!");
             }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                show_message("Incorrect!");
+            }
             break;
-        }
-        case 3: 
-        {
-            rnd_off = 4509873; 
-            string5 = "hundred thousands";
-            rnd_offa = 4511000;
-            rnd_offb = 4000000;
-            rnd_offc = 4500000; 
-            rnd_offd = 5000000;
-            break;
-        }
-        case 4: 
-        {
-            rnd_off = 6837145; 
-            string5 = "millions";
-            rnd_offa = 6800000;
-            rnd_offb = 7000000; 
-            rnd_offc = 6000000;
-            rnd_offd = 6840000;
-            break;
-        }
-        default: 
-        {
-            string5 = ""; rnd_off = rnd_offa = rnd_offb = rnd_offc = rnd_offd = 0;
         }
     }
 </string>
