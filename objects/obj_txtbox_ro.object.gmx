@@ -25,85 +25,149 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rndoff_rnd = irandom(2);
-string5 = ""; 
-rnd_off = 0; 
-rnd_offa = 0; 
-rnd_offb = 0; 
-rnd_offc = 0; 
-rnd_offd = 0;
-/* if (room == rm_ro_lvl1) 
-|| (room == rm_ro_lvl1_1)
-|| (room == rm_ro_lvl1_2) 
-|| (room == rm_ro_lvl1_3)
-|| (room == rm_ro_lvl1_4)
-{ */
-    
-//}
+            <string>rnd_ro = irandom(19);
+rnd_off = 0; string5 = ""; rnd_offa = 0; rnd_offb = 0; rnd_offc = 0; rnd_offd = 0;
 
-switch (rndoff_rnd) 
+//Level 1 - Round Off
+if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1) || (room == rm_ro_lvl1_2) || (room == rm_ro_lvl1_3) || (room == rm_ro_lvl1_4)
+{
+    switch (rnd_ro) 
     {
-        //This is only a test
-        case 0: 
-        {
-            rnd_off = 152678;
-            string5 = "hundred thousands";
-            rnd_offa = 200000; 
-            rnd_offb = 160000;
-            rnd_offc = 210000;
-            rnd_offd = 100000;
-            break;
-        }
-        case 1: 
-        {
-            rnd_off = 214563; 
-            string5 = "hundred thousands";
-            rnd_offa = 210000;
-            rnd_offb = 200000; 
-            rnd_offc = 214000;
-            rnd_offd = 215000;
-            break;
-        }
-        case 2: 
-        {
-            rnd_off = 13097564; 
-            string5 = "millions";
-            rnd_offa = 13110000;
-            rnd_offb = 13100000;
-            rnd_offc = 14000000;
-            rnd_offd = 13000000; 
-            break;
-        }
-        case 3: 
-        {
-            rnd_off = 4509873; 
-            string5 = "hundred thousands";
-            rnd_offa = 4511000;
-            rnd_offb = 4000000;
-            rnd_offc = 4500000; 
-            rnd_offd = 5000000;
-            break;
-        }
-        case 4: 
-        {
-            rnd_off = 6837145; 
-            string5 = "millions";
-            rnd_offa = 6800000;
-            rnd_offb = 7000000; 
-            rnd_offc = 6000000;
-            rnd_offd = 6840000;
-            break;
-        }
-        default: 
-        {
-            string5 = ""; rnd_off = rnd_offa = rnd_offb = rnd_offc = rnd_offd = 0; break;
-        }
+        case 0: { rnd_off = 149.20; string5 = "tens"; rnd_offa = 149.00; rnd_offb = 150.00 ; /*answer*/ rnd_offc = 140.00; rnd_offd = 100.00; break; }
+        case 1: { rnd_off = 102.45; string5 = "tenths"; rnd_offa = 102.00; rnd_offb = 110.40; rnd_offc = 102.05; rnd_offd = 102.50; /*answer*/ break; }
+        case 2: { rnd_off = 473.33; string5 = "hundreds"; rnd_offa = 500.00; /*answer*/ rnd_offb = 470.00; rnd_offc = 473.00; rnd_offd = 500.33; break; }
+        case 3: { rnd_off = 116.50; string5 = "ones"; rnd_offa = 116.00; rnd_offb = 120.00; rnd_offc = 110.00; rnd_offd = 117.00; /*answer*/ break; }
+        case 4: { rnd_off = 489.959; string5 = "hundredths"; rnd_offa = 490.960; rnd_offb = 489.000; rnd_offc = 489.960; /*answer*/ rnd_offd = 490.000; break; }
+        case 5: { rnd_off = 363; string5 = "hundreds"; rnd_offa = 300; rnd_offb = 360; rnd_offc = 410; rnd_offd = 400; /*answer*/ break; }
+        case 6: { rnd_off = 246; string5 = "tens"; rnd_offa = 200; rnd_offb = 240; rnd_offc = 250; /*answer*/ rnd_offd = 340; break; }
+        case 7: { rnd_off = 435; string5 = "hundreds"; rnd_offa = 400; /*answer*/ rnd_offb = 500; rnd_offc = 530; rnd_offd = 430; break; }
+        case 8: { rnd_off = 359; string5 = "tens"; rnd_offa = 350; rnd_offb = 400; rnd_offc = 450; rnd_offd = 360; /*answer*/ break; }
+        case 9: { rnd_off = 127; string5 = "hundreds"; rnd_offa = 150; rnd_offb = 320; rnd_offc = 120; rnd_offd = 100; /*answer*/ break; }
+        case 10: { rnd_off = 904; string5 = "tens"; rnd_offa = 890; rnd_offb = 900; /*answer*/ rnd_offc = 910; rnd_offd = 1000; break; }
+        case 11: { rnd_off = 920; string5 = "tens"; rnd_offa = 890; rnd_offb = 920; /*answer*/ rnd_offc = 910; rnd_offd = 1000; break; }
+        case 12: { rnd_off = 409; string5 = "tens"; rnd_offa = 500; rnd_offb = 510; rnd_offc = 410; /*answer*/ rnd_offd = 400; break; }
+        case 13: { rnd_off = 646; string5 = "hundreds"; rnd_offa = 740; rnd_offb = 700; rnd_offc = 640; rnd_offd = 600; /*answer*/ break; }
+        case 14: { rnd_off = 444; string5 = "tens"; rnd_offa = 440; /*answer*/ rnd_offb = 410;  rnd_offc = 500; rnd_offd = 400; break; }
+        case 15: { rnd_off = 123; string5 = "hundreds"; rnd_offa = 100; /*answer*/ rnd_offb = 410;  rnd_offc = 500; rnd_offd = 300; break; }
+        case 16: { rnd_off = 321; string5 = "hundreds"; rnd_offa = 300; /*answer*/ rnd_offb = 320;  rnd_offc = 200; rnd_offd = 100; break; }
+        case 17: { rnd_off = 21; string5 = "tens"; rnd_offa = 40;  rnd_offb = 20; /*answer*/ rnd_offc = 10; rnd_offd = 21; break; }
+        case 18: { rnd_off = 64; string5 = "tens"; rnd_offa = 60; /*answer*/ rnd_offb = 40; rnd_offc = 65; rnd_offd = 48; break; }
+        case 19: { rnd_off = 94; string5 = "tens"; rnd_offa = 93; rnd_offb = 90; /*answer*/ rnd_offc = 50; rnd_offd = 40; break; }
     }
+}
+//Level 2
+if (room == rm_ro_lvl2) || (room == rm_ro_lvl2_1) || (room == rm_ro_lvl2_2) || (room == rm_ro_lvl2_3) || (room == rm_ro_lvl2_4)
+{
+    switch (rnd_ro) 
+    {
+        case 0: { rnd_off = 4147; string5 = "hundreds"; rnd_offa = 4500; rnd_offb = 4100;/*answer*/ rnd_offc = 1400; rnd_offd = 2000; break; }
+        case 1: { rnd_off = 2351; string5 = "tens"; rnd_offa = 2315; rnd_offb = 2350; /*answer*/ rnd_offc = 2352; rnd_offd = 2451; break; }
+        case 2: { rnd_off = 2097; string5 = "hundreds"; rnd_offa = 2100;/*answer*/ rnd_offb = 2090; rnd_offc = 2190; rnd_offd = 2119; break; }
+        case 3: { rnd_off = 4996; string5 = "tens"; rnd_offa = 5000;/*answer*/ rnd_offb = 4900; rnd_offc = 4990; rnd_offd = 4199; break; }
+        case 4: { rnd_off = 4183; string5 = "thousands"; rnd_offa = 4180 ; rnd_offb = 4185; rnd_offc = 4100; rnd_offd = 4000;/*answer*/ break; }
+        case 5: { rnd_off = 1524; string5 = "thousands"; rnd_offa = 1500 ; rnd_offb = 1520; rnd_offc = 2000;/*answer*/ rnd_offd = 2520; break; }
+        case 6: { rnd_off = 4766; string5 = "thousands"; rnd_offa = 4100 ; rnd_offb = 4700; rnd_offc = 5000;/*answer*/ rnd_offd = 1760; break; }
+        case 7: { rnd_off = 2894; string5 = "tens"; rnd_offa = 2800; rnd_offb = 2890; /*answer*/ rnd_offc = 4990; rnd_offd = 2895; break; }
+        case 8: { rnd_off = 1535; string5 = "tens"; rnd_offa = 1500; rnd_offb = 1530; rnd_offc = 15003; rnd_offd = 1530;/*answer*/ break; }
+        case 9: { rnd_off = 5334; string5 = "hundreds"; rnd_offa = 5300;/*answer*/ rnd_offb = 5330; rnd_offc = 5335; rnd_offd = 5000; break; }
+        case 10: { rnd_off = 1172; string5 = "hundreds"; rnd_offa = 1100; rnd_offb = 1170; rnd_offc = 1200;/*answer*/  rnd_offd = 2000; break; }
+        case 11: { rnd_off = 1260; string5 = "tens"; rnd_offa = 1000; rnd_offb = 2000; rnd_offc = 1255; rnd_offd = 1200;/*answer*/ break; }
+        case 12: { rnd_off = 2558; string5 = "tens"; rnd_offa = 2500;/*answer*/ rnd_offb = 2550; rnd_offc = 2000; rnd_offd = 2555; break; }
+        case 13: { rnd_off = 3476; string5 = "thousands"; rnd_offa = 3000 ; rnd_offb = 3400; /*answer*/ rnd_offc = 3000; rnd_offd = 3470; break; }
+        case 14: { rnd_off = 3586; string5 = "thousands"; rnd_offa = 3580; rnd_offb = 4000; rnd_offc = 4000;/*answer*/ rnd_offd = 3600; break; }
+        case 15: { rnd_off = 2921; string5 = "hundreds"; rnd_offa = 2900; rnd_offb = 3000; rnd_offc = 2920; rnd_offd = 2900;/*answer*/ break; }
+        case 16: { rnd_off = 2224; string5 = "tens"; rnd_offa = 2000; rnd_offb = 2200; /*answer*/ rnd_offc = 3000; rnd_offd = 2220; break; }
+        case 17: { rnd_off = 3981; string5 = "tens"; rnd_offa = 3000; rnd_offb = 2000; rnd_offc = 4000; rnd_offd = 3980;/*answer*/ break; }
+        case 18: { rnd_off = 1933; string5 = "thousands"; rnd_offa = 2000 ;/*answer*/ rnd_offb = 2000; rnd_offc = 1930; rnd_offd = 1990; break; }
+        case 19: { rnd_off = 3576; string5 = "thousands"; rnd_offa = 3000; rnd_offb = 3570; rnd_offc = 4000;/*answer*/ rnd_offd = 3500; break;}
+    }
+}
 
 
+//Level 3
+if (room == rm_ro_lvl3) || (room == rm_ro_lvl3_1) || (room == rm_ro_lvl3_2) || (room == rm_ro_lvl3_3) || (room == rm_ro_lvl3_4)
+{
+    switch (rnd_ro) 
+    {
+        case 0: { rnd_off = 40818; string5 = "hundreds"; rnd_offa = 45500; rnd_offb = 40800; /*answer*/ rnd_offc = 44400; rnd_offd = 42000; break; }
+        case 1: { rnd_off = 34866; string5 = "tens"; rnd_offa = 34888; rnd_offb = 34870; /*answer*/ rnd_offc = 34800; rnd_offd = 34895; break; }
+        case 2: { rnd_off = 24977; string5 = "hundreds"; rnd_offa = 25000;/*answer*/ rnd_offb = 24980; rnd_offc = 21900; rnd_offd = 25905; break; }
+        case 3: { rnd_off = 7996; string5 = "tens"; rnd_offa = 8000;/*answer*/ rnd_offb = 7900; rnd_offc = 6990; rnd_offd = 7199; break; }
+        case 4: { rnd_off = 23845; string5 = "thousands"; rnd_offa = 24180 ; rnd_offb = 24185; rnd_offc = 24100; rnd_offd = 24000;/*answer*/ break; }
+        case 5: { rnd_off = 45260; string5 = "thousands"; rnd_offa = 45200 ; rnd_offb = 41520; rnd_offc = 45000;/*answer*/ rnd_offd = 42520; break; }
+        case 6: { rnd_off =38169; string5 = "thousands"; rnd_offa = 38170 ; rnd_offb = 34700; rnd_offc = 38000;/*answer*/ rnd_offd = 34567; break; }
+        case 7: { rnd_off = 9374; string5 = "tens"; rnd_offa = 9300; rnd_offb = 9370; /*answer*/ rnd_offc = 8300; rnd_offd = 9380; break; }
+        case 8: { rnd_off = 11923; string5 = "tens"; rnd_offa = 11189; rnd_offb = 11300; rnd_offc = 15003; rnd_offd = 11920;/*answer*/ break; }
+        case 9: { rnd_off = 27438; string5 = "hundreds"; rnd_offa = 27400;/*answer*/ rnd_offb = 28000; rnd_offc = 27000; rnd_offd = 25000; break; }
+        case 10: { rnd_off = 42407; string5 = "hundreds"; rnd_offa = 41100; rnd_offb = 1170; rnd_offc = 42400;/*answer*/  rnd_offd = 42000; break; }
+        case 11: { rnd_off = 20399; string5 = "tens"; rnd_offa = 20400; rnd_offb = 20000; rnd_offc = 21255; rnd_offd = 20400;/*answer*/ break; }
+        case 12: { rnd_off = 28860; string5 = "tens"; rnd_offa = 28860;/*answer*/ rnd_offb = 28870; rnd_offc = 20000; rnd_offd = 24554; break; }
+        case 13: { rnd_off = 17912; string5 = "thousands"; rnd_offa = 19000 ; rnd_offb = 18000; /*answer*/ rnd_offc = 17000; rnd_offd = 16470; break; }
+        case 14: { rnd_off = 44551; string5 = "ten thousands"; rnd_offa = 45080; rnd_offb = 44000; rnd_offc = 40000;/*answer*/ rnd_offd = 3600; break; }
+        case 15: { rnd_off = 25301; string5 = "ten thousands"; rnd_offa = 30000; /*answer*/ rnd_offb = 25000; rnd_offc = 20500; rnd_offd = 35000; break; }
+        case 16: { rnd_off = 49329; string5 = "hundreds"; rnd_offa = 49000; rnd_offb = 49300; /*answer*/ rnd_offc = 40000; rnd_offd = 50000; break; }
+        case 17: { rnd_off = 48186; string5 = "thousands"; rnd_offa = 50000; rnd_offb = 48000; /*answer*/ rnd_offc = 58000; rnd_offd = 40000; break; }
+        case 18: { rnd_off = 30935; string5 = "thousands"; rnd_offa = 30000 ; rnd_offb = 40000; rnd_offc = 31000; /*answer*/ rnd_offd = 32000; break; }
+        case 19: { rnd_off = 40289; string5 = "hundreds"; rnd_offa = 60000; rnd_offb = 42000; rnd_offc = 41000; rnd_offd = 40300; /*answer*/ break; }
+    }
+}
 
+//Level 4
+if (room == rm_ro_lvl4) || (room == rm_ro_lvl4_1) || (room == rm_ro_lvl4_2) || (room == rm_ro_lvl4_3) || (room == rm_ro_lvl4_4)
+{
+    switch (rnd_ro) 
+    {
+        case 0: { rnd_off = 160718; string5 = "hundred thousands"; rnd_offa = 200000; /*answer*/ rnd_offb = 160000; rnd_offc = 150000; rnd_offd = 210000;  break; }
+        case 1: { rnd_off = 339602; string5 = "ten thousands"; rnd_offa = 330000; rnd_offb = 340000; /*answer*/ rnd_offc = 400000; rnd_offd = 300000; break; }
+        case 2: { rnd_off = 394883; string5 = "ten thousands"; rnd_offa = 394000; rnd_offb = 410000; rnd_offc = 400000; rnd_offd = 390000; /*answer*/ break; }
+        case 3: { rnd_off = 164312; string5 = "thousands"; rnd_offa = 260000; rnd_offb = 160000; rnd_offc = 164000; /*answer*/ rnd_offd = 200000; break; }
+        case 4: { rnd_off = 347906; string5 = "thousands"; rnd_offa = 350000; rnd_offb = 300000; rnd_offc = 347000;  rnd_offd = 348000; /*answer*/ break; }
+        case 5: { rnd_off = 336222; string5 = "thousands"; rnd_offa = 336000; /*answer*/  rnd_offb = 330000; rnd_offc = 340000; rnd_offd = 400000; break; }
+        case 6: { rnd_off = 333088; string5 = "thousands"; rnd_offa = 336000;  rnd_offb = 330000; /*answer*/ rnd_offc = 340000; rnd_offd = 400000; break; }
+        case 7: { rnd_off = 311401; string5 = "ten thousands"; rnd_offa = 350000;  rnd_offb = 300000; rnd_offc = 310000; /*answer*/ rnd_offd = 320000; break; }
+        case 8: { rnd_off = 376823; string5 = "ten thousands"; rnd_offa = 346000;  rnd_offb = 370000; rnd_offc = 380000; /*answer*/ rnd_offd = 400000; break; }
+        case 9: { rnd_off = 445079; string5 = "ten thousands"; rnd_offa = 450000; /*answer*/  rnd_offb = 4450000; rnd_offc = 400000; rnd_offd = 410000; break; }
+        case 10: { rnd_off = 476246; string5 = "ten thousands"; rnd_offa = 346000;  rnd_offb = 370000; rnd_offc = 480000; /*answer*/ rnd_offd = 400000; break; }
+        case 11: { rnd_off = 455600; string5 = "hundreds"; rnd_offa = 455600; /*answer*/ rnd_offb = 400000; rnd_offc = 386000; rnd_offd = 370000; break; }
+        case 12: { rnd_off = 385600; string5 = "hundreds"; rnd_offa = 385600; /*answer*/ rnd_offb = 400000; rnd_offc = 386000; rnd_offd = 370000; break; }
+        case 13: { rnd_off = 137600; string5 = "hundreds"; rnd_offa = 200000; rnd_offb = 137600; /*answer*/ rnd_offc = 137605; rnd_offd = 147000; break; }
+        case 14: { rnd_off = 129200; string5 = "tens"; rnd_offa = 130000; rnd_offb = 200000; rnd_offc = 129200; /*answer*/ rnd_offd = 300000; break; }
+        case 15: { rnd_off = 768000; string5 = "ten thousands"; rnd_offa = 770000; /*answer*/ rnd_offb = 800000; rnd_offc = 770200; rnd_offd = 700000; break; }
+        case 16: { rnd_off = 115140; string5 = "hundred thousands"; rnd_offa = 100000; /*answer*/ rnd_offb = 200000; rnd_offc = 150000; rnd_offd = 151000; break; }
+        case 17: { rnd_off = 297392; string5 = "ten thousands"; rnd_offa = 300000; /*answer*/ rnd_offb = 350000; rnd_offc = 290000; rnd_offd = 200000; break; }
+        case 18: { rnd_off = 358512; string5 = "ones"; rnd_offa = 40000; rnd_offb = 30000; rnd_offc = 358512; /*answer*/ rnd_offd = 35000; break; }
+        case 19: { rnd_off = 141946; string5 = "ones"; rnd_offa = 141946; /*answer*/ rnd_offb = 151000; rnd_offc = 141000; rnd_offd = 141900; break; }
+    }
+}
 
-
+//Level 5
+if (room == rm_ro_lvl5) || (room == rm_ro_lvl5_1) || (room == rm_ro_lvl5_2) || (room == rm_ro_lvl5_3) || (room == rm_ro_lvl5_4)
+{
+    switch (rnd_ro) 
+    {
+        case 0: { rnd_off = 152678; string5 = "hundred thousands"; rnd_offa = 200000; /*answer*/ rnd_offb = 160000; rnd_offc = 210000; rnd_offd = 100000; break; }
+        case 1: { rnd_off = 214563; string5 = "hundred thousands"; rnd_offa = 210000; rnd_offb = 200000; /*answer*/ rnd_offc = 214000; rnd_offd = 215000; break; }
+        case 2: { rnd_off = 13097564; string5 = "millions"; rnd_offa = 1311000; rnd_offb = 13100000; rnd_offc = 14000000; rnd_offd = 13000000; /*answer*/ break; }
+        case 3: { rnd_off = 4509873; string5 = "hundred thousands"; rnd_offa = 4511000; rnd_offb = 4000000; rnd_offc = 4500000; /*answer*/ rnd_offd = 5000000; break; }
+        case 4: { rnd_off = 6837145; string5 = "millions"; rnd_offa = 6800000; rnd_offb = 7000000; /*answer*/ rnd_offc = 6000000; rnd_offd = 6840000; break; }
+        case 5: { rnd_off = 3501796;  string5 = "hundred thousands"; rnd_offa = 4000000; rnd_offb = 3500000; /*answer*/ rnd_offc = 2000000; rnd_offd = 1000000;
+        break; }
+        case 6: { rnd_off = 8724625;  string5 = "millions"; rnd_offa = 9000000; /*answer*/ rnd_offb = 8700000; rnd_offc = 5009000; rnd_offd = 8000000; break; }
+        case 7: { rnd_off = 28356721;  string5 = "millions"; rnd_offa = 21000000; rnd_offb = 30000000; rnd_offc = 28300000; rnd_offd = 28000000; /*answer*/ break; }
+        case 8: { rnd_off = 5098123; string5 = "millions"; rnd_offa = 5100000; rnd_offb = 6100000; rnd_offc = 5090000; rnd_offd = 5000000; /*answer*/ break; }
+        case 9: { rnd_off = 29965954; string5 = "hundred thousands"; rnd_offa = 30000000; /*correct*/ rnd_offb = 27000000; rnd_offc = 30000000; rnd_offd = 29900000; break; }
+        case 10: { rnd_off = 45092432;  string5 = "millions"; rnd_offa = 45000000; /*correct*/ rnd_offb = 45100000;rnd_offa = 40000000; rnd_offa = 50000000; break;}
+        case 11: { rnd_off = 432783; string5 = "hundred thousands"; rnd_offa = 400000; /*correct*/ rnd_offb = 500000; rnd_offc = 430000; rnd_offd = 432000; break; }
+        case 12: { rnd_off = 234219; string5 = "Hundred thousands"; rnd_offa = 100000; rnd_offb = 200000; /*correct*/ rnd_offc = 230000; rnd_offd = 400000; break; }
+        case 13: { rnd_off = 4087345; string5 = "millions"; rnd_offa = 21000000; rnd_offb = 30000000; rnd_offc = 4000000; /*correct*/ rnd_offd = 4100000; break; }
+        case 14: { rnd_off = 730823; string5 = "hundred thousands"; rnd_offa = 600000; /*correct*/ rnd_offb = 730000; rnd_offc = 300000; rnd_offd = 700000; /*correct*/ break; }
+        case 15: { rnd_off = 3532678; string5 = "millions"; rnd_offa = 4000000; /*correct*/ rnd_offb = 3000000 rnd_offc = 3500000; rnd_offd = 2000000; break; }
+        case 16: { rnd_off = 567345; string5 = "hundred thousands"; rnd_offa = 600000; /*correct*/ rnd_offb = 300000; rnd_offc = 400000; /*correct*/ rnd_offd = 410000; break; }
+        case 17: {  rnd_off = 823251;  string5 = "hundred thousands"; rnd_offa = 600000 ;rnd_offb = 800000; /*correct*/ rnd_offc = 700000 ;rnd_offd = 820000; break; }
+        case 18: { rnd_off = 47656228;  string5 = "millions"; rnd_offa = 48000000; /*correct*/ rnd_offb = 30000000; rnd_offc = 28300000; rnd_offd = 47000000; break; }
+        case 19: { rnd_off = 1656228;  string5 = "millions"; rnd_offa = 2000000; /*correct*/ rnd_offb = 10000000; rnd_offc = 30000000; rnd_offd = 29900000; break; }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -127,74 +191,23 @@ switch (rndoff_rnd)
           <argument>
             <kind>1</kind>
             <string>switch (rndoff_rnd) 
-    {
+{
         //This is only a test
-        case 0: 
+    case 0: 
+    {
+        if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
         {
-           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Correct!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
-            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
-            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
+            show_message("Correct!");
+        }
+        else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+        (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+        (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+        {
+            show_message("Incorrect!");
+        }
             break;
         }
-        case 1: 
-        {
-            if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Correct!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
-            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
-            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            break;
-        }
-        case 2: 
-        {
-            if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Correct!");
-            }
-            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
-            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
-            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
-            {
-                show_message("Incorrect!");
-            }
-            break;
-        }
-    }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="82">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_restart();
+}
 </string>
           </argument>
         </arguments>

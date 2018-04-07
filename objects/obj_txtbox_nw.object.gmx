@@ -141,6 +141,230 @@ if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1) ||
     }
 }
 
+//LVL2
+if (room == n2w_lvl2) || (room == n2w_lvl2_1) || (room == n2w_lvl2_2) || (room == n2w_lvl2_3) || (room == n2w_lvl2_4)
+{
+    switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+        n2w = 8360; n2w_a = "eight thousand three hundred sixty"; /*correct*/ n2w_b = "one hundred twenty"; n2w_c = "two thousand five hundred one"; n2w_d = "eight hundred fifteen"; break;
+        }
+        case 1: 
+        {
+        n2w = 329; n2w_a = "five hundred twenty-nine"; n2w_b = "three hundred twenty-nine"; /*correct*/ n2w_c = "nine hundred twenty-three"; n2w_d = "one thousand three"; break;
+        }
+        case 2: 
+        {
+        n2w = 9478; n2w_a = "three hundred thirty-four"; n2w_b = "nine hundred forty-seven"; n2w_c = "nine thousand four hundred seventy-eight"; /*correct*/ n2w_d = "eight thousand seventy-eight"; break;
+        }
+        case 3: 
+        {
+        n2w = 8177; n2w_a = "eight hundred seventeen"; n2w_b = "one hundred seventy-seven"; n2w_c = "seven thousand seventy-one"; n2w_d = "eight thousand one hundred seventy-seven"; /*correct*/ break;
+        }
+        case 4: 
+        {
+        n2w = 1488; n2w_a = "one thousand four hundred eighty-eight"; /*correct*/ n2w_b = "one hundred forty-eight"; n2w_c = "four thousand eighty-eight"; n2w_d = "one thousand four hundred seventy-seven"; break;
+        }
+        case 5: 
+        {
+        n2w = 4104; n2w_a = "four thousand four hundred"; n2w_b = "four thousand one hundred four"; /*correct*/ n2w_c = "four hundred forty-one"; n2w_d = "ten thousand four hundred ten"; break;
+        }
+        case 6: 
+        {
+        n2w = 438; n2w_a = "four thousand thirty-eight"; n2w_b = "eight hundred thirty-four"; n2w_c = "four hundred thirty-eight"; /*correct*/ n2w_d = "three hundred eighty"; break;
+        }
+        case 7: 
+        {
+        n2w = 2959; n2w_a = "nine hundred fifty-nine"; n2w_b = "nine thousand five hundred ninety-two"; n2w_c = "two hundred ninety-five"; n2w_d = "two thousand nine hundred fifty-nine"; /*correct*/ break;
+        } 
+        case 8: 
+        {
+        n2w = 8842; n2w_a = "eight thousand eight hundred forty-two"; /*correct*/ n2w_b = "two thousand four hundred eighty-eight"; n2w_c = "eight hundred forty-two"; n2w_d = "eight thousand nine hundred"; break;
+        } 
+        case 8: 
+        {
+        n2w = 6863; n2w_a = "six thousand eighty-six"; n2w_b = "six thousand eight hundred sixty-three"; /*correct*/ n2w_c = "eight hundred sixty-three"; n2w_d = "three hundred sixty-eight"; break;
+        } 
+        case 9: 
+        {
+        n2w = 1146; n2w_a = "one thousand forty-six"; n2w_b = "one hundred forty-six"; n2w_c = "one thousand one hundred forty-six"; /*correct*/ n2w_d = "six thousand forty-eight"; break;
+        } 
+        case 10: 
+        {
+        n2w = 951; n2w_a = "fifty-one"; n2w_b = "nine thousand fifty-one"; n2w_c = "five hundred ninety-one"; n2w_d = "nine hundred fifty-one"; /*correct*/ break;
+        } 
+        case 11: 
+        {
+        n2w = 2759; n2w_a = "two thousand seven hundred fifty-nine"; /*correct*/ n2w_b = "two thousand seven hundre ninety-five"; n2w_c = "two hundred fifteen"; n2w_d = "five thousand nine hundred"; break;
+        } 
+        case 12: 
+        {
+        n2w = 7886; n2w_a = "seven hundred eighty-eight"; n2w_b = "seven thousand eight hundred eighty-six"; /*correct*/ n2w_c = "six hundred five"; n2w_d = "eight thousand eighty-six"; break;
+        } 
+        case 13: 
+        {
+        n2w = 1113; n2w_a = "four hundred ninety-five"; n2w_b = "three thousand one hundred eleven"; n2w_c = "one thousand one hundred thirteen"; /*correct*/ n2w_d = "one hundred thirteen"; break;
+        } 
+        case 14: 
+        {
+        n2w = 6511; n2w_a = "six thousand five hundred"; n2w_b = "sixty-eight"; n2w_c = "five hundred eleven"; n2w_d = "six thousand five hundred eleven"; /*correct*/ break;
+        } 
+        case 15: 
+        {
+        n2w = 7018; n2w_a = "seven thousand eighteen "; /*correct*/ n2w_b = "seven hundred eighteen"; n2w_c = "seven thousand eight hundred one"; n2w_d = "seven thousand eight hundred ninety-nine"; break;
+        } 
+        case 16: 
+        {
+        n2w = 4037; n2w_a = "four thousand forty-seven"; n2w_b = "four thousand thirty-seven"; /*correct*/ n2w_c = "four hundred thirty-seven"; n2w_d = "seven thousand three hundred four"; break;
+        } 
+        case 17: 
+        {
+        n2w = 4275; n2w_a = "four thousand two hundred seventy"; n2w_b = "four hundred twenty-seven"; n2w_c = "four thousand two hundred seventy-five"; /*correct*/ n2w_d = "four thousand five hundred seventy-two"; break;
+        } 
+        case 18: 
+        {
+        n2w = 5723; n2w_a = "five thousand seven hundred ninety-three"; n2w_b = "five hundred twenty-three"; n2w_c = "three thousand two hundred seventy-five"; n2w_d = "five thousand seven hundred twenty-three"; /*correct*/ break;
+        } 
+        case 19: 
+        {
+        n2w = 3771; n2w_a = "three thousand seven hundred seventy-one"; /*correct*/ n2w_b = "three thousand seven hundred seventy-seven"; n2w_c = "three hundred seventeen"; n2w_d = "thirty-seven"; break;
+        } 
+        case 20: 
+        {
+        n2w = 5855; n2w_a = "five thousand eight hundred"; n2w_b = "five thousand eight hundred fifty-five"; /*correct*/ n2w_c = "five hundred eighty-five"; n2w_d = "fifty-eight"; break;
+        } 
+        case 21: 
+        {
+        n2w = 6644; n2w_a = "six thousand four hundred"; n2w_b = "six hundred forty-four"; n2w_c = "six thousand six hundred forty-four"; /*correct*/ n2w_d = "six thousand sixty-four"; break;
+        }  
+        case 22: 
+        {
+        n2w = 8154; n2w_a = "eighty-one"; n2w_b = "eight hundred fifteen"; n2w_c = "one thousand fifty-four"; n2w_d = "eight thousand one hundred fifty-four"; /*correct*/ break;
+        }  
+        case 23: 
+        {
+        n2w = 9387; n2w_a = "nine thousand three hundred eighty-seven"; /*correct*/ n2w_b = "nine thousand seventy-eight"; n2w_c = "nine hundred thirty-eight"; n2w_d = "three hundred eighty-seven"; break;
+        }  
+        case 24: 
+        {
+        n2w = 788; n2w_a = "seven thousand eight"; n2w_b = "seven hundred eighty-eight"; /*correct*/ n2w_c = "seventy-eight"; n2w_d = "eighty-eight"; break;
+        }  
+    }
+}
+
+//LVL3
+if (room == n2w_lvl3) || (room == n2w_lvl3_1) || (room == n2w_lvl3_2) || (room == n2w_lvl13_3) || (room == n2w_lvl3_4)
+{
+    	switch (n2w_rnd) 
+    	{
+        		case 0: 
+        		{
+        			n2w = 82391; n2w_a = "eight thousand three hundred ninety-one"; n2w_b = "eight thousand three hundred ninety"; n2w_c = "eight thousand two hundred nine-one" ; n2w_d = "eighty-two thousand three hundred ninety-one"; /*correct*/ break;
+        		}
+        		case 1: 
+        		{
+        			n2w = 49318; n2w_a = "four thousand nine hundred thirty-eight"; n2w_b = "four thousand three hundred eighteen"; n2w_c = "forty-nine thousand three hundred eighteen" ;/*correct*/ n2w_d = "forty-nine thousand three hundred"; break;
+        		}
+        		case 2: 
+        		{
+        			n2w = 67767; n2w_a = "six hundred sixty-seven"; n2w_b = "sixty thousand seven hundred sixty-seven"; n2w_c = "six thousand seven hundred"; n2w_d = "sixty-seven thousand seven hundred sixty-seven"; break;
+        		}
+        		case 3: 
+        		{
+        			n2w = 78105; n2w_a = "seventy-eight thousand one hundred five";/*correct*/ n2w_b = "seven thousand one hundred five"; n2w_c = "seven thousand eight hundred five" ; n2w_d = "seventy-eight thousand one hundred"; break;
+        		}
+        		case 4: 
+        		{
+        			n2w = 99444; n2w_a = "nine thousand four hundred forty-four"; n2w_b = "nine hundred forty-four"; n2w_c = "ninety-nine thousand four hundred forty-four" ; /*correct*/ n2w_d = "ninety-nine thousand four hundred four"; break;
+        		}
+        		case 5: 
+        		{
+        			n2w = 99947; n2w_a = "ninety-nine thousand nine hundred forty"; n2w_b = "ninety-nine thousand nine hundred forty-seven"; /*correct*/ n2w_c = "nine thousand nine hundred forty-seven"; n2w_d = "nine thousand nine hundred"; break;
+        		}
+        		case 6: 
+        		{
+        			n2w = 62050; n2w_a = "six thousand five hundred"; n2w_b = "sixty-two thousand five hundred"; n2w_c = "sixty thousand two hundred fifty"; n2w_d = "sixty-two thousand fifty" ;/*correct*/ break;
+        		}
+        		case 7: 
+        		{
+        			n2w = 35514; n2w_a = "three thousand fourteen"; n2w_b = "thirty-five thousand five hundred fourteen";/*correct*/ n2w_c = "thirty-five thousand five hundred"; n2w_d = "three hundred fifteen"; break;
+        		} 
+        		case 8: 
+        		{
+        			n2w = 50910; n2w_a = "five hundred ten"; n2w_b = "fifty thousand nine hundred"; n2w_c = "fifty-nine thousand nine hundred ten"; n2w_d = "fifty thousand nine hundred ten";/*correct*/ break;
+        		} 
+        		case 8: 
+        		{
+        			n2w = 24440; n2w_a = "two hundred forty"; n2w_b = "twenty-four thousand four hundred forty" ;/*correct*/ n2w_c = "twenty-four thousand four hundred"; n2w_d = "twenty thousand four hundred"; break;
+        		} 
+        		case 9: 
+        		{
+        			n2w = 93040; n2w_a = "ninety-three thousand forty" ;/*correct*/ n2w_b = "nine thousand three hundred forty"; n2w_c = "nine thousand three hundred"; n2w_d = "ninety-three thousand"; break;
+        		} 
+        		case 10: 
+        		{ 
+        			n2w = 35950; n2w_a = "thirty-nine thousand fifty"; n2w_b = "three thousand nine hundred"; n2w_c = "three thousand nine fifty"; n2w_d = "thirty-five thousand nine hundred fifty"; /*correct*/  break;
+        		} 
+        		case 11: 
+        		{
+        			n2w = 99951; n2w_a = "ninety-nine thousand nine hundred fifty-one" ;/*correct*/ n2w_b = "nine thousand fifty-one"; n2w_c = "ninety-nine thousand"; n2w_d = "nine hundred fifty-one"; break;
+        		} 
+        		case 12: 
+        		{
+        			n2w = 85620; n2w_a = "eight thousand five hundred twenty"; n2w_b = "eight thousand five hundred twenty"; n2w_c = "eight thousand five hundred"; n2w_d = "eighty-five thousand six hundred twenty"; /*correct*/ break;
+        		} 
+        		case 13: 
+        		{
+        			n2w = 55266; n2w_a = "five hundred sixty-six"; n2w_b = "fifty-five thousand two hundred"; n2w_c = "fifty-five thousand two hundred sixty-six" ;/*correct*/ n2w_d = "five thousand two hundred sixty-six"; break;
+          } 
+        case 14: 
+         {
+        			n2w = 87064; n2w_a = "eighty-seven thousand sixty-four" ;/*correct*/ n2w_b = "eighty-seven thousand six hundred four"; n2w_c = "eight thousand seven hundred sixty four"; n2w_d = "eight thousand sixty-four"; break;
+        		} 
+        		case 15: 
+        		{
+        			n2w = 29596; n2w_a = "two thousand five hundred ninety-six"; n2w_b = "two thousand five hundred"; n2w_c = "twenty nine thousand five hundred"; n2w_d = "twenty-nine thousand five hundred ninety-six";/*correct*/ break;
+        		} 
+        		case 16: 
+        		{
+        			n2w = 41575; n2w_a = "forty thousand five hundred seventy-five"; n2w_b = "forty-one thousand five hundred seventy-five"; n2w_c = "forty-one thousand seventy-five"; n2w_d = "four thousand seven hundred five"; break;
+        		} 
+        		case 17: 
+        		{
+        			n2w = 88010; n2w_a = "eight thousand ten"; n2w_b = "eighty-eight thousand eight hundred"; n2w_c = "eighty-eight thousand ten";/*correct*/ n2w_d = "eight thousand eight hundred ten"; break;
+        		} 
+        		case 18: 
+        		{
+        			n2w = 47979; n2w_a = "forty thousand nine hundred nine"; n2w_b = "forty-seven thousand nine hundred seventy-nine" ; /*correct*/ n2w_c = "four thousand seven hundred seventy-nine"; n2w_d = "forty thousand nine hundred seventy-nine"; break;
+        		} 
+        		case 19: 
+        		{
+        			n2w = 51995; n2w_a = "fifty thousand nine hundred ninety-five"; n2w_b = "fifty thousand nine hundred"; n2w_c = "five thousand nine hundred ninety-five"; n2w_d = "fifty-one thousand nine hundred ninety-five";  /*correct*/ break;
+        		} 
+        		case 20: 
+        		{
+        			n2w = 51437; n2w_a = "fifty-one thousand four hundred thirty-seven" ;/*correct*/ n2w_b ="five thousand four hundred twenty-seven"; n2w_c = "fifty four thousand thirty-seven"; n2w_d = "five thousand four hundred thirty-seven"; break;
+        		} 
+        		case 21: 
+        		{
+        			n2w = 76702; n2w_a = "seven hundred seventy-two"; n2w_b = "seven thousand six hundred two"; n2w_c = "seventy-six thousand seven hundred"; n2w_d = "seventy-six thousand seven hundred two";/*correct*/ break;
+        		}  
+        		case 22: 
+        		{
+        			n2w = 26776; n2w_a = "twenty-six thousand seven hundred"; n2w_b = "twenty-six thousand seven hundred seventy-six" ; /*correct*/ n2w_c = "two thousand seven hundred seventy-six"; n2w_d = "two thousand seventy-six"; break;
+        		}  
+        		case 23: 
+        		{
+        			n2w = 70525; n2w_a = n2w_lvl1a; "seven thousand five hundred fifty-two" = "seventy thousand five hundred twenty-five" ;/*correct*/ n2w_c = "seven hundred twenty five"; n2w_d = "seven thousand five hundred"; break;
+        		}  
+        		case 24: 
+        		{
+        			n2w = 82143; n2w_a = "eight thousand one hundred forty-three"; n2w_b = "eighty-two thousand one hundred forty-three" ;/*correct*/ n2w_c = "eighty thousand one hundred forty-three"; n2w_d = "eight thousand two hundred forty-three"; break;
+        		}  
+    	}
+}
+
 
 
 </string>

@@ -85,7 +85,7 @@
         <arguments>
           <argument>
             <kind>11</kind>
-            <room>&lt;undefined&gt;</room>
+            <room>-1</room>
           </argument>
         </arguments>
       </action>

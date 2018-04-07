@@ -26,28 +26,33 @@
           <argument>
             <kind>1</kind>
             <string>draw_self(); draw_set_font(f_choice_nw); draw_set_color(c_black);
-if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1) 
-|| (room == rm_ro_lvl1_2) || (room == rm_ro_lvl1_3) ||
-(room == rm_ro_lvl1_4)
-{
-    draw_set_halign(fa_center);
-    draw_text(x+230, y+15, obj_txtbox_ro.rnd_offa);
-}
 
-if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1) 
-|| (room == rm_n2w_lvl1_2) || (room == rm_n2w_lvl1_3) ||
-(room == rm_n2w_lvl1_4)
+if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1) || (room == rm_n2w_lvl1_2) || (room == rm_n2w_lvl1_3) || (room == rm_n2w_lvl1_4) ||
+(room == rm_n2w_lvl2) || (room == rm_n2w_lvl2_1) || (room == rm_n2w_lvl2_2) || (room == rm_n2w_lvl2_3) || (room == rm_n2w_lvl2_4) ||
+(room == rm_n2w_lvl3) || (room == rm_n2w_lvl3_1) || (room == rm_n2w_lvl3_2) || (room == rm_n2w_lvl3_3) || (room == rm_n2w_lvl3_4) ||
+(room == rm_n2w_lvl4) || (room == rm_n2w_lvl4_1) || (room == rm_n2w_lvl4_2) || (room == rm_n2w_lvl4_3) || (room == rm_n2w_lvl4_4) || 
+(room == rm_n2w_lvl5) || (room == rm_n2w_lvl5_1) || (room == rm_n2w_lvl5_2) || (room == rm_n2w_lvl5_3) || (room == rm_n2w_lvl5_4)
 {
     draw_set_halign(fa_center);
     draw_text(x+230, y+30, obj_txtbox_nw.n2w_a);
 }
-
-if (room == rm_pv_lvl1) || (room == rm_pv_lvl1_1) 
-|| (room == rm_pv_lvl1_2) || (room == rm_pv_lvl1_3) ||
-(room == rm_pv_lvl1_4)
+if (room == rm_pv_lvl1) || (room == rm_pv_lvl1_1) || (room == rm_pv_lvl1_2) || (room == rm_pv_lvl1_3) || (room == rm_pv_lvl1_4) ||
+(room == rm_pv_lvl2) || (room == rm_pv_lvl2_1) || (room == rm_pv_lvl2_2) || (room == rm_pv_lvl2_3) || (room == rm_pv_lvl2_4) ||
+(room == rm_pv_lvl3) || (room == rm_pv_lvl3_1) || (room == rm_pv_lvl3_2) || (room == rm_pv_lvl3_3) || (room == rm_pv_lvl3_4) ||
+(room == rm_pv_lvl4) || (room == rm_pv_lvl4_1) || (room == rm_pv_lvl4_2) || (room == rm_pv_lvl4_3) || (room == rm_pv_lvl4_4) || 
+(room == rm_pv_lvl5) || (room == rm_pv_lvl5_1) || (room == rm_pv_lvl5_2) || (room == rm_pv_lvl5_3) || (room == rm_pv_lvl5_4)
 {
     draw_set_halign(fa_center);
     draw_text(x+230, y+15, obj_txtbox_pv.pv_a);
+}
+if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1) || (room == rm_ro_lvl1_2) || (room == rm_ro_lvl1_3) || (room == rm_ro_lvl1_4) ||
+(room == rm_ro_lvl2) || (room == rm_ro_lvl2_1) || (room == rm_ro_lvl2_2) || (room == rm_ro_lvl2_3) || (room == rm_ro_lvl2_4) ||
+(room == rm_ro_lvl3) || (room == rm_ro_lvl3_1) || (room == rm_ro_lvl3_2) || (room == rm_ro_lvl3_3) || (room == rm_ro_lvl3_4) ||
+(room == rm_ro_lvl4) || (room == rm_ro_lvl4_1) || (room == rm_ro_lvl4_2) || (room == rm_ro_lvl4_3) || (room == rm_ro_lvl4_4) || 
+(room == rm_ro_lvl5) || (room == rm_ro_lvl5_1) || (room == rm_ro_lvl5_2) || (room == rm_ro_lvl5_3) || (room == rm_ro_lvl5_4)
+{
+    draw_set_halign(fa_center);
+    draw_text(x+230, y+15, obj_txtbox_ro.rnd_offa);
 }
 </string>
           </argument>

@@ -288,8 +288,8 @@
           <object>objects\obj_h_wn</object>
         </objects>
         <objects name="GAME">
-          <object>objects\obj_h_t2a</object>
           <object>objects\obj_h_game</object>
+          <object>objects\obj_h_t2a</object>
           <object>objects\obj_h_c2a</object>
         </objects>
       </objects>
@@ -351,10 +351,10 @@
             <room>rooms\h_pv_3</room>
           </rooms>
           <room>rooms\h_ro_1</room>
-          <room>rooms\rm_game_help</room>
+          <room>rooms\rm_lesson</room>
         </rooms>
         <rooms name="help_game">
-          <room>rooms\rm_help_game</room>
+          <room>rooms\rm_game_help</room>
           <room>rooms\c2a_help</room>
           <room>rooms\t2a_help</room>
         </rooms>
@@ -453,25 +453,25 @@
             <room>rooms\rm_pv_lvl2_4</room>
           </rooms>
           <rooms name="LVL3">
+            <room>rooms\rm_pv_lvl3</room>
+            <room>rooms\rm_pv_lvl3_1</room>
+            <room>rooms\rm_pv_lvl3_2</room>
+            <room>rooms\rm_pv_lvl3_3</room>
             <room>rooms\rm_pv_lvl3_4</room>
-            <room>rooms\room135</room>
-            <room>rooms\room136</room>
-            <room>rooms\room138</room>
-            <room>rooms\room137</room>
           </rooms>
           <rooms name="LVL4">
-            <room>rooms\room115</room>
-            <room>rooms\room127</room>
-            <room>rooms\room129</room>
-            <room>rooms\room128</room>
-            <room>rooms\room126</room>
+            <room>rooms\rm_pv_lvl4</room>
+            <room>rooms\rm_pv_lvl4_1</room>
+            <room>rooms\rm_pv_lvl4_2</room>
+            <room>rooms\rm_pv_lvl4_3</room>
+            <room>rooms\rm_pv_lvl4_4</room>
           </rooms>
           <rooms name="LVL5">
-            <room>rooms\room114</room>
-            <room>rooms\room131</room>
-            <room>rooms\room133</room>
-            <room>rooms\room132</room>
-            <room>rooms\room130</room>
+            <room>rooms\rm_pv_lvl5</room>
+            <room>rooms\rm_pv_lvl5_1</room>
+            <room>rooms\rm_pv_lvl5_2</room>
+            <room>rooms\rm_pv_lvl5_3</room>
+            <room>rooms\rm_pv_lvl5_4</room>
           </rooms>
         </rooms>
         <rooms name="Round Off">
@@ -516,7 +516,6 @@
       <room>rooms\room_about</room>
       <room>rooms\room_help</room>
       <room>rooms\room_lesson</room>
-      <room>rooms\room139</room>
       <room>rooms\room_menu</room>
       <room>rooms\room_exit</room>
     </rooms>
