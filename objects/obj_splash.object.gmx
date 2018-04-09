@@ -73,7 +73,7 @@ lives=5;
 
 //Play sound
 global.sound = 1;
-
+audio_play_sound(snd_game,0,1)
 </string>
           </argument>
         </arguments>

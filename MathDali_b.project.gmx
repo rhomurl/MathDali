@@ -66,6 +66,7 @@
       </sprites>
       <sprites name="Textbox">
         <sprite>sprites\spr_txtbx_yellow</sprite>
+        <sprite>sprites\sprite81</sprite>
         <sprite>sprites\spr_txtbx_aqua</sprite>
         <sprite>sprites\spr_txtbx_red</sprite>
         <sprite>sprites\spr_txtbx_violet</sprite>
@@ -128,14 +129,12 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_level</background>
-    <background>background\bg_play</background>
+    <background>background\bg_w2nplay</background>
     <background>background\background2</background>
-    <background>background\background3</background>
-    <background>background\bg_sel_button</background>
     <background>background\bg_exitconfirm</background>
-    <background>background\background6</background>
     <background>background\bg_splash_mm</background>
     <background>background\background8</background>
+    <background>background\background9</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_cloud</path>
@@ -322,19 +321,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\room_splash_screen</room>
-    <room>rooms\ro_2</room>
-    <room>rooms\test2</room>
     <rooms name="Conditions">
       <room>rooms\room_gameover</room>
       <room>rooms\level_complete</room>
-      <room>rooms\room_gameover_wn</room>
-      <room>rooms\room_gameover_nw</room>
-      <room>rooms\room_gameover_pv</room>
-      <room>rooms\room_gameover_ro</room>
-      <room>rooms\level_complete_nw</room>
-      <room>rooms\level_complete_wn</room>
-      <room>rooms\level_complete_pv</room>
-      <room>rooms\level_complete_ro</room>
     </rooms>
     <rooms name="Menu">
       <rooms name="Help">

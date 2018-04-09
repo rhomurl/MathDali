@@ -126,7 +126,36 @@ if (room == room_n2w_level)
     {
     locked=true
     }
-    if locked image_index=0 else image_index=1
+    if (locked) 
+    {
+        image_index=0 
+        //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=1 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=0
+        }
+    }
+    else 
+    {
+    image_index=2
+    //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=3 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=2
+        }
+    }
     if (!locked &amp;&amp; position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
     {
         if my_n2w_lvl==1 room_goto(rm_n2w_lvl1);
@@ -152,7 +181,36 @@ if (room == room_pv_level)
     {
     locked=true
     }
-    if locked image_index=0 else image_index=1
+    if (locked) 
+    {
+        image_index=0 
+        //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=1 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=0
+        }
+    }
+    else 
+    {
+    image_index=2
+    //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=3 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=2
+        }
+    }
     if (!locked &amp;&amp; position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
     {
         if my_placeval_lvl==1 room_goto(rm_pv_lvl1);
@@ -178,7 +236,36 @@ if (room == room_ro_level)
     {
     locked=true
     }
-    if locked image_index=0 else image_index=1
+    if (locked) 
+    {
+        image_index=0 
+        //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=1 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=0
+        }
+    }
+    else 
+    {
+    image_index=2
+    //mouse enter
+        if position_meeting(mouse_x,mouse_y,self)
+        {
+        hasEntered = true;
+        image_index=3 
+        }
+        //mouse leave
+        if (!position_meeting(mouse_x,mouse_y,self) &amp;&amp; hasEntered)
+        {
+        image_index=2
+        }
+    }
     if (!locked &amp;&amp; position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
     {
         if my_roundoff_lvl==1 room_goto(rm_ro_lvl1);
@@ -227,19 +314,19 @@ draw_set_halign(fa_center);
 //Draw level number &gt;&gt; first part
 if (room == room_w2n_level) {
 draw_set_colour(c_black);  
-draw_text(x-1,y-1,my_w2n_lvl); //Draw number level number - Words to Number
+draw_text(x-2,y,my_w2n_lvl); //Draw number level number - Words to Number
 }
 else if (room == room_n2w_level) {
 draw_set_colour(c_black);
-draw_text(x-1,y-1,my_n2w_lvl); //Draw number level number - Number to Words
+draw_text(x-2,y,my_n2w_lvl); //Draw number level number - Number to Words
 }
 else if (room == room_pv_level) {
 draw_set_colour(c_black);
-draw_text(x-1,y-1,my_placeval_lvl); //Draw number level number - Place Value
+draw_text(x-2,y,my_placeval_lvl); //Draw number level number - Place Value
 }
 else if (room == room_ro_level) {
 draw_set_colour(c_black);
-draw_text(x-1,y-1,my_roundoff_lvl); //Draw number level number - Round Off
+draw_text(x-2,y,my_roundoff_lvl); //Draw number level number - Round Off
 }
 
 //Draw level number &gt;&gt; second part

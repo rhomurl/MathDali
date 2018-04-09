@@ -97,12 +97,19 @@ image_index = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(room_menu);
-if (room == room_lesson) 
+            <string>if (room == room_lesson) 
+{
+    room_goto(room_menu);
+}
+if (room == room_help) 
+{
+    room_goto(room_menu);
+}
+if (room == rm_lesson) 
 {
     room_goto(room_help);
 }
-if (room == room_help) 
+if (room == rm_game_help) 
 {
     room_goto(room_help);
 }
@@ -130,6 +137,10 @@ if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1) || (room == rm_ro_lvl1_2) || (
 (room == rm_ro_lvl5) || (room == rm_ro_lvl5_1) || (room == rm_ro_lvl5_2) || (room == rm_ro_lvl5_3) || (room == rm_ro_lvl5_4)
 {
     room_goto(room_ro_level);
+}
+if (room == room_n2w_level) || (room == room_w2n_level) || (room == room_pv_level) || (room == room_ro_level)
+{
+    room_goto(room_lesson);
 }
 </string>
           </argument>

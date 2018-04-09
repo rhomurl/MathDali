@@ -23,9 +23,9 @@
     <glyph character="61" x="372" y="349" w="29" h="45" shift="36" offset="4"/>
     <glyph character="77" x="218" y="2" w="52" h="57" shift="56" offset="2"/>
     <glyph character="122" x="362" y="283" w="32" h="57" shift="34" offset="2"/>
-    <glyph character="56" x="220" y="283" w="34" h="58" shift="40" offset="3"/>
     <glyph character="35" x="89" y="349" w="29" h="57" shift="36" offset="3"/>
     <glyph character="115" x="58" y="349" w="29" h="57" shift="31" offset="1"/>
+    <glyph character="56" x="220" y="283" w="34" h="58" shift="40" offset="3"/>
     <glyph character="105" x="81" y="421" w="19" h="57" shift="22" offset="3"/>
     <glyph character="47" x="30" y="349" w="26" h="66" shift="36" offset="5"/>
     <glyph character="80" x="155" y="218" w="37" h="57" shift="40" offset="2"/>
@@ -34,12 +34,12 @@
     <glyph character="48" x="388" y="218" w="36" h="58" shift="40" offset="2"/>
     <glyph character="32" x="350" y="349" w="20" h="70" shift="20" offset="0"/>
     <glyph character="91" x="118" y="421" w="14" h="71" shift="18" offset="4"/>
-    <glyph character="114" x="296" y="349" w="25" h="57" shift="28" offset="2"/>
     <glyph character="57" x="114" y="283" w="35" h="58" shift="40" offset="2"/>
-    <glyph character="98" x="184" y="283" w="34" h="58" shift="36" offset="0"/>
     <glyph character="79" x="227" y="74" w="44" h="57" shift="48" offset="2"/>
-    <glyph character="107" x="366" y="146" w="38" h="57" shift="40" offset="3"/>
+    <glyph character="98" x="184" y="283" w="34" h="58" shift="36" offset="0"/>
     <glyph character="97" x="396" y="283" w="32" h="57" shift="35" offset="2"/>
+    <glyph character="107" x="366" y="146" w="38" h="57" shift="40" offset="3"/>
+    <glyph character="114" x="296" y="349" w="25" h="57" shift="28" offset="2"/>
     <glyph character="46" x="252" y="421" w="11" h="57" shift="21" offset="5"/>
     <glyph character="38" x="96" y="74" w="45" h="57" shift="48" offset="3"/>
     <glyph character="100" x="350" y="218" w="36" h="58" shift="39" offset="3"/>

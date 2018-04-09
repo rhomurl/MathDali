@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>1086</width>
-  <height>768</height>
-  <data>images\bg_play.png</data>
+  <width>1160</width>
+  <height>773</height>
+  <data>images\bg_w2nplay.png</data>
 </background>

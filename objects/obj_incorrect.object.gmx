@@ -141,9 +141,7 @@ draw_text(x,y-160, "Press Space key to continue");
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_deactivate_object(obj_incorrect);
-instance_deactivate_object(obj_correct);
-
+            <string>
 /* BACKUP//
 if (room == rm_w2n_lvl2) || (room == rm_w2n_lvl2_1) 
 || (room == rm_w2n_lvl2_2) || (room == rm_w2n_lvl2_3)
@@ -185,8 +183,7 @@ if (room == rm_w2n_lvl1) || (room == rm_w2n_lvl1_1)
 || (room == rm_w2n_lvl1_2) || (room == rm_w2n_lvl1_3)
 {
     if (lives = 0) 
-    {
-        global.lesson = "w2n";
+    { 
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -198,12 +195,12 @@ else if (room == rm_w2n_lvl1_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5){
     room_goto(rm_w2n_lvl1_1);
     }
+
 }
 
 //Level 2
@@ -212,7 +209,6 @@ if (room == rm_w2n_lvl2) || (room == rm_w2n_lvl2_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -224,7 +220,6 @@ else if (room == rm_w2n_lvl2_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -238,20 +233,17 @@ if (room == rm_w2n_lvl3) || (room == rm_w2n_lvl3_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5)
     {
         room_goto_next();
     }
-
 }
 else if (room == rm_w2n_lvl3_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -266,26 +258,22 @@ if (room == rm_w2n_lvl4) || (room == rm_w2n_lvl4_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5)
     {
         room_goto_next();
     }
-    
 }
 else if (room == rm_w2n_lvl4_4)
 {   
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5){
     room_goto(rm_w2n_lvl4_1);
     }
-    
 }
 
 //Level 5
@@ -294,26 +282,22 @@ if (room == rm_w2n_lvl5) || (room == rm_w2n_lvl5_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5)
     {
         room_goto_next();
     }
-    
 }
 else if (room == rm_w2n_lvl5_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "w2n";
         room_goto(room_gameover);
     }
     if (score != 5){
     room_goto(rm_w2n_lvl1_1);
     }
-    
 }
 //END Words to Numbers
 //---------------------//
@@ -324,7 +308,6 @@ if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -336,7 +319,6 @@ else if (room == rm_n2w_lvl1_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -350,7 +332,6 @@ if (room == rm_n2w_lvl2) || (room == rm_n2w_lvl2_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -362,7 +343,6 @@ else if (room == rm_n2w_lvl2_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -376,7 +356,6 @@ if (room == rm_n2w_lvl3) || (room == rm_n2w_lvl3_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -389,7 +368,6 @@ else if (room == rm_n2w_lvl3_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -404,7 +382,6 @@ if (room == rm_n2w_lvl4) || (room == rm_n2w_lvl4_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -432,7 +409,6 @@ if (room == rm_n2w_lvl5) || (room == rm_n2w_lvl5_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -445,7 +421,6 @@ else if (room == rm_n2w_lvl5_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "n2w";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -453,7 +428,7 @@ else if (room == rm_n2w_lvl5_4)
     }
     
 }
-//END Words to Numbers
+//END Numbers to Words
 //--------------------//
 //START Place Value
 if (room == rm_pv_lvl1) || (room == rm_pv_lvl1_1) 
@@ -461,7 +436,6 @@ if (room == rm_pv_lvl1) || (room == rm_pv_lvl1_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -473,7 +447,6 @@ else if (room == rm_pv_lvl1_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -487,7 +460,6 @@ if (room == rm_pv_lvl2) || (room == rm_pv_lvl2_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -499,7 +471,6 @@ else if (room == rm_pv_lvl2_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -513,7 +484,6 @@ if (room == rm_pv_lvl3) || (room == rm_pv_lvl3_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -526,7 +496,6 @@ else if (room == rm_pv_lvl3_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -541,7 +510,6 @@ if (room == rm_pv_lvl4) || (room == rm_pv_lvl4_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -554,7 +522,6 @@ else if (room == rm_pv_lvl4_4)
 {   
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -569,7 +536,6 @@ if (room == rm_pv_lvl5) || (room == rm_pv_lvl5_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -582,7 +548,6 @@ else if (room == rm_pv_lvl5_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "pv";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -598,7 +563,6 @@ if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -610,7 +574,6 @@ else if (room == rm_ro_lvl1_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -624,7 +587,6 @@ if (room == rm_ro_lvl2) || (room == rm_ro_lvl2_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -636,7 +598,6 @@ else if (room == rm_ro_lvl2_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -650,7 +611,6 @@ if (room == rm_ro_lvl3) || (room == rm_ro_lvl3_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -663,7 +623,6 @@ else if (room == rm_ro_lvl3_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -678,7 +637,6 @@ if (room == rm_ro_lvl4) || (room == rm_ro_lvl4_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -691,7 +649,6 @@ else if (room == rm_ro_lvl4_4)
 {   
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5){
@@ -706,7 +663,6 @@ if (room == rm_ro_lvl5) || (room == rm_ro_lvl5_1)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5)
@@ -719,7 +675,6 @@ else if (room == rm_ro_lvl5_4)
 {
     if (lives = 0) 
     {
-        global.lesson = "ro";
         room_goto(room_gameover);
     }
     if (score != 5){

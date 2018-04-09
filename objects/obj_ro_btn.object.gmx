@@ -101,21 +101,29 @@
     <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
-        <id>224</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_another_room</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>11</kind>
-            <room>room_ro_level</room>
+            <kind>1</kind>
+            <string>if (room == room_lesson)
+{
+    room_goto(room_ro_level);
+}
+if (room == rm_lesson)
+{
+    room_goto(h_ro_1);
+}
+</string>
           </argument>
         </arguments>
       </action>

@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>n2w_rnd = irandom(24);
+            <string>global.lesson = "n2w";
+n2w_rnd = irandom(24);
 n2w = 0;  n2w_a = ""; n2w_b = ""; n2w_c = ""; n2w_d = "";
 
 //Level 1 - Numbers to Words
@@ -142,7 +143,7 @@ if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1) ||
 }
 
 //LVL2
-if (room == n2w_lvl2) || (room == n2w_lvl2_1) || (room == n2w_lvl2_2) || (room == n2w_lvl2_3) || (room == n2w_lvl2_4)
+if (room == rm_n2w_lvl2) || (room == rm_n2w_lvl2_1) || (room == rm_n2w_lvl2_2) || (room == rm_n2w_lvl2_3) || (room == rm_n2w_lvl2_4)
 {
     switch (n2w_rnd) 
     {
@@ -181,11 +182,7 @@ if (room == n2w_lvl2) || (room == n2w_lvl2_1) || (room == n2w_lvl2_2) || (room =
         case 8: 
         {
         n2w = 8842; n2w_a = "eight thousand eight hundred forty-two"; /*correct*/ n2w_b = "two thousand four hundred eighty-eight"; n2w_c = "eight hundred forty-two"; n2w_d = "eight thousand nine hundred"; break;
-        } 
-        case 8: 
-        {
-        n2w = 6863; n2w_a = "six thousand eighty-six"; n2w_b = "six thousand eight hundred sixty-three"; /*correct*/ n2w_c = "eight hundred sixty-three"; n2w_d = "three hundred sixty-eight"; break;
-        } 
+        }  
         case 9: 
         {
         n2w = 1146; n2w_a = "one thousand forty-six"; n2w_b = "one hundred forty-six"; n2w_c = "one thousand one hundred forty-six"; /*correct*/ n2w_d = "six thousand forty-eight"; break;
@@ -254,117 +251,330 @@ if (room == n2w_lvl2) || (room == n2w_lvl2_1) || (room == n2w_lvl2_2) || (room =
 }
 
 //LVL3
-if (room == n2w_lvl3) || (room == n2w_lvl3_1) || (room == n2w_lvl3_2) || (room == n2w_lvl13_3) || (room == n2w_lvl3_4)
+if (room == rm_n2w_lvl3) || (room == rm_n2w_lvl3_1) || (room == rm_n2w_lvl3_2) || (room == rm_n2w_lvl3_3) || (room == rm_n2w_lvl3_4)
 {
-    	switch (n2w_rnd) 
-    	{
-        		case 0: 
-        		{
-        			n2w = 82391; n2w_a = "eight thousand three hundred ninety-one"; n2w_b = "eight thousand three hundred ninety"; n2w_c = "eight thousand two hundred nine-one" ; n2w_d = "eighty-two thousand three hundred ninety-one"; /*correct*/ break;
-        		}
-        		case 1: 
-        		{
-        			n2w = 49318; n2w_a = "four thousand nine hundred thirty-eight"; n2w_b = "four thousand three hundred eighteen"; n2w_c = "forty-nine thousand three hundred eighteen" ;/*correct*/ n2w_d = "forty-nine thousand three hundred"; break;
-        		}
-        		case 2: 
-        		{
-        			n2w = 67767; n2w_a = "six hundred sixty-seven"; n2w_b = "sixty thousand seven hundred sixty-seven"; n2w_c = "six thousand seven hundred"; n2w_d = "sixty-seven thousand seven hundred sixty-seven"; break;
-        		}
-        		case 3: 
-        		{
-        			n2w = 78105; n2w_a = "seventy-eight thousand one hundred five";/*correct*/ n2w_b = "seven thousand one hundred five"; n2w_c = "seven thousand eight hundred five" ; n2w_d = "seventy-eight thousand one hundred"; break;
-        		}
-        		case 4: 
-        		{
-        			n2w = 99444; n2w_a = "nine thousand four hundred forty-four"; n2w_b = "nine hundred forty-four"; n2w_c = "ninety-nine thousand four hundred forty-four" ; /*correct*/ n2w_d = "ninety-nine thousand four hundred four"; break;
-        		}
-        		case 5: 
-        		{
-        			n2w = 99947; n2w_a = "ninety-nine thousand nine hundred forty"; n2w_b = "ninety-nine thousand nine hundred forty-seven"; /*correct*/ n2w_c = "nine thousand nine hundred forty-seven"; n2w_d = "nine thousand nine hundred"; break;
-        		}
-        		case 6: 
-        		{
-        			n2w = 62050; n2w_a = "six thousand five hundred"; n2w_b = "sixty-two thousand five hundred"; n2w_c = "sixty thousand two hundred fifty"; n2w_d = "sixty-two thousand fifty" ;/*correct*/ break;
-        		}
-        		case 7: 
-        		{
-        			n2w = 35514; n2w_a = "three thousand fourteen"; n2w_b = "thirty-five thousand five hundred fourteen";/*correct*/ n2w_c = "thirty-five thousand five hundred"; n2w_d = "three hundred fifteen"; break;
-        		} 
-        		case 8: 
-        		{
-        			n2w = 50910; n2w_a = "five hundred ten"; n2w_b = "fifty thousand nine hundred"; n2w_c = "fifty-nine thousand nine hundred ten"; n2w_d = "fifty thousand nine hundred ten";/*correct*/ break;
-        		} 
-        		case 8: 
-        		{
-        			n2w = 24440; n2w_a = "two hundred forty"; n2w_b = "twenty-four thousand four hundred forty" ;/*correct*/ n2w_c = "twenty-four thousand four hundred"; n2w_d = "twenty thousand four hundred"; break;
-        		} 
-        		case 9: 
-        		{
-        			n2w = 93040; n2w_a = "ninety-three thousand forty" ;/*correct*/ n2w_b = "nine thousand three hundred forty"; n2w_c = "nine thousand three hundred"; n2w_d = "ninety-three thousand"; break;
-        		} 
-        		case 10: 
-        		{ 
-        			n2w = 35950; n2w_a = "thirty-nine thousand fifty"; n2w_b = "three thousand nine hundred"; n2w_c = "three thousand nine fifty"; n2w_d = "thirty-five thousand nine hundred fifty"; /*correct*/  break;
-        		} 
-        		case 11: 
-        		{
-        			n2w = 99951; n2w_a = "ninety-nine thousand nine hundred fifty-one" ;/*correct*/ n2w_b = "nine thousand fifty-one"; n2w_c = "ninety-nine thousand"; n2w_d = "nine hundred fifty-one"; break;
-        		} 
-        		case 12: 
-        		{
-        			n2w = 85620; n2w_a = "eight thousand five hundred twenty"; n2w_b = "eight thousand five hundred twenty"; n2w_c = "eight thousand five hundred"; n2w_d = "eighty-five thousand six hundred twenty"; /*correct*/ break;
-        		} 
-        		case 13: 
-        		{
-        			n2w = 55266; n2w_a = "five hundred sixty-six"; n2w_b = "fifty-five thousand two hundred"; n2w_c = "fifty-five thousand two hundred sixty-six" ;/*correct*/ n2w_d = "five thousand two hundred sixty-six"; break;
+    switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+        n2w = 82391; n2w_a = "eight thousand three hundred ninety-one"; n2w_b = "eight thousand three hundred ninety"; n2w_c = "eight thousand two hundred nine-one" ; n2w_d = "eighty-two thousand three hundred ninety-one"; /*correct*/ break;
+        }
+        case 1: 
+        {
+        n2w = 49318; n2w_a = "four thousand nine hundred thirty-eight"; n2w_b = "four thousand three hundred eighteen"; n2w_c = "forty-nine thousand three hundred eighteen" ;/*correct*/ n2w_d = "forty-nine thousand three hundred"; break;
+        }
+        case 2: 
+        {
+        n2w = 67767; n2w_a = "six hundred sixty-seven"; n2w_b = "sixty thousand seven hundred sixty-seven"; n2w_c = "six thousand seven hundred"; n2w_d = "sixty-seven thousand seven hundred sixty-seven"; break;
+        }
+        case 3: 
+        {
+        n2w = 78105; n2w_a = "seventy-eight thousand one hundred five";/*correct*/ n2w_b = "seven thousand one hundred five"; n2w_c = "seven thousand eight hundred five" ; n2w_d = "seventy-eight thousand one hundred"; break;
+        }
+        case 4: 
+        {
+        n2w = 99444; n2w_a = "nine thousand four hundred forty-four"; n2w_b = "nine hundred forty-four"; n2w_c = "ninety-nine thousand four hundred forty-four" ; /*correct*/ n2w_d = "ninety-nine thousand four hundred four"; break;
+        }
+        case 5: 
+        {
+        n2w = 99947; n2w_a = "ninety-nine thousand nine hundred forty"; n2w_b = "ninety-nine thousand nine hundred forty-seven"; /*correct*/ n2w_c = "nine thousand nine hundred forty-seven"; n2w_d = "nine thousand nine hundred"; break;
+        }
+        case 6: 
+        {
+        n2w = 62050; n2w_a = "six thousand five hundred"; n2w_b = "sixty-two thousand five hundred"; n2w_c = "sixty thousand two hundred fifty"; n2w_d = "sixty-two thousand fifty" ;/*correct*/ break;
+        }
+        case 7: 
+        {
+        n2w = 35514; n2w_a = "three thousand fourteen"; n2w_b = "thirty-five thousand five hundred fourteen";/*correct*/ n2w_c = "thirty-five thousand five hundred"; n2w_d = "three hundred fifteen"; break;
+        } 
+        case 8: 
+        {
+        n2w = 50910; n2w_a = "five hundred ten"; n2w_b = "fifty thousand nine hundred"; n2w_c = "fifty-nine thousand nine hundred ten"; n2w_d = "fifty thousand nine hundred ten";/*correct*/ break;
+        } 
+        case 9: 
+        {
+        n2w = 93040; n2w_a = "ninety-three thousand forty" ;/*correct*/ n2w_b = "nine thousand three hundred forty"; n2w_c = "nine thousand three hundred"; n2w_d = "ninety-three thousand"; break;
+        } 
+        case 10: 
+        { 
+        n2w = 35950; n2w_a = "thirty-nine thousand fifty"; n2w_b = "three thousand nine hundred"; n2w_c = "three thousand nine fifty"; n2w_d = "thirty-five thousand nine hundred fifty"; /*correct*/  break;
+        } 
+        case 11: 
+        {
+        n2w = 99951; n2w_a = "ninety-nine thousand nine hundred fifty-one" ;/*correct*/ n2w_b = "nine thousand fifty-one"; n2w_c = "ninety-nine thousand"; n2w_d = "nine hundred fifty-one"; break;
+        } 
+        case 12: 
+        {
+        n2w = 85620; n2w_a = "eight thousand five hundred twenty"; n2w_b = "eight thousand five hundred twenty"; n2w_c = "eight thousand five hundred"; n2w_d = "eighty-five thousand six hundred twenty"; /*correct*/ break;
+        } 
+        case 13: 
+        {
+        n2w = 55266; n2w_a = "five hundred sixty-six"; n2w_b = "fifty-five thousand two hundred"; n2w_c = "fifty-five thousand two hundred sixty-six" ;/*correct*/ n2w_d = "five thousand two hundred sixty-six"; break;
           } 
         case 14: 
          {
-        			n2w = 87064; n2w_a = "eighty-seven thousand sixty-four" ;/*correct*/ n2w_b = "eighty-seven thousand six hundred four"; n2w_c = "eight thousand seven hundred sixty four"; n2w_d = "eight thousand sixty-four"; break;
-        		} 
-        		case 15: 
-        		{
-        			n2w = 29596; n2w_a = "two thousand five hundred ninety-six"; n2w_b = "two thousand five hundred"; n2w_c = "twenty nine thousand five hundred"; n2w_d = "twenty-nine thousand five hundred ninety-six";/*correct*/ break;
-        		} 
-        		case 16: 
-        		{
-        			n2w = 41575; n2w_a = "forty thousand five hundred seventy-five"; n2w_b = "forty-one thousand five hundred seventy-five"; n2w_c = "forty-one thousand seventy-five"; n2w_d = "four thousand seven hundred five"; break;
-        		} 
-        		case 17: 
-        		{
-        			n2w = 88010; n2w_a = "eight thousand ten"; n2w_b = "eighty-eight thousand eight hundred"; n2w_c = "eighty-eight thousand ten";/*correct*/ n2w_d = "eight thousand eight hundred ten"; break;
-        		} 
-        		case 18: 
-        		{
-        			n2w = 47979; n2w_a = "forty thousand nine hundred nine"; n2w_b = "forty-seven thousand nine hundred seventy-nine" ; /*correct*/ n2w_c = "four thousand seven hundred seventy-nine"; n2w_d = "forty thousand nine hundred seventy-nine"; break;
-        		} 
-        		case 19: 
-        		{
-        			n2w = 51995; n2w_a = "fifty thousand nine hundred ninety-five"; n2w_b = "fifty thousand nine hundred"; n2w_c = "five thousand nine hundred ninety-five"; n2w_d = "fifty-one thousand nine hundred ninety-five";  /*correct*/ break;
-        		} 
-        		case 20: 
-        		{
-        			n2w = 51437; n2w_a = "fifty-one thousand four hundred thirty-seven" ;/*correct*/ n2w_b ="five thousand four hundred twenty-seven"; n2w_c = "fifty four thousand thirty-seven"; n2w_d = "five thousand four hundred thirty-seven"; break;
-        		} 
-        		case 21: 
-        		{
-        			n2w = 76702; n2w_a = "seven hundred seventy-two"; n2w_b = "seven thousand six hundred two"; n2w_c = "seventy-six thousand seven hundred"; n2w_d = "seventy-six thousand seven hundred two";/*correct*/ break;
-        		}  
-        		case 22: 
-        		{
-        			n2w = 26776; n2w_a = "twenty-six thousand seven hundred"; n2w_b = "twenty-six thousand seven hundred seventy-six" ; /*correct*/ n2w_c = "two thousand seven hundred seventy-six"; n2w_d = "two thousand seventy-six"; break;
-        		}  
-        		case 23: 
-        		{
-        			n2w = 70525; n2w_a = n2w_lvl1a; "seven thousand five hundred fifty-two" = "seventy thousand five hundred twenty-five" ;/*correct*/ n2w_c = "seven hundred twenty five"; n2w_d = "seven thousand five hundred"; break;
-        		}  
-        		case 24: 
-        		{
-        			n2w = 82143; n2w_a = "eight thousand one hundred forty-three"; n2w_b = "eighty-two thousand one hundred forty-three" ;/*correct*/ n2w_c = "eighty thousand one hundred forty-three"; n2w_d = "eight thousand two hundred forty-three"; break;
-        		}  
-    	}
+        n2w = 87064; n2w_a = "eighty-seven thousand sixty-four" ;/*correct*/ n2w_b = "eighty-seven thousand six hundred four"; n2w_c = "eight thousand seven hundred sixty four"; n2w_d = "eight thousand sixty-four"; break;
+        } 
+        case 15: 
+        {
+        n2w = 29596; n2w_a = "two thousand five hundred ninety-six"; n2w_b = "two thousand five hundred"; n2w_c = "twenty nine thousand five hundred"; n2w_d = "twenty-nine thousand five hundred ninety-six";/*correct*/ break;
+        } 
+        case 16: 
+        {
+        n2w = 41575; n2w_a = "forty thousand five hundred seventy-five"; n2w_b = "forty-one thousand five hundred seventy-five"; n2w_c = "forty-one thousand seventy-five"; n2w_d = "four thousand seven hundred five"; break;
+        } 
+        case 17: 
+        {
+        n2w = 88010; n2w_a = "eight thousand ten"; n2w_b = "eighty-eight thousand eight hundred"; n2w_c = "eighty-eight thousand ten";/*correct*/ n2w_d = "eight thousand eight hundred ten"; break;
+        } 
+        case 18: 
+        {
+        n2w = 47979; n2w_a = "forty thousand nine hundred nine"; n2w_b = "forty-seven thousand nine hundred seventy-nine" ; /*correct*/ n2w_c = "four thousand seven hundred seventy-nine"; n2w_d = "forty thousand nine hundred seventy-nine"; break;
+        } 
+        case 19: 
+        {
+        n2w = 51995; n2w_a = "fifty thousand nine hundred ninety-five"; n2w_b = "fifty thousand nine hundred"; n2w_c = "five thousand nine hundred ninety-five"; n2w_d = "fifty-one thousand nine hundred ninety-five";  /*correct*/ break;
+        } 
+        case 20: 
+        {
+        n2w = 51437; n2w_a = "fifty-one thousand four hundred thirty-seven" ;/*correct*/ n2w_b ="five thousand four hundred twenty-seven"; n2w_c = "fifty four thousand thirty-seven"; n2w_d = "five thousand four hundred thirty-seven"; break;
+        } 
+        case 21: 
+        {
+        n2w = 76702; n2w_a = "seven hundred seventy-two"; n2w_b = "seven thousand six hundred two"; n2w_c = "seventy-six thousand seven hundred"; n2w_d = "seventy-six thousand seven hundred two";/*correct*/ break;
+        }  
+        case 22: 
+        {
+        n2w = 26776; n2w_a = "twenty-six thousand seven hundred"; n2w_b = "twenty-six thousand seven hundred seventy-six" ; /*correct*/ n2w_c = "two thousand seven hundred seventy-six"; n2w_d = "two thousand seventy-six"; break;
+        }  
+        case 23: 
+        {
+        n2w = 70525; n2w_a = "seven thousand five hundred fifty-two"; n2w_b= "seventy thousand five hundred twenty-five" ;/*correct*/ n2w_c = "seven hundred twenty five"; n2w_d = "seven thousand five hundred"; break;
+        }  
+        case 24: 
+        {
+        n2w = 82143; n2w_a = "eight thousand one hundred forty-three"; n2w_b = "eighty-two thousand one hundred forty-three" ;/*correct*/ n2w_c = "eighty thousand one hundred forty-three"; n2w_d = "eight thousand two hundred forty-three"; break;
+        }  
+    }
 }
 
+
+//LVL4
+if (room == rm_n2w_lvl4) || (room == rm_n2w_lvl4_1) || (room == rm_n2w_lvl4_2) || (room == rm_n2w_lvl4_3) || (room == rm_n2w_lvl4_4)
+{
+    switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+        n2w = 235408; n2w_a = "two hundred thirty-five thousand four hundred eight"; /*correct*/ nw_b = "two hundred forty-eight thousand"; n2w_c = "two hundred fifty-four thousand"; n2w_d = "two hundred thousand forty-eight"; break;
+        }
+        case 1: 
+        {
+        n2w = 311970; n2w_a = "three hundred eleven thousand nine hundred seven"; n2w_b = "three hundred eleven thousand nine hundred seventy"; /*correct*/ n2w_c = "three hundred thousand nine hundred seven"; n2w_d = "three thousand eleven hundred"; break;
+        }
+        case 2: 
+        {
+        n2w = 141780; n2w_a = "one hundred thousand seven hundred eighty"; n2w_b = "one hundred forty-one thousand seven"; n2w_c = "one hundred forty-one thousand seven hundred eighty" ;/*correct*/ n2w_d = "one hundred thousand seven hundred"; break;
+        }
+        case 3: 
+        {
+        n2w = 211591; n2w_a = "two hundred eleven thousand five hundred ninety-one"; /*correct*/ n2w_b = "two hundred thousand five hundred nine-one"; n2w_c = "twenty thousand five hundred ninety-one"; n2w_d = "two hundred thousand five hundred ninety"; break;
+        }
+        case 4: 
+        {
+        n2w = 462623; n2w_a = "four hundred sixty thousand six hundred twenty-three"; n2w_b = "four hundred thousand six hundred"; n2w_c = "four hundred thousand two hundred sixty-three"; n2w_d = "four hundred sixty-two thousand six hundred twenty-three"; /*correct*/  break;
+        }
+        case 5: 
+        {
+        n2w = 130372; n2w_a = "one hundred thirty-three thousand three hundred seventy-two"; n2w_b = "one hundred thirteen thousand seven hundred thirty-two"; n2w_c = "one hundred thousand three hundred seventy-two"; n2w_d = "one hundred thirty thousand three hundred seventy-two"; /*correct*/  break;
+        }
+        case 6: 
+        {
+        n2w = 104035; n2w_a = "one hundred four thousand thirty-five"; /*correct*/ n2w_b = "one hundred forty thousand three hundred thirteen"; n2w_c = "one hundred thousand three hundred thirty-five"; n2w_d = "one hundred forty thousand three hundred thirty-five"; break;
+        }
+        case 7: 
+        {
+        n2w = 112582; n2w_a = "one hundred twelve thousand five hundred eighteen"; n2w_b = "one hundred twelve thousand five hundred eighty-two"; /*correct*/ n2w_c = "one hundred twenty thousand five hundred eighty two"; n2w_d = "one hundred twelve thousand five hundred eighty"; break;
+        } 
+        case 8: 
+        {
+        n2w = 335092; n2w_a = "three hundred thirty-five thousand ninety"; n2w_b = "three hundred thirty thousand nine hundred two"; n2w_c = "three hundred thirty-five thousand ninety-two" ;/*correct*/ n2w_d = "three hundred thirty-five thousand nine hundred two"; break;
+        } 
+        case 9: 
+        {
+        n2w = 177515; n2w_a = "one hundred seventy-seven thousand five hundred fifteen" ;/*correct*/ n2w_b = "one hundred thousand seven hundred seventy-five"; n2w_c = "one hundred seventy thousand five hundred fifteen"; n2w_d = "one hundred thousand five hundred fifteen"; break;
+        } 
+        case 10: 
+        {
+        n2w = 215302; n2w_a = "two hundred fifty thousand three hundred two"; n2w_b = "two hundred fifteen thousand three hundred two" ;/*correct*/ n2w_c = "two hundred fifteen thousand three hundred"; n2w_d = "two hundred twenty thousand three hundred two"; break;
+        } 
+        case 11: 
+        {
+        n2w = 418771; n2w_a = "four hundred eighty thousand seven hundred seventy-one"; n2w_b = "four hundred eighteen thousand seven hundred seventy-one";/*correct*/ n2w_c = "four hundred eighty thousand seven hundred seventy"; n2w_d = "four hundred thousand seven hundred seventy one"; break;
+        } 
+        case 12: 
+        {
+        n2w = 396812; n2w_a = "three hundred ninety-six thousand eight hundred"; n2w_b = "three hundred ninety-six thousand eight hundred two"; n2w_c = "three hundred ninety-six thousand eight hundred twelve ";/*correct*/ n2w_d = "three hundred ninety-six thousand eight hundred one"; break;
+        } 
+        case 13: 
+        {
+        n2w = 440958; n2w_a = "four hundred forty-nine thousand nine hundred fifty-eight"; n2w_b = "four hundred forty thousand nine hundred fifty"; n2w_c = "four hundred thousand nine hundred eight"; n2w_d = "four hundred forty thousand nine hundred fifty-eight";/*correct*/ break;
+        } 
+        case 14: 
+        {
+        n2w = 406074; n2w_a = "four hundred six thousand seventy-four";/*correct*/ n2w_b = "four hundred sixteen thousand seven hundred four"; n2w_c = "four hundred six thousand seventy-four"; n2w_d = "four hundred sixty thousand seventy"; break;
+        } 
+        case 15: 
+        {
+        n2w = 390328; n2w_a = "three hundred nineteen thousand three hundred twenty-eight"; n2w_b = "three hundred ninety thousand three hundred twenty-eight"; /*correct*/  n2w_c = "three hundred ninety thousand three hundred twenty"; n2w_d = "three hundred ninety thousand three hundred two"; break;
+        } 
+        case 16: 
+        {
+        n2w = 238052; n2w_a = "two hundred thirty thousand fifty-two"; n2w_b = "two hundred thirty-eight thousand five hundred"; n2w_c = "two hundred thirty-eight thousand fifty-two";/*correct*/ n2w_d = "two hundred thirty-eight thousand two hundred"; break;
+        } 
+        case 17: 
+        {
+        n2w = 124407; n2w_a = "one hundred twenty-four thousand four hundred seven"; n2w_b = "one hundred twelve thousand four hundred seven"; n2w_c = "one hundred twenty thousand"; n2w_d = "one hundred twenty-four thousand four hundred seven";/*correct*/ break;
+        } 
+        case 18: 
+        {
+        n2w = 228887; n2w_a = "two hundred twenty-eight thousand eight hundred eighty-seven";/*correct*/ n2w_b = "two hundred thousand eight hundred eighty-seven"; n2w_c = "two hundred twenty thousand eight hundred seven"; n2w_d = "two hundred twenty-eight thousand eight hundred eighty-seven"; break;
+        } 
+        case 19: 
+        {
+        n2w = 184070; n2w_a = "one hundred thousand eight hundred seventy"; n2w_b = "one hundred eighty-four thousand seventy";/*correct*/ n2w_c = "one hundred eighty thousand seventy"; n2w_d = "one hundred forty thousand seventy"; break;
+        } 
+        case 20: 
+        {
+        n2w = 102772; n2w_a = "one hundred twenty-seven thousand seven hundred seventy"; n2w_b = "one hundred twenty-seven thousand seven hundred two"; n2w_c = "one hundred two thousand seven hundred seventy-two";/*correct*/ n2w_d = "one hundred twenty-seven thousand seven hundred seventy-two"; break;
+        } 
+        case 21: 
+        {
+        n2w = 128727; n2w_a = "one hundred twenty-eight thousand seven hundred twenty-seven";/*correct*/ n2w_b = "one hundred twenty eight thousand seven hundred twenty"; n2w_c = "one hundred eighty seven thousand twenty seven"; n2w_d = "one hundred thousand seven hundred seven"; break;
+        }  
+        case 22: 
+        {
+        n2w = 108103; n2w_a = "one hundred eight thousand one hundred"; n2w_b = "one hundred eighty thousand one hundred thirty"; n2w_c = "one hundred eighty one thousand one hundred three"; n2w_d = "one hundred eight thousand one hundred three";/*correct*/ break;
+        }  
+        case 23: 
+        {
+        n2w = 394094; n2w_a = "three hundred ninety-four thousand ninety-four";/*correct*/ n2w_b = "three hundred ninety-four thousand ninety"; n2w_c = "three hundred ninety thousand ninety-four"; n2w_d = "three hundred ninety four thousand nine hundred four"; break;
+        }  
+        case 24: 
+        {
+        n2w = 232813; n2w_a = "two hundred twenty-three thousand eight hundred thirteen"; n2w_b = "two hundred thirty-two thousand eight hundred thirteen";/*correct*/ n2w_c = "two hundred thirty-two thousand eight hundred thirty"; n2w_d = "two hundred thirty thousand eight hundred thirty"; break;
+        }  
+    }
+}
+
+
+//LVL 5
+if (room == rm_n2w_lvl5) || (room == rm_n2w_lvl5_1) || (room == rm_n2w_lvl5_2) || (room == rm_n2w_lvl5_3) || (room == rm_n2w_lvl5_4)
+{
+    switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+        n2w = 8572932; n2w_a = "eight million five hundred seventy-two thousand nine hundred thirty-two" /*correct*/ ; n2w_b = "eight million five hundred seventy thousand nine hundred thirty-two"; n2w_c = "eight million five hundred seventy-two thousand nine hundred thirty"; n2w_d = "eight million five hundred two thousand nine hundred thirty-two"; break;
+        }
+        case 1: 
+        {
+        n2w = 4380110; n2w_a = "four million three hundred eighty thousand one hundred ten ";/*correct*/ n2w_b = "four million three hundred eighteen thousand one hundred ten"; n2w_c = "four million three hundred eighty thousand one hundred"; n2w_d = "four million four hundred eighty thousand one hundred ten"; break;
+        }
+        case 2: 
+        {
+        n2w = 7273272; n2w_a = "seven million two hundred three thousand two hundred seventy-two"; n2w_b = "seven million two hundred seventy-three thousand two hundred seventy-two";/*correct*/ ; n2w_c = "seven million two hundred seventy thousand two hundred seventy-two"; n2w_d = "seven million two hundred seventy-three thousand two hundred seventy"; break;
+        }
+        case 3: 
+        {
+        n2w = 9192988; n2w_a = "nine million one hundred ninety-two thousand nine hundred eighty"; n2w_b = "nine million one hundred ninety-two thousand nine hundred eighty-eight" ;/*correct*/ n2w_c = "nine million one hundred ninety thousand nine hundred eighty-eight"; n2w_d = "nine million one hundred ninety-two thousand eight hundred eighty-eight"; break;
+        }
+        case 4: 
+        {
+        n2w = 9037464; n2w_a = "nine million thirty thousand four hundred sixty-four"; n2w_b = "nine million thirty-seven thousand four hundred sixty"; n2w_c = "nine million thirty-seven thousand four hundred sixty-four"; /*correct*/ n2w_d = "nine million thirty-seven thousand four hundred four"; break;
+        }
+        case 5: 
+        {
+        n2w = 674499; n2w_a = "six hundred seventy thousand four hundred ninety-nine"; n2w_b = "six hundred seventy-four thousand four hundred nine"; n2w_c = "six hundred seventy-four thousand four hundred ninety"; n2w_d = "six hundred seventy-four thousand four hundred ninety-nine"; /*correct*/ break;
+        }
+        case 6: 
+        {
+        n2w = 3709359; n2w_a = "three million seven hundred nine thousand three hundred fifty-nine";/*correct*/ n2w_b = "three million seven hundred nine thousand three hundred fifty"; n2w_c = "three million seven hundred nine thousand three hundred nine"; n2w_d = "three million eight hundred nine thousand three hundred fifty-nine"; break;
+        }
+        case 7: 
+        {
+        n2w = 6913308; n2w_a = "six million nine hundred thirteen thousand four hundred eight"; n2w_b = "six million nine hundred thirteen thousand three hundred eight";/*correct*/ n2w_c = "six million nine hundred thirty thousand three hundred eight"; n2w_d = "six million nine hundred thirteen thousand three hundred eighty"; break;
+        } 
+        case 8: 
+        {
+        n2w = 2642620; n2w_a = "two million six hundred forty thousand six hundred twenty "; n2w_b = "two million six hundred two thousand six hundred twenty "; n2w_c = "two million six hundred forty-two thousand six hundred twenty";/*correct*/ n2w_d = "two million six hundred forty-two thousand six hundred twelve"; break;
+        } 
+        case 9: 
+        {
+        n2w = 6029792; n2w_a = "six million twenty-nine thousand seven hundred ninety-two";/*correct*/ n2w_b = "six million twenty thousand seven hundred ninety-two"; n2w_c = "six million nine thousand seven hundred ninety-two"; n2w_d = "six million twenty-nine thousand seven hundred ninety"; break;
+        } 
+        case 10: 
+        {
+        n2w = 3309437; n2w_a = "three million three hundred nine thousand four hundred seven"; n2w_b = "three million three hundred nine thousand four hundred thirty-seven";/*correct*/ n2w_c = "three million three hundred nine thousand four hundred thirty"; n2w_d = "three million three hundred nine thousand three hundred thirty-seven"; break;
+        } 
+        case 11: 
+        {
+        n2w = 4550256; n2w_a = "four million five hundred fifty thousand two hundred fifty"; n2w_b = "four million five hundred fifty thousand two hundred six"; n2w_c = "four million five hundred fifty thousand two hundred fifty-six";/*correct*/ n2w_d = "four million five hundred fifteen thousand two hundred fifty-six"; break;
+        } 
+        case 12: 
+        {
+        n2w = 844236; n2w_a = "eight hundred forty-four thousand two hundred thirty"; n2w_b = "eight hundred forty-four thousand two hundred thirty-six"; n2w_c = "eight hundred forty-four thousand two hundred six"; n2w_d = "eight hundred forty thousand two hundred thirty-six"; /*correct*/ break;
+        } 
+        case 13: 
+        {
+        n2w = 7409317; n2w_a = "seven million four hundred nine thousand three hundred seventeen"; /*correct*/ n2w_b = "seven million four hundred nine thousand three hundred seventy"; n2w_c = "seven million four hundred ninety thousand three hundred seventeen"; n2w_d = "seven million four hundred nineteen thousand three hundred seventeen"; break;
+        } 
+        case 14: 
+        {
+        n2w = 9827206; n2w_a = "nine million eight hundred twenty thousand two hundred six"; n2w_b = "nine million eight hundred twenty-seven thousand two hundred six"; /*correct*/ n2w_c = "nine million eight hundred seven thousand two hundred six"; n2w_d = "nine million eight hundred twenty-seven thousand two hundred sixty"; break;
+        } 
+        case 15: 
+        {
+        n2w = 701291; n2w_a = "seven hundred one thousand two hundred ninety"; n2w_b = "seven hundred one thousand two hundred one"; n2w_c = "seven hundred one thousand two hundred ninety-one"; /*correct*/ n2w_d = "seven hundred one thousand three hundred ninety-one"; break;
+        } 
+        case 16: 
+        {
+        n2w = 8112187; n2w_a = "eight million one hundred twenty thousand one hundred eighty-seven"; n2w_b = "eight million one hundred twelve thousand one hundred eighty"; n2w_c = "eight million one hundred twelve thousand one hundred seven"; n2w_d = "eight million one hundred twelve thousand one hundred eighty-seven"; /*correct*/ break;
+        } 
+        case 17: 
+        {
+        n2w = 2177249; n2w_a = "two million one hundred seventy-seven thousand two hundred forty-nine"; /*correct*/ n2w_b = "two million one hundred seventy-seven thousand two hundred forty"; n2w_c = "two million one hundred seventy-seven thousand two hundred nine"; n2w_d = "two million one hundred seventy thousand two hundred forty-nine"; break;
+        } 
+        case 18: 
+        {
+        n2w = 7013622; n2w_a = "seven million thirteen thousand six hundred twenty"; n2w_b = "seven million thirteen thousand six hundred twenty-two"; /*correct*/ n2w_c = "seven million thirteen thousand six hundred two"; n2w_d = "seven million thirtyn thousand six hundred twenty-two"; break;
+        } 
+        case 19: 
+        {
+        n2w = 4491567; n2w_a = "four million four hundred ninety-one thousand five hundred sixty"; n2w_b = "four million four hundred ninety-one thousand five hundred seven"; n2w_c = "four million four hundred ninety thousand five hundred sixty-seven"; n2w_d = "four million four hundred ninety-one thousand five hundred sixty-seven"; /*correct*/ break;
+        } 
+        case 20: 
+        {
+        n2w = 44915675; n2w_a = "four million nine hundred eighty-two thousand twenty-nine"; /*correct*/ n2w_b = "four million nine hundred eighty thousand twenty-nine"; n2w_c = "four million nine hundred eighty thousand twenty-nine"; n2w_d = "four million nine hundred two thousand twenty-nine"; break;
+        } 
+        case 21: 
+        {
+        n2w = 4982029; n2w_a ="four million nine hundred eighty-two thousand twenty-nine"; /*correct*/ n2w_b = "four million nine hundred eighty thousand twenty-nine"; n2w_c = "four million nine hundred eighty-two thousand nine"; n2w_d = "four million nine hundred eighty-two thousand ninety"; break;
+        }  
+        case 22: 
+        {
+        n2w = 6261648; n2w_a = "six million two hundred sixty-one thousand six hundred forty-eight"; /*correct*/ n2w_b = "six million two hundred sixty thousand six hundred forty-eight"; n2w_c = "six million two hundred sixty-one thousand six hundred forty"; n2w_d = "six million two hundred sixteen thousand six hundred forty-eight"; break;
+        }  
+        case 23: 
+        {
+        n2w = 5774359; n2w_a = "five million seven hundred seventy-four thousand three hundred fifteen"; n2w_b = "five million seven hundred seventy thousand three hundred fifty-nine"; n2w_c = "five million seven hundred seventy-four thousand three hundred fifty-nine";/*correct*/ n2w_d = "five million seven hundred seventy-four thousand three hundred fifty"; break;
+        }  
+        case 24: 
+        {
+        n2w = 5853559; n2w_a = "five million eight hundred fifty thousand five hundred fifty-nine"; n2w_b = "five million eight hundred fifty-three thousand five hundred fifty-nine";/*correct*/ n2w_c = "five million eight hundred fifty-three thousand five hundred fifty"; n2w_d = "five million eight hundred fifteen thousand five hundred fifty-nine"; break;
+        }  
+    }
+}
 
 
 </string>
@@ -389,7 +599,10 @@ if (room == n2w_lvl3) || (room == n2w_lvl3_1) || (room == n2w_lvl3_2) || (room =
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (n2w_rnd) 
+            <string>//LEVEL 1
+if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1) || (room == rm_n2w_lvl1_2) || (room == rm_n2w_lvl1_3) || (room == rm_n2w_lvl1_4)
+{
+    switch (n2w_rnd) 
     {
         //This is only a test
         case 0: 
@@ -744,6 +957,1442 @@ if (room == n2w_lvl3) || (room == n2w_lvl3_1) || (room == n2w_lvl3_2) || (room =
         }
             
     }
+}    
+//LEVEL 2
+if (room == rm_n2w_lvl2) || (room == rm_n2w_lvl2_1) || (room == rm_n2w_lvl2_2) || (room == rm_n2w_lvl2_3) || (room == rm_n2w_lvl2_4)
+{
+switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 1: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 2: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 3: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 4: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 5: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 6: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 7: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 8: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 9: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 10: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 11: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 12: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 13: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 14: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 15: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 16: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 17: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 18: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 19: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 20: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 21: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 22: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 23: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 24: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+            
+    }
+}
+
+//LEVEL 3
+if (room == rm_n2w_lvl3) || (room == rm_n2w_lvl3_1) || (room == rm_n2w_lvl3_2) || (room == rm_n2w_lvl3_3) || (room == rm_n2w_lvl3_4)
+{
+switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 1: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 2: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 3: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 4: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 5: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 6: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 7: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 8: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 9: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 10: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 11: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 12: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 13: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 14: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 15: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 16: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 17: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 18: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 19: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 20: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 21: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 22: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 23: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 24: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+            
+    }
+}
+
+//LEVEL 4
+if (room == rm_n2w_lvl4) || (room == rm_n2w_lvl4_1) || (room == rm_n2w_lvl4_2) || (room == rm_n2w_lvl4_3) || (room == rm_n2w_lvl4_4)
+{
+switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 1: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 2: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 3: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 4: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 5: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 6: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 7: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 8: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 9: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 10: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 11: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 12: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 13: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 14: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 15: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 16: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 17: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 18: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 19: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 20: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 21: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 22: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 23: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 24: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+            
+    }
+}
+
+//LEVEL 5
+if (room == rm_n2w_lvl5) || (room == rm_n2w_lvl5_1) || (room == rm_n2w_lvl5_2) || (room == rm_n2w_lvl5_3) || (room == rm_n2w_lvl5_4)
+{
+switch (n2w_rnd) 
+    {
+        case 0: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 1: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 2: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 3: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 4: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 5: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 6: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 7: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 8: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 9: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 10: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 11: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 12: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 13: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 14: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 15: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 16: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 17: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 18: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 19: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 20: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 21: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 22: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 23: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+        case 24: 
+        {
+           if (position_meeting(mouse_x, mouse_y, obj_txtbox_b) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_correct); 
+            }
+            else if (position_meeting(mouse_x, mouse_y, obj_txtbox_c) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_a) &amp;&amp; mouse_check_button_released(mb_left)) || 
+            (position_meeting(mouse_x, mouse_y, obj_txtbox_d) &amp;&amp; mouse_check_button_released(mb_left))
+            {
+                instance_create(room_width/2,room_height/2, obj_incorrect); 
+            }
+            break;
+        }
+            
+    }
+}
     
 </string>
           </argument>

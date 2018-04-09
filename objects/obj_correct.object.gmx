@@ -121,6 +121,7 @@ if (room == rm_w2n_lvl1) || (room == rm_w2n_lvl1_1)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n1 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 else if (room == rm_w2n_lvl1_4)
 {
@@ -149,6 +150,7 @@ if (room == rm_w2n_lvl2) || (room == rm_w2n_lvl2_1)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 else if (room == rm_w2n_lvl2_4)
 {
@@ -161,6 +163,7 @@ else if (room == rm_w2n_lvl2_4)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 
 //Level 3
@@ -177,6 +180,7 @@ if (room == rm_w2n_lvl3) || (room == rm_w2n_lvl3_1)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n3 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 else if (room == rm_w2n_lvl3_4)
 {
@@ -189,6 +193,7 @@ else if (room == rm_w2n_lvl3_4)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n3 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 
 //Level 4
@@ -205,6 +210,7 @@ if (room == rm_w2n_lvl4) || (room == rm_w2n_lvl4_1)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 else if (room == rm_w2n_lvl4_4)
 {
@@ -217,6 +223,7 @@ else if (room == rm_w2n_lvl4_4)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 
 //Level 5
@@ -236,6 +243,7 @@ if (room == rm_w2n_lvl5) || (room == rm_w2n_lvl5_1)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 else if (room == rm_w2n_lvl5_4)
 {
@@ -251,6 +259,7 @@ else if (room == rm_w2n_lvl5_4)
         //Kapag second time or more than na naglaro
         else if (global.level_w2n5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "w2n";
 }
 //Words to Numbers END
 
@@ -269,6 +278,7 @@ if (room == rm_n2w_lvl1) || (room == rm_n2w_lvl1_1)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w1 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 else if (room == rm_n2w_lvl1_4)
 {
@@ -281,6 +291,7 @@ else if (room == rm_n2w_lvl1_4)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w1 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 
 //Level 2
@@ -297,6 +308,7 @@ if (room == rm_n2w_lvl2) || (room == rm_n2w_lvl2_1)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 else if (room == rm_n2w_lvl2_4)
 {
@@ -309,6 +321,7 @@ else if (room == rm_n2w_lvl2_4)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 
 //Level 3
@@ -337,6 +350,7 @@ else if (room == rm_n2w_lvl3_4)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w3 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 
 //Level 4
@@ -353,6 +367,7 @@ if (room == rm_n2w_lvl4) || (room == rm_n2w_lvl4_1)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 else if (room == rm_n2w_lvl4_4)
 {
@@ -365,6 +380,7 @@ else if (room == rm_n2w_lvl4_4)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 
 //Level 5
@@ -381,6 +397,7 @@ if (room == rm_n2w_lvl5) || (room == rm_n2w_lvl5_1)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 else if (room == rm_n2w_lvl5_4)
 {
@@ -393,6 +410,7 @@ else if (room == rm_n2w_lvl5_4)
         //Kapag second time or more than na naglaro
         else if (global.level_n2w5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "n2w";
 }
 
 //Numbers to Words END//
@@ -412,6 +430,7 @@ if (room == rm_pv_lvl1) || (room == rm_pv_lvl1_1)
         //Kapag second time or more than na naglaro
         else if (global.level_pv1 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 else if (room == rm_pv_lvl1_4)
 {
@@ -424,6 +443,7 @@ else if (room == rm_pv_lvl1_4)
         //Kapag second time or more than na naglaro
         else if (global.level_pv1 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 
 //Level 2
@@ -440,6 +460,7 @@ if (room == rm_pv_lvl2) || (room == rm_pv_lvl2_1)
         //Kapag second time or more than na naglaro
         else if (global.level_pv2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 else if (room == rm_pv_lvl2_4)
 {
@@ -452,6 +473,7 @@ else if (room == rm_pv_lvl2_4)
         //Kapag second time or more than na naglaro
         else if (global.level_pv2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 
 //Level 3
@@ -468,6 +490,7 @@ if (room == rm_pv_lvl3) || (room == rm_pv_lvl3_1)
         //Kapag second time or more than na naglaro
         else if (global.level_pv3 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 else if (room == rm_pv_lvl3_4)
 {
@@ -480,6 +503,7 @@ else if (room == rm_pv_lvl3_4)
         //Kapag second time or more than na naglaro
         else if (global.level_pv3 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 
 //Level 4
@@ -496,6 +520,7 @@ if (room == rm_pv_lvl4) || (room == rm_pv_lvl4_1)
         //Kapag second time or more than na naglaro
         else if (global.level_pv4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 else if (room == rm_pv_lvl4_4)
 {
@@ -508,6 +533,7 @@ else if (room == rm_pv_lvl4_4)
         //Kapag second time or more than na naglaro
         else if (global.level_pv4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 
 //Level 5
@@ -527,6 +553,7 @@ if (room == rm_pv_lvl5) || (room == rm_pv_lvl5_1)
         //Kapag second time or more than na naglaro
         else if (global.level_pv5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 else if (room == rm_pv_lvl5_4)
 {
@@ -542,6 +569,7 @@ else if (room == rm_pv_lvl5_4)
         //Kapag second time or more than na naglaro
         else if (global.level_pv5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "pv";
 }
 //END Place Value
 
@@ -560,6 +588,7 @@ if (room == rm_ro_lvl1) || (room == rm_ro_lvl1_1)
         //Kapag second time or more than na naglaro
         else if (global.level_ro1 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 else if (room == rm_ro_lvl1_4)
 {
@@ -572,6 +601,7 @@ else if (room == rm_ro_lvl1_4)
         //Kapag second time or more than na naglaro
         else if (global.level_ro1 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 
 //Level 2
@@ -588,6 +618,7 @@ if (room == rm_ro_lvl2) || (room == rm_ro_lvl2_1)
         //Kapag second time or more than na naglaro
         else if (global.level_ro2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 else if (room == rm_ro_lvl2_4)
 {
@@ -600,6 +631,7 @@ else if (room == rm_ro_lvl2_4)
         //Kapag second time or more than na naglaro
         else if (global.level_ro2 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 
 //Level 3
@@ -616,6 +648,7 @@ if (room == rm_ro_lvl3) || (room == rm_ro_lvl3_1)
         //Kapag second time or more than na naglaro
         else if (global.level_ro3 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 else if (room == rm_ro_lvl3_4)
 {
@@ -628,6 +661,7 @@ else if (room == rm_ro_lvl3_4)
         //Kapag second time or more than na naglaro
         else if (global.level_ro3 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 
 //Level 4
@@ -644,6 +678,7 @@ if (room == rm_ro_lvl4) || (room == rm_ro_lvl4_1)
         //Kapag second time or more than na naglaro
         else if (global.level_ro4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 else if (room == rm_ro_lvl4_4)
 {
@@ -656,6 +691,7 @@ else if (room == rm_ro_lvl4_4)
         //Kapag second time or more than na naglaro
         else if (global.level_ro4 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 
 //Level 5
@@ -675,6 +711,7 @@ if (room == rm_ro_lvl5) || (room == rm_ro_lvl5_1)
         //Kapag second time or more than na naglaro
         else if (global.level_ro5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 else if (room == rm_ro_lvl5_4)
 {
@@ -690,6 +727,7 @@ else if (room == rm_ro_lvl5_4)
         //Kapag second time or more than na naglaro
         else if (global.level_ro5 == 1) { room_goto(level_complete); }        
     }
+    global.lesson = "ro";
 }
 </string>
           </argument>

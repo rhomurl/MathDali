@@ -54,59 +54,6 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///obj_exit_yes clicked
-if (position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
-{
-    image_index=1;
-    alarm[0]=room_speed*1;
-}
-
-if (room == room_gameover) 
-{
-    if (position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
-        {
-            if (global.lesson = "w2n")
-            {
-                room_goto(room_w2n_level);
-            }
-            else if (global.lesson = "n2w")
-            {
-                room_goto(room_n2w_level);
-            }
-            else if (global.lesson = "pv")
-            {
-                room_goto(room_pv_level);
-            }
-            else if (global.lesson = "ro")
-            {
-                room_goto(room_ro_level);
-            }
-        
-        }
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="6" enumb="11">
       <action>
         <libid>1</libid>
@@ -148,6 +95,105 @@ if (room == room_gameover)
           <argument>
             <kind>1</kind>
             <string>image_index=1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (room == room_exit)
+{
+alarm[0]=room_speed*1;
+}
+
+
+if (global.lesson = "w2n")
+{
+room_goto(room_w2n_level);
+}
+else if (global.lesson = "n2w")
+{
+room_goto(room_n2w_level);
+}
+else if (global.lesson = "pv")
+{
+room_goto(room_pv_level);
+}
+else if (global.lesson = "ro")
+{
+room_goto(room_ro_level);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (room == room_exit)
+{
+    if (position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
+    {
+        image_index=1;
+        alarm[0]=room_speed*1;
+    }
+}
+/* else if (room == room_gameover) 
+{
+    if (position_meeting(mouse_x, mouse_y, id) &amp;&amp; mouse_check_button_released(mb_left))
+    {
+            if (global.lesson = "w2n")
+            {
+                room_goto(room_w2n_level);
+            }
+            else if (global.lesson = "n2w")
+            {
+                room_goto(room_n2w_level);
+            }
+            else if (global.lesson = "pv")
+            {
+                room_goto(room_pv_level);
+            }
+            else if (global.lesson = "ro")
+            {
+                room_goto(room_ro_level);
+            }
+        
+    }
+}
+*/
+
 </string>
           </argument>
         </arguments>

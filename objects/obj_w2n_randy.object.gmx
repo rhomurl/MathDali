@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>global.lesson = "w2n";
 /// Generate ran numbers and strings.
 
 // Reset lives
