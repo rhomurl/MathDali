@@ -151,8 +151,7 @@ if (room == rm_ro_lvl5) || (room == rm_ro_lvl5_1) || (room == rm_ro_lvl5_2) || (
         case 2: { rnd_off = 13097564; string5 = "millions"; rnd_offa = 1311000; rnd_offb = 13100000; rnd_offc = 14000000; rnd_offd = 13000000; /*answer*/ break; }
         case 3: { rnd_off = 4509873; string5 = "hundred thousands"; rnd_offa = 4511000; rnd_offb = 4000000; rnd_offc = 4500000; /*answer*/ rnd_offd = 5000000; break; }
         case 4: { rnd_off = 6837145; string5 = "millions"; rnd_offa = 6800000; rnd_offb = 7000000; /*answer*/ rnd_offc = 6000000; rnd_offd = 6840000; break; }
-        case 5: { rnd_off = 3501796;  string5 = "hundred thousands"; rnd_offa = 4000000; rnd_offb = 3500000; /*answer*/ rnd_offc = 2000000; rnd_offd = 1000000;
-        break; }
+        case 5: { rnd_off = 3501796;  string5 = "hundred thousands"; rnd_offa = 4000000; rnd_offb = 3500000; /*answer*/ rnd_offc = 2000000; rnd_offd = 1000000; break; }
         case 6: { rnd_off = 8724625;  string5 = "millions"; rnd_offa = 9000000; /*answer*/ rnd_offb = 8700000; rnd_offc = 5009000; rnd_offd = 8000000; break; }
         case 7: { rnd_off = 28356721;  string5 = "millions"; rnd_offa = 21000000; rnd_offb = 30000000; rnd_offc = 28300000; rnd_offd = 28000000; /*answer*/ break; }
         case 8: { rnd_off = 5098123; string5 = "millions"; rnd_offa = 5100000; rnd_offb = 6100000; rnd_offc = 5090000; rnd_offd = 5000000; /*answer*/ break; }
@@ -1630,29 +1629,6 @@ switch (rnd_ro)
     }
 }
     
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="82">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_restart();
 </string>
           </argument>
         </arguments>

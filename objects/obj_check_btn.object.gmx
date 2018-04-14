@@ -116,12 +116,16 @@
           <argument>
             <kind>1</kind>
             <string>room_goto_next();
-if (room == h_w2n_n2w_4) || (room == h_pv_3)
+if (room == h_w2n_n2w_4) || (room == h_pv_3) || (room == h_ro4)
 {
    room_goto(rm_lesson);
 
 }
 
+if (room == c2a_help2) || (room == t2a_help2)
+{
+    room_goto(rm_game_help);
+}
 </string>
           </argument>
         </arguments>

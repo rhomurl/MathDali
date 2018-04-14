@@ -149,25 +149,25 @@ if (room == room_ro_level){
             <string>if room == room_w2n_level {
 draw_set_valign(fa_left);
 draw_set_halign(fa_left);
-draw_text(10,10,global.level_w2n); //for testing only
+//draw_text(10,10,global.level_w2n); //for testing only
 draw_text(32,704,str_w2n);
 }
 else if room == room_n2w_level {
 draw_set_valign(fa_left);
 draw_set_halign(fa_left);
-draw_text(10,10,global.level_n2w); //for testing only
+//draw_text(10,10,global.level_n2w); //for testing only
 draw_text(32,704,str_n2w);
 }
 else if room == room_pv_level {
 draw_set_valign(fa_left);
 draw_set_halign(fa_left);
-draw_text(10,10,global.level_pv); //for testing only
+//draw_text(10,10,global.level_pv); //for testing only
 draw_text(32,704,str_pv);
 }
 else if room == room_ro_level {
 draw_set_valign(fa_left);
 draw_set_halign(fa_left);
-draw_text(10,10,global.level_ro); //for testing only
+//draw_text(10,10,global.level_ro); //for testing only
 draw_text(32,704,str_ro);
 }
 draw_set_valign(fa_center);

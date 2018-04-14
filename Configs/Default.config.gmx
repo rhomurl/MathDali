@@ -78,8 +78,8 @@
     <option_frequency>0</option_frequency>
     <option_frontimage>nil</option_frontimage>
     <option_fullscreen>False</option_fullscreen>
-    <option_gameguid>{0A7A2CBD-BD87-48CD-880D-E992A0A55BD1}</option_gameguid>
-    <option_gameid>746425631</option_gameid>
+    <option_gameguid>{9AD0BC73-BAD9-4DC5-8D53-FC2AE5FE45C5}</option_gameguid>
+    <option_gameid>352794739</option_gameid>
     <option_haptic_effects>0</option_haptic_effects>
     <option_hasloadimage>false</option_hasloadimage>
     <option_helpkey>true</option_helpkey>
@@ -107,7 +107,7 @@
     <option_html5_outputdebugtoconsole>False</option_html5_outputdebugtoconsole>
     <option_html5_outputname>index.html</option_html5_outputname>
     <option_html5_scale>-1</option_html5_scale>
-    <option_html5_showcursor>True</option_html5_showcursor>
+    <option_html5_showcursor>False</option_html5_showcursor>
     <option_html5_splash_png>Configs\Default\html5\splash.png</option_html5_splash_png>
     <option_html5_texture_page>2048</option_html5_texture_page>
     <option_html5_use_test_ads>0</option_html5_use_test_ads>
@@ -254,7 +254,7 @@
     <option_screenkey>False</option_screenkey>
     <option_screenshotkey>true</option_screenshotkey>
     <option_shortcircuit>True</option_shortcircuit>
-    <option_showcursor>True</option_showcursor>
+    <option_showcursor>False</option_showcursor>
     <option_showprogress>1</option_showprogress>
     <option_sizeable>False</option_sizeable>
     <option_stayontop>false</option_stayontop>
@@ -287,12 +287,12 @@
     <option_tizen_usesplash>False</option_tizen_usesplash>
     <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
-    <option_version>100</option_version>
+    <option_version>200</option_version>
     <option_version_build>0</option_version_build>
-    <option_version_company></option_version_company>
+    <option_version_company>Innovators</option_version_company>
     <option_version_copyright>2018</option_version_copyright>
-    <option_version_description>An e-learning game for Ibaan Central School</option_version_description>
-    <option_version_major>1</option_version_major>
+    <option_version_description>An E-learning game for Ibaan Central School</option_version_description>
+    <option_version_major>2</option_version_major>
     <option_version_minor>0</option_version_minor>
     <option_version_product></option_version_product>
     <option_version_release>0</option_version_release>
@@ -333,14 +333,14 @@
     <option_win8_wide_logo>Configs\Default\Windows8\logos\logo310.png</option_win8_wide_logo>
     <option_windowcolor>clBlack</option_windowcolor>
     <option_windows_build_version>0</option_windows_build_version>
-    <option_windows_company_info></option_windows_company_info>
+    <option_windows_company_info>Innovators</option_windows_company_info>
     <option_windows_copyright_info>2018</option_windows_copyright_info>
-    <option_windows_description_info>An e-learning game for Ibaan Central School</option_windows_description_info>
+    <option_windows_description_info>An E-learning game for Ibaan Central School</option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
     <option_windows_mainor_version>0</option_windows_mainor_version>
-    <option_windows_major_version>1</option_windows_major_version>
+    <option_windows_major_version>2</option_windows_major_version>
     <option_windows_nsis_file>Configs\Default\windows\RunnerInstaller.nsi</option_windows_nsis_file>
     <option_windows_product_info></option_windows_product_info>
     <option_windows_release_version>0</option_windows_release_version>

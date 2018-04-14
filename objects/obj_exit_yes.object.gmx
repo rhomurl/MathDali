@@ -121,8 +121,6 @@
 {
 alarm[0]=room_speed*1;
 }
-
-
 if (global.lesson = "w2n")
 {
 room_goto(room_w2n_level);

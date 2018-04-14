@@ -20,6 +20,9 @@
       <sprite>sprites\spr_clouds2</sprite>
       <sprite>sprites\spr_clouds1</sprite>
       <sprite>sprites\spr_clouds4</sprite>
+      <sprite>sprites\spr_c2a</sprite>
+      <sprite>sprites\spr_t2a</sprite>
+      <sprite>sprites\spr_h_ro</sprite>
     </sprites>
     <sprites name="Buttons">
       <sprites name="LESSON MENU">
@@ -33,7 +36,7 @@
         <sprites name="game">
           <sprite>sprites\spr_gamehelp_btn</sprite>
           <sprite>sprites\spr_type2ans_btn</sprite>
-          <sprite>sprites\spr_ans2type_btn</sprite>
+          <sprite>sprites\spr_choose2ans_btn</sprite>
         </sprites>
       </sprites>
       <sprite>sprites\spr_MainMenu</sprite>
@@ -46,6 +49,7 @@
       <sprite>sprites\spr_ok_btn</sprite>
       <sprite>sprites\spr_check_btn</sprite>
       <sprite>sprites\spr_prev_next</sprite>
+      <sprite>sprites\spr_back_btn</sprite>
       <sprites name="Place Value">
         <sprite>sprites\spr_tens</sprite>
         <sprite>sprites\spr_hundredmillions</sprite>
@@ -71,12 +75,23 @@
         <sprite>sprites\spr_txtbx_red</sprite>
         <sprite>sprites\spr_txtbx_violet</sprite>
       </sprites>
+      <sprite>sprites\spr_leaves</sprite>
+      <sprite>sprites\spr_notunlocked</sprite>
+      <sprite>sprites\spr_ans_incorrect</sprite>
+      <sprite>sprites\spr_ans_correct</sprite>
+      <sprite>sprites\spr_choose_n2w</sprite>
+      <sprite>sprites\spr_dialog_q</sprite>
+      <sprite>sprites\sprite97</sprite>
+      <sprite>sprites\spr_about_btn</sprite>
     </sprites>
     <sprites name="Cursor">
       <sprite>sprites\spr_cursor</sprite>
+      <sprite>sprites\sprite93</sprite>
       <sprite>sprites\spr_cursor2</sprite>
       <sprite>sprites\spr_cursor_red</sprite>
+      <sprite>sprites\sprite94</sprite>
       <sprite>sprites\spr_cursor_blue</sprite>
+      <sprite>sprites\sprite95</sprite>
     </sprites>
     <sprites name="Main Menu">
       <sprite>sprites\spr_msg_mainmenu</sprite>
@@ -85,16 +100,13 @@
     <sprites name="Others">
       <sprite>sprites\spr_textbox</sprite>
       <sprite>sprites\spr_textbox2</sprite>
-      <sprite>sprites\spr_prev_next_bck</sprite>
       <sprite>sprites\spr_textobx_green_bck</sprite>
       <sprite>sprites\spr_collision_green</sprite>
       <sprite>sprites\spr_bamboo_leaves</sprite>
+      <sprite>sprites\spr_bamboo_leaves1</sprite>
     </sprites>
     <sprites name="Popup">
-      <sprite>sprites\spr_correct</sprite>
-      <sprite>sprites\spr_incorrect</sprite>
       <sprite>sprites\spr_levelcomplete</sprite>
-      <sprite>sprites\spr_dialog_lvl_notunlocked</sprite>
     </sprites>
     <sprites name="Questions">
       <sprite>sprites\spr_numbers</sprite>
@@ -126,15 +138,17 @@
       <sprite>sprites\spr_help_pv2</sprite>
       <sprite>sprites\spr_help_pv3</sprite>
     </sprites>
+    <sprite>sprites\sprite89</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_level</background>
     <background>background\bg_w2nplay</background>
-    <background>background\background2</background>
     <background>background\bg_exitconfirm</background>
     <background>background\bg_splash_mm</background>
     <background>background\background8</background>
     <background>background\background9</background>
+    <background>background\bg_about</background>
+    <background>background\level_menugbg</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path_cloud</path>
@@ -156,40 +170,17 @@
     <font>fonts\f_txtbox_ro</font>
     <font>fonts\f_question_ro</font>
     <font>fonts\f_choice_nw</font>
+    <font>fonts\f_LithosP</font>
+    <font>fonts\f_Lit_EG</font>
+    <font>fonts\f_bk_36</font>
+    <font>fonts\f_bk_30</font>
+    <font>fonts\f_bk_25</font>
+    <font>fonts\f_bk_20</font>
+    <font>fonts\f_bk_22</font>
   </fonts>
   <objects name="objects">
-    <objects name="Cursor">
-      <object>objects\obj_cursor</object>
-    </objects>
     <objects name="Sound">
       <object>objects\obj_sound</object>
-    </objects>
-    <objects name="Bonus">
-      <objects name="Questions">
-        <object>objects\obj_random_num1</object>
-        <object>objects\obj_random_num2</object>
-        <object>objects\obj_fraction</object>
-      </objects>
-      <objects name="Test">
-        <object>objects\obj_dialogbox</object>
-        <object>objects\obj_ctrl_wq</object>
-        <object>objects\obj_ctrl_wq1</object>
-        <object>objects\obj_qans1</object>
-        <object>objects\obj_qans2</object>
-        <object>objects\obj_qans3</object>
-        <object>objects\obj_qans4</object>
-        <object>objects\obj_wq</object>
-        <object>objects\obj_ranqqq</object>
-        <object>objects\obj_dialogbx</object>
-      </objects>
-      <object>objects\obj_cloud_twirl</object>
-      <object>objects\objj_clouds1</object>
-      <object>objects\obj_clouds2</object>
-      <object>objects\obj_clouds3</object>
-      <object>objects\obj_clouds4</object>
-      <object>objects\obj_collision_green</object>
-      <object>objects\obj_splash</object>
-      <object>objects\obj_lives</object>
     </objects>
     <objects name="Buttons">
       <objects name="Exit">
@@ -229,14 +220,13 @@
         <object>objects\obj_button_parent</object>
       </objects>
       <objects name="LESSON MENU">
-        <object>objects\obj_bamboo_leaves</object>
         <object>objects\obj_w2n_btn</object>
         <object>objects\obj_pv_btn</object>
         <object>objects\obj_ro_btn</object>
         <object>objects\obj_n2w_btn</object>
       </objects>
-      <object>objects\obj_nextroom</object>
       <object>objects\obj_prevroom</object>
+      <object>objects\obj_about</object>
       <object>objects\obj_check_btn</object>
     </objects>
     <objects name="Input User">
@@ -257,47 +247,80 @@
         <object>objects\obj_ctrl_lvl_menu</object>
       </objects>
     </objects>
-    <objects name="Text">
-      <objects name="Level Complete">
-        <object>objects\obj_button_complete</object>
-        <object>objects\obj_levelcomplete</object>
-        <object>objects\obj_ctrl_lvl_complete</object>
-      </objects>
-      <object>objects\obj_gameover</object>
-      <object>objects\obj_correct</object>
-      <object>objects\obj_incorrect</object>
-      <object>objects\obj_ok_btn</object>
-      <object>objects\obj_tryagain</object>
-      <object>objects\obj_dialog</object>
-      <object>objects\obj_dialog2</object>
-    </objects>
-    <objects name="Help">
-      <object>objects\obj_helppv1</object>
-      <object>objects\obj_helppv2</object>
-      <object>objects\obj_helppv3</object>
-      <objects name="wn">
-        <object>objects\obj_helpwn</object>
-        <object>objects\obj_helpnw1</object>
-        <object>objects\obj_helpnw3</object>
-        <object>objects\obj_helpnw2</object>
-      </objects>
-      <objects name="btns">
-        <objects name="LESSON">
-          <object>objects\obj_h_lesson</object>
-          <object>objects\obj_h_wn</object>
+    <objects name="Display">
+      <objects name="Bonus">
+        <objects name="Questions">
+          <object>objects\obj_random_num1</object>
+          <object>objects\obj_random_num2</object>
+          <object>objects\obj_fraction</object>
         </objects>
-        <objects name="GAME">
-          <object>objects\obj_h_game</object>
-          <object>objects\obj_h_t2a</object>
-          <object>objects\obj_h_c2a</object>
+        <objects name="Test">
+          <object>objects\obj_dialogbox</object>
+          <object>objects\obj_ctrl_wq</object>
+          <object>objects\obj_ctrl_wq1</object>
+          <object>objects\obj_qans1</object>
+          <object>objects\obj_qans2</object>
+          <object>objects\obj_qans3</object>
+          <object>objects\obj_qans4</object>
+          <object>objects\obj_wq</object>
+          <object>objects\obj_ranqqq</object>
+          <object>objects\obj_dialogbx</object>
+        </objects>
+        <object>objects\obj_cloud_twirl</object>
+        <object>objects\objj_clouds1</object>
+        <object>objects\obj_clouds2</object>
+        <object>objects\obj_clouds3</object>
+        <object>objects\obj_clouds4</object>
+        <object>objects\obj_collision_green</object>
+        <object>objects\obj_splash</object>
+        <object>objects\obj_lives</object>
+        <object>objects\obj_c2a1</object>
+        <object>objects\obj_c2a2</object>
+        <object>objects\obj_t2a1</object>
+        <object>objects\obj_t2a2</object>
+        <object>objects\obj_t2a3</object>
+        <object>objects\obj_h_ro</object>
+        <object>objects\obj_h_ro2</object>
+        <object>objects\obj_h_ro3</object>
+        <object>objects\obj_h_ro4</object>
+      </objects>
+      <objects name="Cursor">
+        <object>objects\obj_cursor</object>
+      </objects>
+      <objects name="Help">
+        <object>objects\obj_helppv1</object>
+        <object>objects\obj_helppv2</object>
+        <object>objects\obj_helppv3</object>
+        <objects name="wn">
+          <object>objects\obj_helpwn</object>
+          <object>objects\obj_helpnw1</object>
+          <object>objects\obj_helpnw3</object>
+          <object>objects\obj_helpnw2</object>
+        </objects>
+        <objects name="btns">
+          <objects name="LESSON">
+            <object>objects\obj_h_lesson</object>
+            <object>objects\obj_h_wn</object>
+          </objects>
+          <objects name="GAME">
+            <object>objects\obj_h_game</object>
+            <object>objects\obj_h_t2a</object>
+            <object>objects\obj_h_c2a</object>
+          </objects>
         </objects>
       </objects>
+      <object>objects\obj_bamboo_leaves</object>
+      <object>objects\obj_bamboo_leaves1</object>
     </objects>
     <objects name="Textboxes">
       <object>objects\obj_txtbox_a</object>
       <object>objects\obj_txtbox_b</object>
       <object>objects\obj_txtbox_c</object>
       <object>objects\obj_txtbox_d</object>
+      <object>objects\obj_choosea</object>
+      <object>objects\obj_chooseb</object>
+      <object>objects\obj_choosec</object>
+      <object>objects\obj_choosed</object>
     </objects>
     <objects name="Lessons">
       <objects name="Words to Numbers">
@@ -317,6 +340,18 @@
         <object>objects\obj_roundoff_question</object>
         <object>objects\obj_txtbox_ro</object>
       </objects>
+    </objects>
+    <objects name="Conditions">
+      <objects name="Level Complete">
+        <object>objects\obj_button_complete</object>
+        <object>objects\obj_levelcomplete</object>
+        <object>objects\obj_ctrl_lvl_complete</object>
+      </objects>
+      <object>objects\obj_correct</object>
+      <object>objects\obj_dialog_notunlocked</object>
+      <object>objects\obj_tryagain</object>
+      <object>objects\obj_incorrect</object>
+      <object>objects\obj_gameover</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -339,13 +374,25 @@
             <room>rooms\h_pv_2</room>
             <room>rooms\h_pv_3</room>
           </rooms>
-          <room>rooms\h_ro_1</room>
+          <rooms name="ro">
+            <room>rooms\h_ro1</room>
+            <room>rooms\h_ro2</room>
+            <room>rooms\h_ro3</room>
+            <room>rooms\h_ro4</room>
+          </rooms>
           <room>rooms\rm_lesson</room>
         </rooms>
         <rooms name="help_game">
           <room>rooms\rm_game_help</room>
-          <room>rooms\c2a_help</room>
-          <room>rooms\t2a_help</room>
+          <rooms name="c2a">
+            <room>rooms\c2a_help</room>
+            <room>rooms\c2a_help2</room>
+          </rooms>
+          <rooms name="t2a">
+            <room>rooms\t2a_help</room>
+            <room>rooms\t2a_help1</room>
+            <room>rooms\t2a_help2</room>
+          </rooms>
         </rooms>
       </rooms>
       <rooms name="Lesson">

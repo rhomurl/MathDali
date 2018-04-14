@@ -29,20 +29,10 @@
 /// Generate ran numbers and strings.
 
 // Reset lives
-if (room == rm_w2n_lvl1){ 
-lives = 5;  
-}
-else if (room == rm_w2n_lvl2) {
-lives = 5;
-}
-else if (room == rm_w2n_lvl3) {
-lives = 5;
-}
-else if (room == rm_w2n_lvl4) {
-lives = 5;
-}
-else if (room == rm_w2n_lvl5) {
-lives = 5;
+if (room == rm_w2n_lvl1) || (room == rm_w2n_lvl2) ||(room == rm_w2n_lvl3) ||
+(room == rm_w2n_lvl4) || (room == rm_w2n_lvl5)
+{ 
+    lives = 5;  
 }
 
 //Setting variables
@@ -162,31 +152,31 @@ if (room == rm_w2n_lvl4) || (room == rm_w2n_lvl4_1) || (room == rm_w2n_lvl4_2)
 || (room == rm_w2n_lvl4_3) || (room == rm_w2n_lvl4_4){
     w2n_4_1 = 0;
     switch(gen_rn){
-    case 0: { string1 = "one hundred sixty-one thousand#six hundred eighty-two"; w2n_4_1 = 161682; break; }
-    case 1: { string1 = "six hundred sixty-nine thousand#six hundred eighty-three "; w2n_4_1 = 669683; break; }
-    case 2: { string1 = "two hundred seventy-two thousand#four hundred thirty"; w2n_4_1 = 272430; break; }
-    case 3: { string1 = "eight hundred ninety thousand#six hundred fifty-seven"; w2n_4_1 = 890657; break; }
+    case 0: { string1 = "one hundred sixty-one#thousand six hundred#eighty-two"; w2n_4_1 = 161682; break; }
+    case 1: { string1 = "six hundred sixty-nine#thousand six hundred#eighty-three "; w2n_4_1 = 669683; break; }
+    case 2: { string1 = "two hundred seventy-two#thousandfour hundred#thirty"; w2n_4_1 = 272430; break; }
+    case 3: { string1 = "eight hundred ninety#thousand six hundred#fifty-seven"; w2n_4_1 = 890657; break; }
     case 4: { string1 = "eight hundred thirty-seven#thousand one hundred"; w2n_4_1 = 837100;  break; }
-    case 5: { string1 = "nine hundred fifty-one thousand#ninety-eight"; w2n_4_1 = 951098; break; }
-    case 6: { string1 = "seven hundred nineteen thousand#six hundred forty-three"; w2n_4_1 = 719643; break; }
-    case 7: { string1 = "eight hundred twelve thousand#six hundred fifty-four"; w2n_4_1 = 812654; break; }
+    case 5: { string1 = "nine hundred fifty-one#thousand ninety-eight"; w2n_4_1 = 951098; break; }
+    case 6: { string1 = "seven hundred nineteen#thousand six hundred#forty-three"; w2n_4_1 = 719643; break; }
+    case 7: { string1 = "eight hundred twelve#thousand six hundred#fifty-four"; w2n_4_1 = 812654; break; }
     case 8: { string1 = "nine hundred twelve#thousand seven hundred#fifty-three"; w2n_4_1 = 912753; break; }
-    case 9: { string1 = "four hundred ninety-four thousand#seven hundred sixty-five"; w2n_4_1 = 494765; break; }
-    case 10: { string1 = "nine hundred thirty-nine thousand#one hundred eighty-four"; w2n_4_1 = 939184; break; }
-    case 11: { string1 = "seven hundred twenty-six thousand#one hundred thirty-eight"; w2n_4_1 = 726138; break; }
+    case 9: { string1 = "four hundred ninety-four#thousandseven hundred#sixty-five"; w2n_4_1 = 494765; break; }
+    case 10: { string1 = "nine hundred thirty-nine#thousand one hundred#eighty-four"; w2n_4_1 = 939184; break; }
+    case 11: { string1 = "seven hundred twenty-six#thousand one hundred#thirty-eight"; w2n_4_1 = 726138; break; }
     case 12: { string1 = "six hundred thirty thousand#nine hundred nineteen"; w2n_4_1 = 630919; break; }
     case 13: { string1 = "six hundred sixty thousand#two hundred sixteen"; w2n_4_1 = 660216; break; }
-    case 14: { string1 ="seven hundred fifty-six thousand#eight hundred";  w2n_4_1 = 756800; break; }
-    case 15: { string1 = "eight hundred seventy-four thousand#four hundred forty-five"; w2n_4_1 = 874445; break; }
-    case 16: { string1 = "three hundred thirty-five thousand#twenty-one"; w2n_4_1 = 335021; break; }
-    case 17: { string1 = "two hundred forty-two thousand#thirty-five"; w2n_4_1 = 242035; break; }
-    case 18: { string1 = "nine hundred eighty-seven#thousandfive hundred eighty-four"; w2n_4_1 = 987584; break; }
-    case 19: { string1 = "nine hundred fifty-six thousand#five hundred thirty-nine"; w2n_4_1 = 956539;  break; }
+    case 14: { string1 ="seven hundred fifty-six#thousandeight hundred";  w2n_4_1 = 756800; break; }
+    case 15: { string1 = "eight hundred seventy-four#thousand four hundred#forty-five"; w2n_4_1 = 874445; break; }
+    case 16: { string1 = "three hundred thirty-five#thousandtwenty-one"; w2n_4_1 = 335021; break; }
+    case 17: { string1 = "two hundred forty-two#thousand thirty-five"; w2n_4_1 = 242035; break; }
+    case 18: { string1 = "nine hundred eighty-seven#thousand five hundred#eighty-four"; w2n_4_1 = 987584; break; }
+    case 19: { string1 = "nine hundred fifty-six#thousand five hundred#thirty-nine"; w2n_4_1 = 956539;  break; }
     case 20: { string1 = "four hundred twenty-two#thousandthirty"; w2n_4_1 = 422030; break; }
     case 21: { string1 = "seven hundred one thousand#one hundred fifty-eight"; w2n_4_1 = 701158; break; }
-    case 22: { string1 = "six hundred seventy-nine thousand#six hundred sixty-six"; w2n_4_1 = 679666; break; }
-    case 23: { string1 = "six hundred thousand three hundred#thirteen"; w2n_4_1 = 600313; break; }
-    case 24: { string1 = "four hundred ninety-four thousand#six hundred ninety-nine"; w2n_4_1 = 494699; break; }
+    case 22: { string1 = "six hundred seventy-nine#thousand six hundred#sixty-six"; w2n_4_1 = 679666; break; }
+    case 23: { string1 = "six hundred thousand#three hundred thirteen"; w2n_4_1 = 600313; break; }
+    case 24: { string1 = "four hundred ninety-four#thousand six hundred#ninety-nine"; w2n_4_1 = 494699; break; }
     default:{ string1 = ""; w2n_4_1 = 0; break; }
     }
     global.w2n_4_1 = real(w2n_4_1);

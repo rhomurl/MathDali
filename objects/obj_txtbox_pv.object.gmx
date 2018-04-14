@@ -142,6 +142,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; //Answer
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 11:
         {
@@ -151,6 +152,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones";
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 12:
         {
@@ -160,6 +162,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens"; //Answer
+        break;
         }
         case 13:
         {
@@ -169,6 +172,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 14:
         {
@@ -178,6 +182,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; //Answer
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 15:
         {
@@ -187,6 +192,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; //Answer
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 16:
         {
@@ -196,6 +202,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 17:
         {
@@ -205,6 +212,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens"; //Answer
+        break;
         }
         case 18:
         {
@@ -214,6 +222,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens"; //Answer
+        break;
         }
         case 19:
         {
@@ -223,6 +232,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 20:
         {
@@ -232,6 +242,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; //Answer
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 21:
         {
@@ -241,6 +252,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; //Answer
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 22:
         {
@@ -250,6 +262,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
         case 23:
         {
@@ -259,6 +272,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens"; //Answer
+        break;
         }
         case 24:
         {
@@ -268,6 +282,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; 
         pv_c = "thousands"; 
         pv_d = "tens";
+        break;
         }
     }
 }
@@ -376,6 +391,7 @@ num_pv = 0; pv = 0; pv_a = ""; pv_b = ""; pv_c = ""; pv_d = "";
         pv_b = "ones"; //Answer
         pv_c = "tenths"; 
         pv_d = "tens";
+        break;
         }
         case 10:
         {
@@ -3121,29 +3137,6 @@ switch (rnd_pv)
     }
 }
     
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="9" enumb="82">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>room_restart();
 </string>
           </argument>
         </arguments>

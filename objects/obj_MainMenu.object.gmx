@@ -142,10 +142,10 @@ draw_set_font(f_mainmenu_dr);
 draw_set_halign(fa_center);
 draw_set_colour(c_black);
 
-draw_text(room_width/2-1,224-1,text);
+draw_text(room_width/2-5,520-5,text);
 
 draw_set_colour(c_white); //shadow effect
-draw_text(room_width/2,224,text)
+draw_text(room_width/2,520,text)
 </string>
           </argument>
         </arguments>
