@@ -21,5 +21,24 @@
   <height>565</height>
   <frames>
     <frame index="0">images\spr_ans_incorrect_0.png</frame>
+    <frame index="1">images\spr_ans_incorrect_1.png</frame>
+    <frame index="2">images\spr_ans_incorrect_2.png</frame>
+    <frame index="3">images\spr_ans_incorrect_3.png</frame>
+    <frame index="4">images\spr_ans_incorrect_4.png</frame>
+    <frame index="5">images\spr_ans_incorrect_5.png</frame>
+    <frame index="6">images\spr_ans_incorrect_6.png</frame>
+    <frame index="7">images\spr_ans_incorrect_7.png</frame>
+    <frame index="8">images\spr_ans_incorrect_8.png</frame>
+    <frame index="9">images\spr_ans_incorrect_9.png</frame>
+    <frame index="10">images\spr_ans_incorrect_10.png</frame>
+    <frame index="11">images\spr_ans_incorrect_11.png</frame>
+    <frame index="12">images\spr_ans_incorrect_12.png</frame>
+    <frame index="13">images\spr_ans_incorrect_13.png</frame>
+    <frame index="14">images\spr_ans_incorrect_14.png</frame>
+    <frame index="15">images\spr_ans_incorrect_15.png</frame>
+    <frame index="16">images\spr_ans_incorrect_16.png</frame>
+    <frame index="17">images\spr_ans_incorrect_17.png</frame>
+    <frame index="18">images\spr_ans_incorrect_18.png</frame>
+    <frame index="19">images\spr_ans_incorrect_19.png</frame>
   </frames>
 </sprite>

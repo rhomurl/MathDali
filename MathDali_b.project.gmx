@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\switch_sound</sound>
-    <sound>sound\correct_answer</sound>
     <sound>sound\snd_game</sound>
   </sounds>
   <sprites name="sprites">
