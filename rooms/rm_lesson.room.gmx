@@ -53,10 +53,10 @@
   <instances>
     <instance objName="obj_prevroom" x="30" y="30" name="inst_630B7862" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bamboo_leaves" x="64" y="0" name="inst_9B4149D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_w2n_btn" x="33" y="129" name="inst_2D7E42CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_n2w_btn" x="22" y="263" name="inst_4228D18D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pv_btn" x="96" y="384" name="inst_9583C47B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ro_btn" x="104" y="503" name="inst_78BCB98E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_w2n_btn" x="38" y="111" name="inst_2D7E42CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_n2w_btn" x="23" y="272" name="inst_4228D18D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pv_btn" x="101" y="394" name="inst_9583C47B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ro_btn" x="105" y="531" name="inst_78BCB98E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
